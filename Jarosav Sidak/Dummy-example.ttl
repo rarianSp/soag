@@ -1,1 +1,148 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
+#kutija kao logički skup dokumenata
+<Kutija01> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt01" ;
+			rico:name "Kutija 01" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata01-01> , <Dokument01-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1933-1934" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup dokumenata
+			rico:classification "" ; #može se koristiti za skup dokumenata
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup dokumenata
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kutija s rukopisima radova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
+							] ;
+
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "" . #razina
+			
+
+#kutija kao fizički pojavni oblik
+<Kutija01> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt01" ;
+			rico:name "Kutija 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Većinom čitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom." ;
+			rico:qualityOfRepresentatonNote "" .
+ 
+#SkupDokumenata01-01 kao logički                        
+<SkupDokumenata01-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd01" ;
+			rico:name "Skup dokumenata 01" ;
+			rico:directlyPrecedesInSequence <Dokument01-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1933-1934" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup dokumenata
+			rico:classification "" ; #može se koristiti za skup dokumenata
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup dokumenata
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 40 dokumenata s bilješkama o raznim temama i nacrtima radova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "40" ;
+								rico:unitOfMeasurement "dokumenata" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina
+
+#SkupDokumenata01-01 kao fizički pojavni oblik
+<SkupDokumenata01-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd01" ;
+			rico:name "Skup dokumenata 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "16" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Većinom čitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+
+#Dokument01-02 kao logički
+<Dokument01-02> a rico:Record ;
+rico:generalDescription "Dokument" ;
+			rico:identifier "kt01d02" ;
+			rico:name "Dokument 02" ;
+			rico:directlyFollowsInSequence <SkupDokumenata01-01> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "19330101" ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup dokumenata
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup dokumenata
+			rico:integrityNote "Nadostaje dio dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "" ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:state "Nacrt" ;
+			rico:documentaryForm "Rukopis" ;
+			rico:recordSetType "Komad" . #razina
+
+#Dokument01-02 kao fizički oblik
+<Dokument01-02> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt01d02" ;
+			rico:name "Dokument 02" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "2" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko" ;
+			rico:productionTechnique "Pisano rukom." ;
+			rico:qualityOfRepresentatonNote "" .
+
+#Agent
+<JaroslavSidak> a rico:Person ;
+			rico:name "Jaroslav Šidak" ;
+			rico:performsOrPerformed <ObranaDiplomskogRada> , <ObranaDoktorskogRada> .
+
+#Agent
+<FilozofskiFakultet> a rico:Agent ;
+			rico:name "Filozofski fakultet" ;
+			rico:legalStatus "Fakultet" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <ObranaDiplomskogRada> , <ObranaDoktorskogRada>.
+
+#Mjesto 
+<Zagreb> a rico:Place ;
+		 rico:name "Zagreb" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> ;
+			rico:isOrWasLocationOf<FilozofskiFakultet> .
+
+#Događaj
+<ObranaDiplomskogRada> a rico:Activity ;
+			rico:name "Obrana diplomskog rada" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1926." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JaroslavSidak> .
+
+#Događaj
+<ObranaDoktorskogRada> a rico:Activity ;
+			rico:name "Obrana doktorskog rada" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1935." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JaroslavSidak> ;
+	rico:documentedBy <SkupDokumenata01-01> ;
+	rico:isEventAssociatedWith <Dokument01-02> .
