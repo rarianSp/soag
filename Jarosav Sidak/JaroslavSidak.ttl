@@ -2,37 +2,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <JaroslavSidak> a rico:Person ;
             rico:generalDescription "Stvaratelj ostavštine" ;
+			rico:identifier "" ;
 			rico:name "Jaroslav Šidak" ;
-            foaf:givenName "Jaroslav" ;
-            foaf:surname "Šidak" ;
             rico:isEquivalentTo <https://enciklopedija.hr/clanak/sidak-jaroslav> ;
-            rico:history "Jaroslav Šidak rođen je u Beču 4.1.1903. godine. Diplomirao je povijest i zemljopis na Filozofskom fakultetu u Zagrebu 1926., a 1935. doktorirao povijest. Od 1934. do 1948., s prekidima, predavao je u gimnazijama u Senju i Zagrebu. 1941. postao je docentom, a 1945. profesorom na Filozofskom fakultetu u Zagrebu, gdje je predavao kolegije iz svjetske i hrvatske povijesti od 1943. Od 1958.vodi Katedru za hrvatsku povijest u Zagrebu. Uređivao je časopise Muzičar (1923-1930) i Historijski zbornik (1948.-1985., uz prekid 1976-1977.). Kao povjesničar, bavio se bosanskim srednjovjekovljem, hrvatskim novovjekovljem i 19. stoljećem. 1976. dobio je državnu nagradu za životno djelo. Umro je u 25.3.1986. u Zagrebu." ;
+            rico:history "Jaroslav Šidak rođen je u Beču 4.1.1903. godine. Diplomirao je povijest i zemljopis na Filozofskom fakultetu u Zagrebu 1926., a 1935. doktorirao povijest. Od 1934. do 1948., s prekidima, predavao je u gimnazijama u Senju i Zagrebu. 1941. postao je docentom, a 1945. profesorom na Filozofskom fakultetu u zagrebu, gdje je predavao kolegije iz svjetske i hrvatske povijesti od 1943. Od 1958.vodi Katedru za hrvatsku povijest u Zagrebu. Uređivao je časopise Muzičar (1923-1930) i Historijski zbornik (1948.-1985., uz prekid 1976-1977.). Kao povjesničar, bavio se bosanskim srednjovjekovljem, hrvatskim novovjekovljem i 19. stoljećem. 1976. dobio je državnu nagradu za životno djelo. Umro je u 25.3.1986. u Zagrebu." ;
             rico:language "Hrvatski (hr)" , "Latinski (lat)" ;
             rico:DemographicGroup "" ;
-            rico:OccupationType "Povjesničar" ;
-            rico:hasBirthdate [ a rico:Date ;
-								rico:expressedDate "04.01.1903." ;
-								] ;
-            rico:isAssociatedWithDate [ a rico:Date ;
-								rico:expressedDate "1909." ;
-								rico:name "Datum dolaska u Zagreb." ;
-								] ;
-            rico:isAssociatedWithDate [ a rico:Date ;
-								rico:expressedDate "1926." ;
-								rico:name "Datum obrane diplomskpog rada." ;
-								] ;
-            rico:isAssociatedWithDate [ a rico:Date ;
-								rico:expressedDate "1935." ;
-								rico:name "Datum obrane doktorskog rada." ;
-								] ;
-            rico:hasDeathDate [ a rico:Date ;
-								rico:expressedDate "25.03.1986." ;
-                                rico:name "Datum smrti." ;
-								] ;
-            rico:isAssociatedWithEvent <ObranaDiplomskogRada> , <ObranaDoktorskogRada> ;
-            rico:agentHasOrHadLocation <Zagreb> .
-
-
+            rico:OccupationType "Povjesničar" .
