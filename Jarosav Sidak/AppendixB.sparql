@@ -1,0 +1,35 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT DISTINCT ?AgentName ?ActivityName ?Date ?RecordResourceIdentifier
+WHERE 
+{ 
+    ?Activity a rico:Activity ;  
+             rico:occurredAtDate ?DateNode ; 
+             rico:isOrWasPerformedBy ?Agent;  
+             rico:name ?ActivityName . 
+
+    {
+        ?DateNode rico:expressedDate ?Date .
+    }
+    UNION
+    {
+        ?DateNode rico:normalizedDate ?Date .
+    }
+
+    OPTIONAL 
+    { 
+        ?Activity (rico:documentedBy|rico:isEventAssociatedWith) ?recordResource . 
+        ?recordResource a ?recordType . 		
+        FILTER (?recordType = rico:RecordSet || ?recordType = rico:Record) 
+        ?recordResource rico:identifier ?RecordResourceIdentifier . 
+    } 
+
+    OPTIONAL 
+    {
+        ?Activity rico:hasInstantiation ?instantiation .
+        ?instantiation rico:identifier ?RecordResourceIdentifier .
+    }
+    
+    ?Agent rico:name ?AgentName . 
+} 
+ORDER BY ?AgentName

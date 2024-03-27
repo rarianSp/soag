@@ -1,0 +1,29 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?identifier (MAX(?date) AS ?maxDate) 
+WHERE 
+{  
+{ 
+?recordOrRecordSet a rico:Record ; rico:identifier ?identifier . 
+}  
+UNION 
+{ 
+?recordOrRecordSet a rico:RecordSet ; rico:identifier ?identifier .        
+FILTER(STRLEN(?identifier)>=5) 
+} 
+     
+?recordOrRecordSet rico:isAssociatedWithDate ?dateObj .  
+{ 
+?dateObj rico:expressedDate ?expressedDate .        
+BIND(IF(STRENDS(?expressedDate , "."), SUBSTR(?expressedDate, STRLEN(?expressedDate) -4, 4), SUBSTR(?expressedDate, STRLEN(?expressedDate) - 3)) AS ?date) 
+} 
+UNION 
+{ 
+?dateObj rico:normalizedDate ?normalizedDate .    
+BIND(SUBSTR(?normalizedDate, 1, 4) AS ?date)  
+}   
+FILTER(?date > "1979") 
+}
+GROUP BY ?identifier 
+ORDER BY DESC(?maxDate)
