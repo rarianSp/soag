@@ -24,7 +24,7 @@
 							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
 							] ;
 
-			rico:state "Nacrti" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
 			rico:structure "Kronološka" ;
 			rico:documentaryForm "Bilješke", "Rukopis" ;
 			rico:recordSetType "" . #razina
@@ -62,7 +62,7 @@
 								rico:quantity "40" ;
 								rico:unitOfMeasurement "dokumenata" ;
 								] ;
-			rico:state "Nacrti" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
 			rico:structure "Kronološka" ;
 			rico:documentaryForm "Bilješke", "Rukopis" ;
 			rico:recordSetType "Predmet" . #razina
@@ -95,7 +95,7 @@ rico:generalDescription "Dokument" ;
 			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
 			rico:scopeAndContent "" ;
 			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
-			rico:state "Nacrt" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
 			rico:documentaryForm "Rukopis" ;
 			rico:recordSetType "Komad" . #razina
 
