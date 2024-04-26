@@ -1,0 +1,779 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+#opis izradio Sven Cikota
+#kutija kao logički skup
+<Kutija01> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt01" ;
+			rico:name "Kutija 01" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata01-01> , <SkupDokumenata01-02> , <SkupDokumenata01-03> , <SkupDokumenata01-04> , <Ljetopis01-05> , <SkupDokumenata01-06> , <SkupDokumenata01-07> , <SkupDokumenata01-08> , <Casopis01-09> , <SkupDokumenata01-10> , <SkupDokumenata01-11> , <SkupDokumenata01-12> , <Novine01-13> , <SkupDokumenata01-14> , <Casopis01-15> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1897-1942" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "Ostavština" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (nj)" , "Latinica (latn)" , "Srpski (sr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kutija s rukopisima radova i tiskanim sadržajem." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "15" ;
+							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
+							] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke" , "Rukopis" , "Tisak" , "Ilustracija"  ;
+			rico:recordSetType "fond" . #razina
+			
+			
+#kutija kao fizički pojavni oblik
+<Kutija01> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt01" ;
+			rico:name "Kutija 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "15" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Podosta nečitkog gradiva, tiskani izvori u dosta dobrom stanju." ;
+			rico:productionTechnique "Rukopis i tiskano." ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+			
+#SkupDokumenata01-01 kao logički                        
+<SkupDokumenata01-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd01" ;
+			rico:name "V Recepti" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1933" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilježnica koja se primarno bavi povijesnom tematikom i sadrži neke ilustracije." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" , "Ilustracija" ;
+			rico:recordSetType "Predmet" . #razina
+			
+			
+#SkupDokumenata01-01 kao fizički pojavni oblik
+<SkupDokumenata01-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd01" ;
+			rico:name "V Recepti" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "50" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Podosta nečitkog gradiva, ilustracije su jasno vidljive." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+			
+#SkupDokumenata01-02 kao logički                        
+<SkupDokumenata01-02> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd02" ;
+			rico:name "Rešetarov zbornik" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1931" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilježnica koja se tiče dubrovačke povijesti." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis"  ;
+			rico:recordSetType "Predmet" . #razina
+			
+			
+#SkupDokumenata01-02 kao fizički pojavni oblik
+<SkupDokumenata01-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd02" ;
+			rico:name "Rešetarov zbornik" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "30" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Malo čitkije u odnosu na ostale dokumente." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .		
+
+
+#SkupDokumenata01-03 kao logički                        
+<SkupDokumenata01-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd03" ;
+			rico:name "Bilješke o bosanskim bogomilima" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-04> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1932" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (nj)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Podaci o bosanskim crkvenim običajima." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis"  ;
+			rico:recordSetType "Predmet" . #razina	
+
+
+#SkupDokumenata01-03 kao fizički pojavni oblik
+<SkupDokumenata01-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd03" ;
+			rico:name "Bilješke o bosanskim bogomilima" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "10" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dosta čitko, manja oštećenja na pojedinim dijelovima." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dosta dobro očuvano" .		
+			
+			
+#SkupDokumenata01-04 kao logički                        
+<SkupDokumenata01-04> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd04" ;
+			rico:name "Bilješke o okupaciji Bosne i 'istočnom pitanju'" ;
+			rico:directlyPrecedesInSequence <Ljetopis01-05> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1936" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Podaci o okupaciji Bosne i nepovoljnom stanju u Osmanskom Carstvu." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "7" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis", "Ilustracija"  ;
+			rico:recordSetType "Predmet" . #razina			
+			
+			
+#SkupDokumenata01-04 kao fizički pojavni oblik
+<SkupDokumenata01-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd04" ;
+			rico:name "Bilješke o okupaciji Bosne i 'istočnom pitanju'" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "35" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dosta čitko, karte vrlo dobro očuvane." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Vrlo dobro očuvano" .
+
+
+#Ljetopis01-05 kao logički
+<Ljetopis01-05> a rico:Record ;
+rico:generalDescription "Ljetopis" ;
+			rico:identifier "kt01d05" ;
+			rico:name "Kongres historičara 21.-27.VIII.1932." ;
+			rico:directlyFollowsInSequence <SkupDokumenata01-04> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "1934" ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kronološki podaci o kretanju Južnih Slavena" ;
+			rico:state "Nacrt" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Komad" . #razina			
+			
+			
+#Ljetopis01-05 kao fizički oblik
+<Ljetopis01-05> a rico:Instantiation ;
+			rico:generalDescription "Ljetopis" ;
+			rico:identifier "kt01d05" ;
+			rico:name "Kongres historičara 21.-27.VIII.1932." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "2" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Podosta čitko" ;
+			rico:productionTechnique "Rukopis." ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano." .
+			
+			
+#SkupDokumenata01-06 kao logički                        
+<SkupDokumenata01-06> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd06" ;
+			rico:name "Die materialistiche Geschichtauffassung" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-07> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1923-1930" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Njemački (nj)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijesni pregled materijalne prošlosti." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "10" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina		
+			
+			
+#SkupDokumenata01-06 kao fizički pojavni oblik
+<SkupDokumenata01-06> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd06" ;
+			rico:name "Die materialistiche Geschichtauffassung" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "70" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Skoro pa nečitko, u dobrom stanju." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Vrlo dobro očuvano" .
+			
+			
+#SkupDokumenata01-07 kao logički                        
+<SkupDokumenata01-07> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd07" ;
+			rico:name "Nepoznat naziv" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-08> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1895" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Njemački (nj)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijest socijalizma." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina	
+			
+			
+#SkupDokumenata01-07 kao fizički pojavni oblik
+<SkupDokumenata01-07> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd07" ;
+			rico:name "Nepoznat naziv" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "30" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dovoljno čitko." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+			
+#SkupDokumenata01-08 kao logički                        
+<SkupDokumenata01-08> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd08" ;
+			rico:name "Dubrovački tjednik" ;
+			rico:directlyPrecedesInSequence <Casopis01-09> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1897" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o kretanju Južnih Slavena." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina	
+			
+			
+#SkupDokumenata01-08 kao fizički pojavni oblik
+<SkupDokumenata01-08> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd08" ;
+			rico:name "Dubrovački tjednik" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "6" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko, dobro očuvano." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+			
+#Casopis01-09 kao logički
+<Casopis01-09> a rico:Record ;
+rico:generalDescription "Casopis" ;
+			rico:identifier "kt01d09" ;
+			rico:name "Nove dulebske studije - Časopis za zgodovino in narodpisje" ;
+			rico:directlyFollowsInSequence <SkupDokumenata01-08> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "1928" ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "" ; 
+			rico:language "Njemački (nj)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Časopis o aktualnim događanjima" ;
+			rico:state "Nacrt" ;
+			rico:documentaryForm "Tisak" ;
+			rico:recordSetType "Komad" . #razina
+			
+			
+#Casopis01-09 kao fizički oblik
+<Casopis01-09> a rico:Instantiation ;
+			rico:generalDescription "Casopis" ;
+			rico:identifier "kt01d09" ;
+			rico:name "Kongres historičara 21.-27.VIII.1932." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "8" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko, dobro očuvano; naslov na slovenskom, a sadržaj na njemačkom." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano." .
+			
+			
+#SkupDokumenata01-10 kao logički                        
+<SkupDokumenata01-10> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd10" ;
+			rico:name "Bosna i Hercegovina pod austro-ugarskom upravom/Srpski narod u XIX veku" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-11> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1938" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Srpski (sr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o stanju u Bosni tijekom vladavine Austro-Ugarske te o stanju srpskog naroda u 19. stoljeću." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis", "Tisak" ;
+			rico:recordSetType "Predmet" . #razina	
+			
+			
+#SkupDokumenata01-10 kao fizički pojavni oblik
+<SkupDokumenata01-10> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd10" ;
+			rico:name "Bosna i Hercegovina pod austro-ugarskom upravom/Srpski narod u XIX veku" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "20" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopis čitak, vrlo dobro očuvano." ;
+			rico:productionTechnique "Rukopis i tiskano" ;
+			rico:qualityOfRepresentatonNote "Vrlo dobro očuvano" .
+			
+			
+#SkupDokumenata01-11 kao logički                        
+<SkupDokumenata01-11> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd11" ;
+			rico:name "Srbija pod osmanskom vlašću" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-12> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1923" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke s predavanja profesora Šišića o Srbiji pod osmanskom vlašću." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "4" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina	
+			
+			
+#SkupDokumenata01-11 kao fizički pojavni oblik
+<SkupDokumenata01-11> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd11" ;
+			rico:name "Srbija pod osmanskom vlašću" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "20" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopis čitak, vrlo dobro očuvano." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Vrlo dobro očuvano" .
+			
+			
+#SkupDokumenata01-12 kao logički                        
+<SkupDokumenata01-12> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd12" ;
+			rico:name "Dalmatinski gradovi do XII st." ;
+			rico:directlyPrecedesInSequence <Novine01-13> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1939" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Latinski (lat)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Izvještaj o povijesti dalmatinskih gradova do 12. stoljeća." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina	
+			
+			
+#SkupDokumenata01-12 kao fizički pojavni oblik
+<SkupDokumenata01-12> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd12" ;
+			rico:name "Dalmatinski gradovi do XII st." ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "40" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Vrlo nečitko, nije najbolje očuvano." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Slabije očuvano" .
+			
+			
+#Novine01-13 kao logički
+<Novine01-13> a rico:Record ;
+rico:generalDescription "Novine" ;
+			rico:identifier "kt01d13" ;
+			rico:name "Neue Ordnung" ;
+			rico:directlyFollowsInSequence <SkupDokumenata01-12> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "19420308" ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "" ; 
+			rico:language "Njemački (nj)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Novosti vezane za Hrvate u Dalmaciji" ;
+			rico:state "Nacrt" ;
+			rico:documentaryForm "Tisak" ;
+			rico:recordSetType "Komad" . #razina
+			
+			
+#Novine01-13 kao fizički oblik
+<Novine01-13> a rico:Instantiation ;
+			rico:generalDescription "Novine" ;
+			rico:identifier "kt01d13" ;
+			rico:name "Neue Ordnung" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "21" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "U vrlo dobrom stanju." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Vrlo dobro očuvano." .
+			
+			
+#SkupDokumenata01-14 kao logički                        
+<SkupDokumenata01-14> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd14" ;
+			rico:name "III Recepti" ;
+			rico:directlyPrecedesInSequence <Casopis01-15> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1932" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ; 
+			rico:scopeAndContent "Izvještaj o povijesti dalmatinskih gradova do 12. stoljeća." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina
+			
+			
+#SkupDokumenata01-14 kao fizički pojavni oblik
+<SkupDokumenata01-14> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd14" ;
+			rico:name "III Recepti" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "40" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dosta nečitko, ilustracije dobro očuvane, manja oštećenja." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+			
+#Casopis01-15 kao logički
+<Casopis01-15> a rico:Record ;
+rico:generalDescription "Casopis" ;
+			rico:identifier "kt01d15" ;
+			rico:name "Jugoslavenska njiva" ;
+			rico:directlyFollowsInSequence <SkupDokumenata01-14> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "1924" ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Političko-kulturni list o aktualnim događanjima u Jugoslaviji" ;
+			rico:state "Nacrt" ;
+			rico:documentaryForm "Tisak" ;
+			rico:recordSetType "Komad" . #razina
+			
+			
+#Casopis01-15 kao fizički oblik
+<Casopis01-09> a rico:Instantiation ;
+			rico:generalDescription "Casopis" ;
+			rico:identifier "kt01d15" ;
+			rico:name "Jugoslavenska njiva" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "18" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Vrlo dobro očuvano." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Vrlo dobro očuvano." .
+			
+			
+#Agent
+<Stojanovic> a rico:Person ;
+			rico:name "Stojanović" ;
+			rico:performsOrPerformed <BosanskiBogomili> , <BosanskiBogomili> .
+			
+			
+#Agent
+<Savakovic> a rico:Person ;
+			rico:name "Savaković" ;
+			rico:performsOrPerformed <BosanskiBogomili> , <BosanskiBogomili> .
+			
+			
+#Agent
+<Petranovic> a rico:Person ;
+			rico:name "Petranović" ;
+			rico:performsOrPerformed <BosanskiBogomili> , <BosanskiBogomili> .
+			
+			
+#Agent
+<Starcevic> a rico:Person ;
+			rico:name "Starčević" ;
+			rico:performsOrPerformed <OkupacijaBosneIIstocnoPitanje> , <OkupacijaBosneIIstocnoPitanje> .
+			
+			
+#Agent
+<Bernstein> a rico:Person ;
+			rico:name "Bernstein" ;
+			rico:performsOrPerformed <PovijestSocijalizma> , <PovijestSocijalizma> .
+			
+			
+#Agent
+<VidVuceticVukanovic> a rico:Person ;
+			rico:name "Vid Vučetić-Vukanović" ;
+			rico:performsOrPerformed <DubrovackiTjednik> , <DubrovackiTjednik> .
+			
+			
+#Agent
+<Skaric> a rico:Person ;
+			rico:name "Škarić" ;
+			rico:performsOrPerformed <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> , <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> .
+			
+			
+#Agent
+<Hadzic> a rico:Person ;
+			rico:name "Hadžić" ;
+			rico:performsOrPerformed <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> , <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> .
+			
+			
+#Agent
+<Stojanovic> a rico:Person ;
+			rico:name "Stojanović" ;
+			rico:performsOrPerformed <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> , <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> .
+			
+			
+#Agent
+<Sisic> a rico:Person ;
+			rico:name "Šišić" ;
+			rico:performsOrPerformed <SrbijaPodOsmanskomVlascu> , <SrbijaPodOsmanskomVlascu> .
+			
+			
+#Agent
+<Hauptmann> a rico:Person ;
+			rico:name "Hauptmann" ;
+			rico:performsOrPerformed <NeueOrdnung> , <NeueOrdnung> .
+			
+			
+#Agent
+<JurajDemetrovic> a rico:Person ;
+			rico:name "Juraj Demetrović" ;
+			rico:performsOrPerformed <JugoslavenskaNjiva> , <JugoslavenskaNjiva> .
+			
+			
+#Mjesto 
+<Dubrovnik> a rico:Place ;
+		 rico:name "Dubrovnik" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Dubrovnik> ;
+			rico:isOrWasLocationOf<SkupDokumenata01-02> .
+			
+			
+#Mjesto 
+<Dubrovnik> a rico:Place ;
+		 rico:name "Dubrovnik" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Dubrovnik> ;
+			rico:isOrWasLocationOf<SkupDokumenata01-08> .
+			
+			
+#Mjesto 
+<Beograd> a rico:Place ;
+		 rico:name "Beograd" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Belgrade> ;
+			rico:isOrWasLocationOf<SkupDokumenata01-11> .
+			
+			
+#Mjesto 
+<Zagreb> a rico:Place ;
+		 rico:name "Zagreb" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> ;
+			rico:isOrWasLocationOf<Casopis01-15> .
+			
+			
+#Događaj
+<BosanskiBogomili> a rico:Activity ;
+			rico:name "Bosanski bogomili" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1932." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Stojanovic> , <Savakovic> , <Petranovic> .
+	
+	
+#Događaj
+<OkupacijaBosneIIstocnoPitanje> a rico:Activity ;
+			rico:name "Okupacija Bosne i istočno pitanje" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1936." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Starcevic> .
+	
+	
+#Događaj
+<PovijestSocijalizma> a rico:Activity ;
+			rico:name "Povijest socijalizma" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1895." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Bernstein> .
+	
+	
+#Događaj
+<DubrovackiTjednik> a rico:Activity ;
+			rico:name "Dubrovački tjednik" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1897." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <VidVuceticVukanovic> .
+	
+	
+#Događaj
+<BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> a rico:Activity ;
+			rico:name "Bosna i Hercegovina pod austro-ugarskom upravom/Srpski narod u XIX veku" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1938." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Skaric> , <Hadzic> , <Stojanovic> .
+	
+	
+#Događaj
+<SrbijaPodOsmanskomVlascu> a rico:Activity ;
+			rico:name "Srbija pod osmanskom vlašću" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1923." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Sisic> .
+	
+	
+#Događaj
+<NeueOrdnung> a rico:Activity ;
+			rico:name "Neue Ordnung" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "8.3.1942." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Hauptmann> .
+	
+	
+#Događaj
+<JugoslavenskaNjiva> a rico:Activity ;
+			rico:name "Jugoslavenska njiva" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1924." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JurajDemetrovic> .

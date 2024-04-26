@@ -1,0 +1,331 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+#opis izradila Katja Bešlić
+<Kutija02> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt02" ;
+			rico:name "Kutija 02" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata01-01> , <SkupDokumenata02-01> , <SkupDokumenata03-01> , <SkupDokumenata04-01> , <SkupDokumenata05-01>;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1900-1972" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; 
+			rico:classification "" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Kutija cjelovita." ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kutija s Rukopisima radova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "5" ;
+							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
+							] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopisi" ;
+			rico:recordSetType "" . 
+			
+<Kutija2> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt02" ;
+			rico:name "Kutija 02" ;
+			rico:physicalCharacteristicsNote "Gradivo pisano olovkom i penkalo, tiskano gradivo (knjige, novine)" ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "" .
+			
+<SkupDokumenata02-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd01" ;
+			rico:name "skup 01" ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1953-1966" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" ;
+			rico:scopeAndContent "Svezak od 5 skupova, s bilješkama o Seljačkoj buni, Lastovskoj buni, kopija knjige S. Radića Srbove a Chorvati " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "nije kronološki" ;
+			rico:documentaryForm "Bilješke", "Rukopis" , "Tisak" ;
+			rico:recordSetType "Predmet" .
+<SkupDokumenata02-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd01" ;
+			rico:name "skup 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "99" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, slaba vidljivost zbog olovke" ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacija kvalitete kopija" .
+<SkupDokumenata02-02> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd02" ;
+			rico:name "skup 02" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata02-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1971-1978" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:contentType "Tekstualni dokumenti" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (lat)" ;
+			rico:scopeAndContent "Svezak od 11 skupova, s bilješkama o Stjepanu Radiću, politici unutar Slovenije i Hrvatske, politika Rusije" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "11" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "kronološki" ;
+			rico:documentaryForm "Bilješke", "Rukopisi" , "Tisak" ;
+			rico:recordSetType "Predmet" .
+
+<SkupDokumenata02-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:hasExtent [a rico:InstantiationExtent ;
+							rico:quantity "116" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, slaba vidljivost zbog olovke" ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacija kvalitete kopija" .		
+
+<SkupDokumenata02-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd03" ;
+			rico:name "skup 03" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata02-04> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1900-1907" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv)" , "Češki (čeh)" ;
+			rico:scopeAndContent "Svezak od 6 skupova, spisi unutar rezolucije 31, politika Supila, novinski članci, kopije djela - Sou-asne Chorvatsko, Slavenska politika u Habsburškoj Monarhiji, Istina o Riječkoj rezoluciji" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+			 ] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Nije kronološki." ;
+			rico:documentaryForm "Bilješke", "Rukopisi" , "Tisak" ;
+			rico:recordSetType "Predmet" .
+ 	
+<SkupDokumenata02-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd03" ;
+			rico:name "skup 03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "260" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, slaba vidljivost zbog olovke" ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacija kvalitete kopija" .
+							
+<SkupDokumenata02-04> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd04" ;
+			rico:name "skup 04" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata02-05> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1956-1962, 1967-1972" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv)" , "Njemački (njem)", "Latinski (lat)" ;
+			rico:scopeAndContent "Svezak od 9 skupova, spisi o 15. st, Rački i Sakcinski, povijest 19.st, Vjekoslav Klaić, 17. st Dalmacija i Venecija, 16. st Vojna Krajina, 17. Lika i Dubrovnik, buna 1755., bilješke za seminare" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "9" ;
+								rico:unitOfMeasurement "Dokument" ;
+			] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Nije kronološki." ;
+			rico:documentaryForm "Bilješke", "Rukopisi" ;
+			rico:recordSetType "Predmet" .
+
+<SkupDokumenata02-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd04" ;
+			rico:name "skup 04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "188" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, slaba vidljivost zbog olovke" ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacija kvalitete kopija" .	
+
+<SkupDokumenata02-05> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd05" ;
+			rico:name "skup 05" ;
+			rico:directlyPrecedesInSequence <Dokument04-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1910." ;
+								rico:dateQualifier "Nepoznati završetak."
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv)" , "Njemački (njem)" ;
+			rico:scopeAndContent "Svezak od 26 skupova, kopija Draškovićeve Dizertacija, spisi o 19. st Hrvatskoj i strankama, federalisti, J. Rački i J.J. Strossmayer, Ilirski pokret, Deželić 1910., Vraz 19.st, Smičiklas" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "19" ;
+								rico:unitOfMeasurement "Dokument" ;
+			] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "nije kronološki" ;
+			rico:documentaryForm "Bilješke", "Rukopisi" ;
+			rico:recordSetType "Predmet" .
+
+<SkupDokumenata02-05> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt02sd05" ;
+			rico:name "skup 05" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "538" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, slaba vidljivost zbog olovke" ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacija kvalitete kopija" .	
+				
+<ZupanDesislav> a rico:Person ;
+			rico:name "Desislav" ;
+			rico:performsOrPerformed <LastovskaBuna> .
+			
+<ZeljeznickaStanicaZapresic> a rico:Agent ;
+			rico:name "Željeznička stanica Zaprešić" ;
+			rico:legalStatus "željeznička stanica" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <NarodniPokret> .
+			
+<Lastovo> a rico:Place ;
+		 rico:name "Lastovo" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Lastovo> ;
+			rico:isOrWasLocationOf<ZeljeznickaStanicaZapresic> .
+			
+
+<LastovskaBuna> a rico:Activity ;
+			rico:name "Izbitak bune na otoku Lastovu" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1602-1606." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <ZupanDesislav> ;
+	rico:documentedBy <SkupDokumenata01-01> ;
+	rico:isEventAssociatedWith <Dokument01-01> .
+
+#Teodor Pejacevic nije sudjelovao u demonstracijama u Zapresicu vec se uputio kako bi ih smirio		
+<TeodorPejacevic> a rico:Person ;
+			rico:name "Teodor Pejačević" ;
+			rico:performsOrPerformed <NarodniPokret> ;
+			rico:history "Teodor Pejacevic nije sudjelovao u demonstracijama u Zapresicu vec se uputio kako bi ih smirio" .
+			
+<ZeljeznickaStanicaZapresic> a rico:Agent ;
+			rico:name "Željeznička stanica Zaprešić" ;
+			rico:legalStatus "željeznička stanica" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <NarodniPokret> .
+			
+<Zapresic> a rico:Place ;
+		 rico:name "Zaprešić" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zapresic> ;
+			rico:isOrWasLocationOf <ZeljeznickaStanicaZapresic> .
+			
+<NarodniPokret> a rico:Activity ;
+			rico:name "Izbitak narodnog pokreta u Banskoj Hrvatskoj" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1903." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <TeodorPejacevic> ;
+	rico:documentedBy <SkupDokumenata02-01> ;
+	rico:isEventAssociatedWith <Dokument02-01> .
+
+<AnteTrumbic> a rico:Person ;
+			rico:name "Ante Trumbić" ;
+			rico:performsOrPerformed <RijeckaRezolucija> .
+			
+<IstarskiSabor> a rico:Agent ;
+			rico:name "Istarski sabor" ;
+			rico:legalStatus "Predstavničko tijelo" ;
+			rico:isOrWasLocationOf <RijeckaRezolucija> .
+			
+<Rijeka> a rico:Place ;
+		 rico:name "Rijeka" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Rijeka> ;
+			rico:isOrWasLocationOf <IstarskiSabor> .
+			
+<RijeckaRezolucija> a rico:Activity ;
+			rico:name "Potpisivanje Riječke rezolucije" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1905." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <AnteTrumbic> ;
+	rico:documentedBy <SkupDokumenata03-01> ;
+	rico:isEventAssociatedWith <Dokument03-01> .
+	
+<JurajKrizanic> a rico:Person ;
+			rico:name "Juraj Križanić" ;
+			rico:performsOrPerformed <MagistriranjeJurjaKrizanica> .
+			
+<SveucilisteUGrazu> a rico:Agent ;
+			rico:name "Istarski sabor" ;
+			rico:legalStatus "Sveučilište" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <MagistriranjeJurjaKrizanica> .
+			
+<Graz> a rico:Place ;
+		 rico:name "Graz" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Graz> ;
+			rico:isOrWasLocationOf<SveucilisteUGrazu> .
+			
+<MagistriranjeJurjaKrizanica> a rico:Activity ;
+			rico:name "Magistriranje Križanića u Grazu" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1638." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JurajKrizanic> ;
+	rico:documentedBy <SkupDokumenata04-01> ;
+	rico:isEventAssociatedWith <Dokument04-01> ;
+        rico:isOrWasPerformedBy <JurajKrizanic> .
+
+<JankoDraskovic> a rico:Person ;
+			rico:name "Janko Drašković" ;
+			rico:performsOrPerformed <Disertacija> .
+			
+<TiskaraUKarlovcu> a rico:Agent ;
+			rico:name "tiskara u Karlovcu" ;
+			rico:legalStatus "tiskara" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <Disertacija> .
+			
+<Karlovac> a rico:Place ;
+		 rico:name "Karlovac" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Karlovac> ;
+			rico:isOrWasLocationOf <TiskaraUKarlovcu> .
+			
+<Disertacija> a rico:Activity ;
+			rico:name "objavljivanje Disertacije" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1832." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JankoDraskovic> .
+
+<Disertacija> a rico:Activity ;
+			rico:name "objavljivanje Disertacije" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1832." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JankoDraskovic> ;
+	rico:documentedBy <SkupDokumenata05-01> ;
+	rico:isEventAssociatedWith <Dokument05-01> .

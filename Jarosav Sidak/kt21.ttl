@@ -1,0 +1,558 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+#opis izradio Karlo Trgovec
+#kutija 21 kao logički skup
+<Kutija21> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt21" ;
+			rico:name "Kutija 21" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata21-01> , <Dokument21-02> , <Dokument21-03> , <Dokument21-04> , <Dokument21-05> , <Dokument21-06> , <SkupDokumenata21-07> , <SkupDokumenata21-08> ; 
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1939.-1985." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti i tiskani dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Češki (cz)" , "Francuski (fr)", "Njemački (ger)", "Engleski (eng)", "Slovenski (slo)" , "Srpski (serb)" , "Latinica (latn)" , "Ćirilica (ćirl)" ;
+			rico:scopeAndContent "Korespodencija Jaroslava Šidaka, Šidakove bilješke za predavanje, službeni spisi i kopije važni za rad fakulteta, državne gimnazije u Sarajevu, neslužbena pisma za mišljenja kandidature za docenta, pismo o Rukopisnoj ostavštini, kutija s Rukopisima radova. Ostavstina se sastoji od otprilike 415 komada složenih Dokument ili skupova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "415" ;
+							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
+							] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke" , "Rukopis" , "Razglednice" , "Pozivnice" , "Tiskani materijal" ;
+			rico:recordSetType "" . #razina
+			
+
+#kutija kao fizički pojavni oblik
+<Kutija21> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt21" ;
+			rico:name "Kutija 21" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Većinom čitko gradivo, dio gradiva pisan olovkom/penkalom izblijedio." , "Dio tinte tiskanog gradiva izblijedio." ;
+			rico:productionTechnique "Rukopis." , "Tiskani materijal." ;
+			rico:qualityOfRepresentatonNote "" .
+ 
+#SkupDokumenata21-01 kao logički                        
+<SkupDokumenata21-01> a rico:RecordSet ;
+			rico:generalDescription "skup koji se većinom sastoje od bilježaka za predavanje" ;
+			rico:identifier "kt21sd01" ;
+			rico:name "skup 01" ;
+			rico:directlyPrecedesInSequence <Dokument21-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1952.-1980." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije bilježaka za pripremu predavanja." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti pisani penkalom ili olovkom"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 130 dokumenata s bilješkama o raznim temama predavanja i nacrtima rada tijekom nastave." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "130" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" . #razina
+
+#SkupDokumenata21-01 kao fizički pojavni oblik
+<SkupDokumenata01-01> a rico:Instantiation ;
+			rico:generalDescription "skup koji se sastoji od bilježaka za predavanje" ;
+			rico:identifier "kt21sd01" ;
+			rico:name "skup 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "130" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Većinom čitko gradivo, dio gradiva pisan olovkom i penkalom izblijedio." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacije zbog pisanja olovkom/penkalom i kvalitete kopija" .
+
+#Dokument21-02 kao logički
+<Dokument21-02> a rico:Record ;
+rico:generalDescription "Dokument Izvanredna sjednica vijeća FFZG-a" ;
+			rico:identifier "kt21d02" ;
+			rico:name "Dokument 02" ;
+			rico:directlyFollowsInSequence <SkupDokumenata21-01> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "13.03.1970." , "19.03.1970." ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tiskani dokument"; #može se koristiti za skup
+			rico:integrityNote "Uvidom ne nedostaje dio dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Sadržaj koji se bavi izvanrednoj sjednici vijeća FFZG-a 1970. godine. Dokument u kojem se radi o izvanrednoj sjednici vijeća FFZG-a gdje se raspravljaju 3 točke" ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" ;
+			rico:recordSetType "Komad" . #razina
+
+#Dokument21-02 kao fizički oblik
+<Dokument21-02> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt21d02" ;
+			rico:name "Dokument 02" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "5" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko. Dokument se sastoje od 5 List tiskanog materijala." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Nisu se izgubile informacije iz tiskanog dijela dokumenta" .
+
+#Dokument21-03 kao logički
+<Dokument21-03> a rico:Record ;
+rico:generalDescription "Pismo o odluci za obustavu prodaje Kulundžićeve knjige" ;
+			rico:identifier "kt21d03" ;
+			rico:name "Dokument 03" ;
+			rico:directlyFollowsInSequence <SkupDokumenata21-02> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "04.06.1970." ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tiskani dokument"; #može se koristiti za skup
+			rico:integrityNote "Uvidom ne nedostaje dio dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Sadržaj koji se bavi kopijom pisma o odluci za obustavu prodaje Kulundžićeve knjige Tragedije hrvatske historiografije. Obustava prodaje na komercijalnom odjelu koji uključuje odsjek prodaje, odjek skladišta), sve knjižare NZMH i predstavništvo u Sarajevu" ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" , "Rukopis" ;
+			rico:recordSetType "Komad" . #razina
+
+#Dokument21-03 kao fizički oblik
+<Dokument21-03> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt21d03" ;
+			rico:name "Dokument 03" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "4" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko. Dokument se sastoje od 1 lista papira gdje je napisana rukom poruka i još 3 List tiskanog materijala." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Nisu se izgubile informacije iz tiskanog dijela dokumenta" .
+
+#Dokument21-04 kao logički
+<Dokument21-04> a rico:Record ;
+rico:generalDescription "Pripremiti prijedloge za pov. BiH u knjigama tj. bavi se prijedlozima za Državnu Šerijatsku gimnaziju u Sarajevu o prikazivanju pov. BiH u školskim knjigama za hrvatsku povijest  " ;
+			rico:identifier "kt21d04" ;
+			rico:name "Dokument 04" ;
+			rico:directlyFollowsInSequence <SkupDokumenata21-03> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:expressedDate "31.05.1941." , "10.02.1942." ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tiskani dokument"; #može se koristiti za skup
+			rico:integrityNote "Uvidom ne nedostaje dio dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Sadržaj koji se bavi prijedlozima za Državnu Šerijatsku gimnaziju u Sarajevu o prikazivanju pov. BiH u školskim knjigama za hrvatsku povijest te se spominje priprema za prijedloge za povijest BiH koji uključuje muslimanske stanovnike te države u knjigama" ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" ;
+			rico:recordSetType "Komad" . #razina
+
+#Dokument21-04 kao fizički oblik
+<Dokument21-04> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt21d04" ;
+			rico:name "Dokument 04" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "6" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko. Dokument se sastoje od 1 tiskane liste iz 1942. i još 5 List tiskanog materijala gdje se rasprava o prijedlozima." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Nisu se izgbile informacije iz tiskanog dijela dokumenta" .
+
+#Dokument21-05 kao logički
+<Dokument21-05> a rico:Record ;
+rico:generalDescription "Pismo o mišljenju kandidaturi za docenta na katedri hrv. pov. dr. Nade Klaić" ;
+			rico:identifier "kt21d05" ;
+			rico:name "Dokument 05" ;
+			rico:directlyFollowsInSequence <SkupDokumenata21-04> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "09.04.1955." ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Tiskani dokument"; #može se koristiti za skup
+			rico:integrityNote "Uvidom ne nedostaje dio dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Pismo o mišljenju kandidaturi za docenta na katedri hrv.pov. Dr. Nadi Klaić te je u pismu prof. Grga Novak odbio tu kandidaturu da se predstavi na dnevnom redu." ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" ;
+			rico:recordSetType "Komad" . #razina
+
+#Dokument21-05 kao fizički oblik
+<Dokument21-05> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt21d05" ;
+			rico:name "Dokument 05" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "2" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko. Dokument se sastoje od 2 lista tiskanog materijala iz 1970 godine." ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "Nisu se izgbile informacije iz tiskanog dijela dokumenta" .
+
+#Dokument21-06 kao logički
+<Dokument21-06> a rico:Record ;
+rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te osobe, a ta ostavština je tzv. 'bijela knjiga' iz 1848.god." ;
+			rico:identifier "kt21d06" ;
+			rico:name "Dokument 06" ;
+			rico:directlyFollowsInSequence <SkupDokumenata21-05> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "" ;
+								] ;
+			rico:AuthenticityNote "" ; #može se koristiti za skup
+			rico:contentType "Pismo naRukopis."; #može se koristiti za skup
+			rico:integrityNote "Uvidom ne nedostaje dio dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Pismo  u kojem je sadržaj Rukopisne ostavštine tj. 'bijele knjige' iz 1848.god. pokojnog djeda te osobe. Moguće je da je to tražio Jaroslav Šidak kao izvor za svoj rad. " ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" ;
+			rico:recordSetType "Komad" . #razina
+
+#Dokument21-06 kao fizički oblik
+<Dokument21-06> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt21d06" ;
+			rico:name "Dokument 06" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "1" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Manje čitko jer je jedan dio pisan penkalom teško čitljiv. Dokument se sastoji od 1 lista pisane rukom." ;
+			rico:productionTechnique "Rukopis." ;
+			rico:qualityOfRepresentatonNote "Nisu se izgubile informacije iz tiskanog dijela dokumenta" .
+
+#SkupDokumenata21-07 kao logički                        
+<SkupDokumenata21-07> a rico:RecordSet ;
+			rico:generalDescription "Korespondencija I između Jaroslava Šidaka i ostalih dopisnika ili institucija." ;
+			rico:identifier "kt21sd07" ;
+			rico:name "skup 07" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata21-08> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1939.-1985." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijali korespondencije Jaroslava Šidaka." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti pisani penkalom ili olovkom te tiskani dokumenti."; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Češki (cz)" , "Njemački (ger)" , "Engleski (eng)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Korespondencija između Jaroslava Šidaka i ostalih dopisnika poput kolega iz fakulteta, drugih profesora izvan zemlje, bivših studenata itd. ili institucija poput kulturnih institucija. Skup od 130 dokumenata vezanim za korespondenciju I Jaroslava Šidaka." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "130" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Tiskani materijal" , "Rukopis" , "Pisma" , "Razglednice" ;
+			rico:recordSetType "Predmet" . #razina
+
+#SkupDokumenata21-07 kao fizički pojavni oblik
+<SkupDokumenata01-07> a rico:Instantiation ;
+			rico:generalDescription "skup vezan za korespondenciju Jaroslava Šidaka i ostalih dopisnika od 1939. do 1985." ;
+			rico:identifier "kt21sd07" ;
+			rico:name "skup 07" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "250" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, dio gradiva pisan olovkom izblijedio, a dio penkalom nije. Ova Korespodencija I je skup koji se sastoji od 250 List koji sadrži pisma, tiskane materijale, Rukopise i razglednice između Jaroslava Šidaka i ostalih dopisnika." ;
+			rico:productionTechnique "Rukopis" , "Tiskani materijal" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacije zbog pisanja olovkom/penkalom i kvalitete kopija" .
+
+#SkupDokumenata21-08 kao logički                        
+<SkupDokumenata21-08> a rico:RecordSet ;
+			rico:generalDescription "Korespondencija II između Jaroslava Šidaka i ostalih dopisnika ili institucija." ;
+			rico:identifier "kt21sd08" ;
+			rico:name "skup 08" ;
+			rico:directlyFollowsInSequence <SkupDokumenata21-07> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1951.-1985." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijali korespondencije Jaroslava Šidaka." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti pisani penkalom ili olovkom te tiskani dokumenti."; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Češki (cz)" , "Njemački (ger)" , "Engleski (eng)" , "Srpski (serb)" , "Latinica (latn)" , "Ćirilica (ćirl)" ;
+			rico:scopeAndContent "Korespondencija II iz među Jaroslava Šidaka i ostalih dopisnika poput kolega iz fakulteta, drugih profesora izvan zemlje, bivših studenata itd. ili institucija poput kulturnih institucija. Skup od 150 dokumenata vezanim za korespondenciju II Jaroslava Šidaka." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "150" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Tiskani materijal" , "Rukopis" , "Pisma" , "Razglednice" , "Pozivnice" ;
+			rico:recordSetType "Predmet" . #razina
+
+#SkupDokumenata21-08 kao fizički pojavni oblik
+<SkupDokumenata01-08> a rico:Instantiation ;
+			rico:generalDescription "skup vezan za korespondenciju II Jaroslava Šidaka i ostalih dopisnika od 1951. do 1985." ;
+			rico:identifier "kt21sd08" ;
+			rico:name "skup 08" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "300" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko gradivo, dio gradiva pisan olovkom izblijedio, a dio penkalom nije. Ovaj skup se sastoji od 300 List koji sadrži pisma, tiskane materijale, Rukopise i razglednice između Jaroslava Šidaka i ostalih dopisnika." ;
+			rico:productionTechnique "Rukopis" , "Tiskani materijal" ;
+			rico:qualityOfRepresentatonNote "Djelomični gubitak informacije zbog pisanja olovkom/penkalom i kvalitete kopija" .
+
+
+#Agent
+<JaroslavSidak> a rico:Person ;
+			rico:name "Jaroslav Šidak" ;
+            rico:performsOrPerformed <PripremaPredavanje> , <SjednicaVijećaFFZG> , <ObustavaProdajeKnjige> , <PrijedloziPovijestiBiH> , <KandidaturaDocentaKatedreHRV.POV.> , <RukopisnaOstavštinaBijeleKnjige> , <KorespodencijaI> , <KorespodencijaII> .
+
+#Agent
+<ZvonimirKulundzic> a rico:Person ;
+            rico:name "Zvonimir Kulundžić" ;
+			rico:performsOrPerformed <SjednicaVijećaFFZG> , <ObustavaProdajeKnjige> .
+
+#Agent
+<DujeRendicMiocevic> a rico:Person ;
+            rico:name "Duje Rendić Miočević" ;
+			rico:performsOrPerformed <SjednicaVijećaFFZG> .
+
+#Agent
+<GrgoGamulin> a rico:Person ;
+            rico:name "Grgo Gamulin" ;
+			rico:performsOrPerformed <ObustavaProdajeKnjige> .
+			
+#Agent
+<PeroBudak> a rico:Person ;
+            rico:name "Pero Budak" ;
+			rico:performsOrPerformed <ObustavaProdajeKnjige> .
+
+#Agent
+<HusejnAlic> a rico:Person ;
+            rico:name "Husejn Alić" ;
+			rico:performsOrPerformed <PrijedloziPovijestiBiH> .
+
+#Agent
+<LovreKatic> a rico:Person ;
+            rico:name "Lovre Katić" ;
+			rico:performsOrPerformed <PrijedloziPovijestiBiH> .
+
+#Agent
+<NadaKlaic> a rico:Person ;
+            rico:name "Nada Klaić" ;
+			rico:performsOrPerformed <KandidaturaDocentaKatedreHRV.POV.> .
+			
+#Agent
+<GrgaNovak> a rico:Person ;
+            rico:name "Grga Novak" ;
+			rico:performsOrPerformed <KandidaturaDocentaKatedreHRV.POV.> .
+
+#Agent
+<MetodMikuz> a rico:Person ;
+            rico:name "Metod Mikuz" ;
+			rico:performsOrPerformed <KorespodencijaI> .
+
+#Agent
+<RadovanGajer> a rico:Person ;
+            rico:name "Radovan Gajer" ;
+			rico:performsOrPerformed <KorespodencijaI> .
+
+#Agent
+<BogumilHrabak> a rico:Person ;
+            rico:name "Bogumil Hrabak" ;
+			rico:performsOrPerformed <KorespodencijaI> .
+
+#Agent
+<MateHraste> a rico:Person ;
+            rico:name "Mate Hraste" ;
+			rico:performsOrPerformed <KorespodencijaI> .
+			
+#Agent
+<LujoMargetic> a rico:Person ;
+            rico:name "Lujo Margetić" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+			
+#Agent
+<TomislavRakor> a rico:Person ;
+            rico:name "Tomislav Rakor" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+
+#Agent
+<MladenCaldarovic> a rico:Person ;
+            rico:name "Mladen Čaldarović" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+			
+#Agent
+<Dr.Drucker> a rico:Person ;
+            rico:name "Drucker" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+
+#Agent
+<ZlatkoTomicic> a rico:Person ;
+            rico:name "Zlatko Tomičić" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+			
+#Agent
+<VladimirStipetic> a rico:Person ;
+            rico:name "Vladimir Stipetić" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+
+#Agent
+<UrosPereusko> a rico:Person ;
+            rico:name "Uroš Pereuško" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+
+#Agent
+<NiksaStancic> a rico:Person ;
+            rico:name "Nikša Stančić" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+			
+#Agent
+<RobertF.Randle> a rico:Person ;
+            rico:name "Robert F. Randle" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+
+#Agent
+<IvanBach> a rico:Person ;
+            rico:name "Ivan Bach" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+
+#Agent
+<IvoBanac> a rico:Person ;
+            rico:name "Ivo Banac" ;
+			rico:performsOrPerformed <KorespodencijaII> .
+						
+#Mjesto-novo
+<Zagreb> a rico:Place ;
+            rico:name "Zagreb" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> ;
+			rico:isOrWasLocationOf <PripremaPredavanje> , <SjednicaVijećaFFZG> , <ObustavaProdajeKnjige> , <PrijedloziPovijestiBiH> , <KandidaturaDocentaKatedreHRV.POV.> , <KorespodencijaI> , <KorespodencijaII> .
+
+<Sarajevo> a rico:Place ;
+            rico:name "Sarajevo" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Sarajevo> ;
+			rico:isOrWasLocationOf <ObustavaProdajeKnjige> , <PrijedloziPovijestiBiH> .
+
+<Ljubljana> a rico:Place ;
+            rico:name "Ljubljana" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Ljubljana> ;
+			rico:isOrWasLocationOf <KorespodencijaI> .
+
+<Beograd> a rico:Place ;
+            rico:name "Beograd" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Belgrade> ;
+			rico:isOrWasLocationOf <KorespodencijaI> .
+
+<Priština> a rico:Place ;
+            rico:name "Priština" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Pristina> ;
+			rico:isOrWasLocationOf <KorespodencijaI> .
+
+<Dubrovnik> a rico:Place ;
+            rico:name "Dubrovnik" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Dubrovnik> ;
+			rico:isOrWasLocationOf <KorespodencijaII> .
+
+<Rijeka> a rico:Place ;
+            rico:name "Rijeka" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Rijeka> ;
+			rico:isOrWasLocationOf <KorespodencijaII> .
+
+<Prag> a rico:Place ;
+            rico:name "Prag" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/Prague> ;
+			rico:isOrWasLocationOf <KorespodencijaII> .
+
+<NewYork> a rico:Place ;
+            rico:name "New York" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/New_York_City> ;
+			rico:isOrWasLocationOf <KorespodencijaII> .
+
+<NewHaven> a rico:Place ;
+            rico:name "New Heaven" ;
+		    rico:isEquivalentTo <https://dbpedia.org/page/New_Haven,_Connecticut> ;
+			rico:isOrWasLocationOf <KorespodencijaII> .			
+
+#Događaj
+<PripremaPredavanje> a rico:Activity ;
+            rico:name "Priprema bilježaka za predavanje" ;
+            rico:occurredAtDate [ a rico:DateRange ;
+                           rico:expressedDate "1952.-1980."
+                           ]  ;
+        rico:isOrWasPerformedBy <JaroslavSidak> ;
+        rico:documentedBy <SkupDokumenata21-01> .
+
+#Događaj
+<SjednicaVijećaFFZG> a rico:Activity ;
+            rico:name "Izvanredna sjednica vijeća FFZG-a" ;
+            rico:occurredAtDate [ a rico:Date ;
+                           rico:expressedDate "13.03.1970." , "19.03.1970."
+                           ]  ;
+        rico:isOrWasPerformedBy <JaroslavSidak>, <ZvonimirKulundzic>, <DujeRendicMiocevic> ;
+        rico:documentedBy <Dokument21-02> .
+
+#Događaj
+<ObustavaProdajeKnjige> a rico:Activity ;
+            rico:name "Obustava prodaje knjige 'Tragedije hrvatske historiografije' Zvonimira Kulundžića" ;
+            rico:occurredAtDate [ a rico:Date ;
+                           rico:expressedDate "04.06.1970."
+                           ]  ;
+            rico:isOrWasPerformedBy <JaroslavSidak>, <ZvonimirKulundzic>, <GrgoGamulin>, <PeroBudak> ;
+            rico:documentedBy <Dokument21-03> .
+
+#Događaj
+<PrijedloziPovijestiBiH> a rico:Activity ;
+            rico:name "Prijedlozi za Državnu Šerijatsku gimnaziju u Sarajevu o prikazivanju povijesti BiH u školskim knjigama" ;
+            rico:occurredAtDate [ a rico:Date ;
+                           rico:expressedDate "31.05.1941." , "10.02.1942."
+                           ]  ;
+        rico:isOrWasPerformedBy <JaroslavSidak>, <HusejnAlic>, <LovreKatic> ;
+        rico:documentedBy <Dokument21-04> .
+	
+#Događaj
+<KandidaturaDocentaKatedreHRV.POV.> a rico:Activity ;
+            rico:name "Kandidatura za docenta na katedri hrv. pov. Nade Klaić" ;
+            rico:occurredAtDate [ a rico:Date ;
+                           rico:expressedDate "09.04.1955."
+                           ]  ;
+        rico:isOrWasPerformedBy <JaroslavSidak>, <NadaKlaic>, <GrgaNovak> ;
+        rico:documentedBy <Dokument21-05> .
+
+#Događaj
+<RukopisnaOstavštinaBijeleKnjige> a rico:Activity ;
+            rico:name "Rukopisna ostavština 'bijele knjige' iz 1848. godine" ;
+            rico:isOrWasPerformedBy <JaroslavSidak> ;
+            rico:documentedBy <Dokument21-06> .
+
+#Događaj
+<KorespodencijaI> a rico:Activity ;
+            rico:name "Korespodencija I između Jaroslava Šidaka i ostalih" ;
+            rico:occurredAtDate [ a rico:DateRange ;
+                           rico:expressedDate "1939.-1985."
+                           ]  ;
+        rico:isOrWasPerformedBy <JaroslavSidak>, <MetodMikuz>, <RadovanGajer>, <BogumilHrabak>, <MateHraste> ;
+        rico:documentedBy <SkupDokumenata21-07> .
+
+#Događaj
+<KorespodencijaII> a rico:Activity ;
+            rico:name "Korespodencija II između Jaroslava Šidaka i ostalih" ;
+            rico:occurredAtDate [ a rico:DateRange ;
+                           rico:expressedDate "1951.-1985."
+                           ]  ;
+            rico:isOrWasPerformedBy <JaroslavSidak>, <LujMargetic>, <TomislavRakor>, <MladenCaldarovic>, <Dr.Drucker>, <ZlatkoTomicic>, <VladimirStipetic>, <UrosPereusko>, <NiksaStancic>, <RobertF.Randle>, <IvanBach>, <IvoBanac> ;
+            rico:documentedBy <SkupDokumenata21-08> .

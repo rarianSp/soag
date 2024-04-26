@@ -1,0 +1,380 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+#opis izradila Melita Blažun
+#kutija kao logički skup dokumenata
+<Kutija18> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt18" ;
+			rico:name "Kutija 18" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <Dokument18-01> , <Dokument18-02> , <Dokument18-03> , <Dokument18-04> , <SkupDokumenata18-01> , <SkupDokumenata18-02>, <SkupDokumenata18-03>   ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1912-1965" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; 
+			rico:classification "Skup dokumenata" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ruski (rus)" , "Ćirilica (ćiril)" , "Njemački (njem)" , "Češki (češ)", "Francuski (franc)" ;
+			rico:scopeAndContent "Kutija s tiskanim dokumentima." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "7" ;
+							rico:unitOfMeasurement "skupova dokumenata i dokumenata" ;
+							] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Tiskani dokumenti", "Noviski članci" ;
+			rico:recordSetType "Serija" . 
+			
+
+#kutija kao fizički pojavni oblik
+<Kutija18> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt18" ;
+			rico:name "Kutija 18" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko, tiskano gradivo" ;
+			rico:productionTechnique "Tiskano." ;
+			rico:qualityOfRepresentatonNote "U dobrom stanju. Očuvano i čitko" .
+ 
+#Dokument18-01 kao logički
+<Dokument18-01> a rico:Record ;
+rico:generalDescription "Dokument" ;
+			rico:identifier "kt18d01" ;
+			rico:name "Dokument18-01" ;
+			rico:directlyPrecedesInSequence <Dokument18-02> ;
+			rico:isAssociatedWithDate [ a rico:Date ; 
+                                        rico:expressedDate "1913" ;
+                                        ] ;
+			rico:AuthenticityNote "Izvorni materijal" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Dokument je cjelovit" ; 
+			rico:language "Ruski (rus)" , "Ćirilica (ćiril)" ;
+			rico:scopeAndContent "Ruska gramatika" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Gramatika" ;
+			rico:recordSetType "Komad" . 
+
+#Dokument18-01 kao fizički oblik
+<Dokument18-01> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt18d01" ;
+			rico:name "Dokument18-01" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "160" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko" ;
+			rico:productionTechnique "Tiskano" ;
+			rico:qualityOfRepresentatonNote "Jasno i čitljivo." .
+			
+#Dokument18-02 kao logički
+<Dokument18-02> a rico:Record;
+rico:generalDescription "Dokument" ;
+            rico:identifier "kt18d02" ;
+			rico:name "Dokument18-02" ;
+			rico:directlyFollowsInSequence <Dokument18-01>  ;
+			rico:isAssociatedWithDate [ a rico:Date ; 
+                                        rico:expressedDate "1921" ;
+                                        ] ;
+			rico:AuthenticityNote "Izvorni materijal" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Dokument je cjelovit" ; 
+			rico:language "Latinski (lat)" , "Latinica (lat)" ,"Hrvatski (hr)" ;
+			rico:scopeAndContent "Izbor iz Kornelije Nepota" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskani dokument" ;
+			rico:recordSetType "Komad" . 
+			
+#Dokument18-02 kao fizički oblik
+<Dokument18-02> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt18d02" ;
+			rico:name "Dokument18-02" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "191" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko" ;
+			rico:productionTechnique "Tiskano" ;
+			rico:qualityOfRepresentatonNote "Jasno i čitljivo" .
+
+#Dokument18-03 kao logički
+<Dokument18-03> a rico:Record ;
+rico:generalDescription "Dokument" ;
+            rico:identifier "kt18d03" ;
+			rico:name "Dokument18-03" ;
+			rico:directlyFollowsInSequence <Dokument18-02>  ;
+			rico:isAssociatedWithDate [ a rico:DateRange ; 
+                                        rico:expressedDate "21.-28.08.1960." ;
+                                        ] ;				
+		    rico:AuthenticityNote "Izvorni materijal" ; 
+			rico:contentType "Tekstualni dokumenti";  
+			rico:integrityNote "Dokument je cjelovit" ; 
+			rico:language "Engleski (engl)", "Latinica (lat)", "Francuski (franc)" ;
+			rico:scopeAndContent "XIth International Congress of Historical Sciences, Programme" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" ;
+			rico:recordSetType "Komad" . 
+			
+#Dokument18-03 kao fizički oblik
+<Dokument18-03> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt18d03" ;
+			rico:name "Dokument18-03" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "56" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko" ;
+			rico:productionTechnique "Tiskano" ;
+			rico:qualityOfRepresentatonNote "Jasno i čitljivo" .
+			
+#Dokument18-04 kao logički
+<Dokument18-04> a rico:Record ;
+rico:generalDescription "Dokument" ;
+            rico:identifier "kt18d04" ;
+			rico:name "Dokument18-04" ;
+			rico:directlyFollowsInSequence <Dokument18-03>  ;
+			rico:isAssociatedWithDate [ a rico:DateRange ; 
+                                        rico:expressedDate "29.08.-05.09.1965." ; 
+                                        ] ;
+			rico:AuthenticityNote "Izvorni materijal" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote"Dokument je cjelovit" ; 
+			rico:language  "Latinica (lat)", "Francuski (franc)" ;
+			rico:scopeAndContent "Congres International des Sciences Historiques" ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:documentaryForm "Tiskano" ;
+			rico:recordSetType "Komad" . 
+			
+#Dokument18-04 kao fizički oblik
+<Dokument18-04> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt18d04" ;
+			rico:name "Dokument18-04" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "56" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Čitko" ;
+			rico:productionTechnique "Tiskano" ;
+			rico:qualityOfRepresentatonNote "Jasno i čitljivo" .
+			
+#SkupDokumenata18-05 kao logički                        
+<SkupDokumenata18-05> a rico:RecordSet ;
+			rico:generalDescription "Tekstualni dokumenti" ;
+			rico:identifier "kt18sd05" ;
+			rico:name "Skup dokumenata 01" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata18-06> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1939-1943" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije, novinski članci." ; 
+			rico:classification "Skup dokumenata" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)", "Ćirilica (ćiril)" ;
+			rico:scopeAndContent "Skup novniskih članaka o hrvatskoj povijesti i kulturi, svjetski povijesni događaji" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "30" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Novinski članci", "Tiskano" ;
+			rico:recordSetType "Predmet" . 
+
+#SkupDokumenata18-05 kao fizički pojavni oblik
+<SkupDokumenata18-05> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt18sd05" ;
+			rico:name "Skup dokumenata 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "30" ;
+							rico:unitOfMeasurement "Dokument" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko, tiskano gradivo" ;
+			rico:productionTechnique "Tiskano gradivo" ;
+			rico:qualityOfRepresentatonNote "Slabije očuvan papir" .
+			
+#SkupDokumenata18-06 kao logički                        
+<SkupDokumenata18-06> a rico:RecordSet ;
+			rico:generalDescription "Tekstualni dokumenti" ;
+			rico:identifier "kt18sd02" ;
+			rico:name "Skup dokumenata 02" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata18-06> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1926-1940" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije, novinski članci." ; 
+			rico:classification "Skup dokumenata" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)", "Ćirilica (ćiril)" ;
+			rico:scopeAndContent "Skup novniskih članaka o hrvatskoj povijesti i kulturi, ruska povijest, boljševizam i emigracije, talijanski socijalizam" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "25" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Novinski članci", "Tiskano" ;
+			rico:recordSetType "Predmet" . 
+			
+#SkupDokumenata18-06 kao fizički pojavni oblik
+<SkupDokumenata18-06> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt18sd06" ;
+			rico:name "Skup dokumenata 02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "25" ;
+							rico:unitOfMeasurement "Dokument" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko, tiskano gradivo" ;
+			rico:productionTechnique "Tiskano gradivo" ;
+			rico:qualityOfRepresentatonNote "Slabije očuvan papir" .
+			
+#SkupDokumenata18-07 kao logički                        
+<SkupDokumenata18-07> a rico:RecordSet ;
+			rico:generalDescription "Tekstualni dokumenti" ;
+			rico:identifier "kt18sd07" ;
+			rico:name "Skup dokumenata 03" ;
+			rico:directlyFollowsInSequence <SkupDokumenata18-06> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:expressedDate "1912-1941" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije, novinski članci, isječci iz novina." ; 
+			rico:classification "Skup dokumenata" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)", "Ćirilica (ćiril)", "Češki (češ)" ;
+			rico:scopeAndContent "Skup novniskih članaka o kazalištu, književnosti, umjetnosti i znanosti, Miroslav Krleža, češka kultura" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "25" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Novinski članci", "Tiskano" ;
+			rico:recordSetType "Predmet" . 
+
+#SkupDokumenata18-07 kao fizički pojavni oblik
+<SkupDokumenata18-07> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt18sd07" ;
+			rico:name "Skup dokumenata 03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "25" ;
+							rico:unitOfMeasurement "Dokument" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko, tiskano gradivo" ;
+			rico:productionTechnique "Tiskano gradivo" ;
+			rico:qualityOfRepresentatonNote "Slabije očuvan papir" .
+
+
+#Agent
+<WoislavMPetrovitch> a rico:Person ;
+            rico:name "Woislav M. Petrovitch" ;
+			rico:performsOrPerformed <RuskaGramatika> . 
+
+#Agent
+<JulijeGolik> a rico:Person ;
+            rico:name "Julije Golik" ;
+			rico:performsOrPerformed <IzborIzKornelijeNepota> .
+#Agent
+<WiksellAlmquist> a rico:Person ;
+            rico:name "Wiksell Almqvist" ;
+			rico:performsOrPerformed <XIthInternationalCongressOfHistoricalSciences> .
+#Agent
+<HrvatskiDnevnik> a rico:Agent ;
+			rico:name "Hrvatski dnevnik" ;
+			rico:legalStatus "Novinska kuća"  ;
+			rico:isOrWasLocationOf <TokBitkeZaPariz> . 
+
+#Agent
+<Novosti> a rico:Agent ;
+			rico:name "Novosti" ;
+			rico:legalStatus "Novinska kuća" ;
+			rico:isOrWasLocationOf <AGMatošINarodniPokret1903> .
+#Agent
+<Obzor> a rico:Agent ;
+			rico:name "Obzor" ;
+			rico:legalStatus "Novinska kuća" ;
+			rico:isOrWasLocationOf <HistorijskaIstinaUSpjevuSmrtSmailAgeCengica> .
+
+#Mjesto 
+<Heidelberg> a rico:Place ;
+		 	rico:isOrWasLocationOf <RuskaGramatika> .
+#Mjesto 
+<Stockholm> a rico:Place ;
+		    rico:isOrWasLocationOf<XIthInternationalCongressOfHistoricalSciences> .
+
+#Mjesto 
+<Bec> a rico:Place ;
+		rico:isOrWasLocationOf <InternationalCongressOfHistoricalSciences> .
+#Mjesto
+<Zagreb> a rico:Place ;
+		rico:isOrWasLocationOf<TokBitkeZaPariz> .
+#Mjesto
+<Zagreb> a rico:Place ;
+		rico:isOrWasLocationOf<AGMatošINarodniPokret1903> .
+
+#Događaj
+<AGMatošINarodniPokret1903> a rico:Activity ;
+			rico:name "A.G. Matoš i narodni pokret 1903." ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1937." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <Novosti> ;
+	rico:documentedBy <SkupDokumenata18-06> ;
+	rico:isEventAssociatedWith <SkupDokumenata18-06> .
+
+			
+#Događaj
+<TokBitkeZaPariz> a rico:Event ;
+            rico:name "Tok bitke za Pariz" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1940." ;
+	                       ]  ;
+	rico:isOrWasPerformedBy <HrvatskiDnevnik> ;
+	rico:documentedBy <SkupDokumenata18-05> ;
+    rico:isEventAssociatedWith <SkupDokumenata18-05> .
+	
+
+#Događaj
+<XIthInternationalCongressOfHistoricalSciences> a rico:Activity ;
+            rico:name "XIth International Congress of Historical Sciences" ;
+            rico:occurredAtDate [ a rico:DateRange ;
+                           rico:expressedDate "21.-28.08.1960." ;
+                           ]  ;
+    rico:isOrWasPerformedBy <WiksellAlmquist> ;
+    rico:documentedBy <Dokument18-03> ;
+    rico:isEventAssociatedWith <Dokument18-03> .
+	
+#Događaj
+<InternationalCongressOfHistoricalSciences> a rico:Activity ;
+            rico:name "Congres International des Sciences Historiques" ;
+            rico:occurredAtDate [ a rico:DateRange ;
+                           rico:expressedDate "29.08-05.09.1965." ;
+                           ]  ;
+    rico:documentedBy <Dokument18-04> ;
+    rico:isEventAssociatedWith <Dokument18-04> .
+
+#Događaj
+<HistorijskaIstinaUSpjevuSmrtSmailAgeCengica> a rico:Activity ;
+			rico:name "Historijska istina u spjevu Smrt Smail-age Čengića" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1936." ;
+	                       ]  ;
+	rico:isOrWasPerformedBy <Obzor> ;
+	rico:documentedBy <SkupDokumenata18-07> ;
+	rico:isEventAssociatedWith <SkupDokumenata18-07> .
