@@ -26,4 +26,4 @@
 			rico:structure "(u Kutiji01 prepisati strukturu, koristiti zatvorenu listu 1-22)" ;
 			rico:accruals "Ne očekuje se da će ostavština primiti novo gradivo." ;
 			#documentaryForm bilježiti kod skupova dokumenata ili dokumenata unutar kutija
-			rico:recordSetType "fond" . #razina
+			rico:recordSetType "serija" . #razina
