@@ -1,0 +1,18 @@
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT (GROUP_CONCAT(?osobaIme; SEPARATOR=",") AS ?abecednaListaOsoba)
+WHERE
+{
+  {
+    SELECT ?osobaIme
+    WHERE
+    {
+      ?s a rico:Person ;
+         rico:name ?osobaIme .
+    }
+    ORDER BY ?osobaIme
+  }
+}
+
+
+#ovaj upit abecedno lista osobe iz svih datoteka u arq mapi koje se ondje nalaze i koje su navedene u liniji terminala: arq --data=kt02.ttl --data=kt05.ttl --query=agentsIndex.rq
