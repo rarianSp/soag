@@ -1,0 +1,1215 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+#kutija kao logièki skup dokumenata
+<Kutija20> a rico:RecordSet "19" ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt20" ;
+			rico:name "Kutija 20" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata01-19> , <Dokument01-210> ;
+			rico:isAssociatedWithDate [ a rico:DateRange 1945-1951 ;
+								rico:expressedDate "1945-1951" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Skupina bilježaka" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr) i Njemaèki (de)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kutija s rukopisima radova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "19" ;
+							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
+							] ;
+
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Opæa povijest" . 
+			
+
+#kutija kao fizièki pojavni oblik
+<Kutija20> a rico:Instantiation "Pravokutna kutija od kartona sa vezicama i rupom s filtrom" ;
+			rico:generalDescription "Kutija" 20;
+			rico:identifier "kt20" ;
+			rico:name "Kutija 20" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom." ;
+			rico:qualityOfRepresentatonNote "U dobrom stanju" .
+ 
+#SkupDokumenata01-01 kao logièki                        
+<SkupDokumenata01-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd01" ;
+			rico:name "Skup dokumenata 01" ;
+			rico:directlyPrecedesInSequence <Dokument01-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1947. 3. 28." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 15 dokumenata s bilješkama o razim temama, veæinom o Engleskoj revoluciji i historiografiji." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "15" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata01-01 kao fizièki pojavni oblik
+<SkupDokumenata01-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd01" ;
+			rico:name "Skup dokumenata 01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "40" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+
+
+#Agent
+<JaroslavSidak> a rico:Person ;
+			rico:name "Jaroslav Šidak" ;
+			rico:performsOrPerformed <ObranaDiplomskogRada> , <ObranaDoktorskogRada> .
+
+#Agent
+<FilozofskiFakultet> a rico:Agent ;
+			rico:name "Filozofski fakultet" ;
+			rico:legalStatus "Fakultet" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <ObranaDiplomskogRada> , <ObranaDoktorskogRada>.
+
+#Mjesto 
+<Zagreb> a rico:Place ;
+		 rico:name "Zagreb" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> ;
+			rico:isOrWasLocationOf<FilozofskiFakultet> .
+
+#Dogaðaj
+<ObranaDiplomskogRada> a rico:Activity ;
+			rico:name "Obrana diplomskog rada" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1926." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JaroslavSidak> .
+
+#Dogaðaj
+<ObranaDoktorskogRada> a rico:Activity ;
+			rico:name "Obrana doktorskog rada" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1935." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JaroslavSidak> ;
+	rico:documentedBy <SkupDokumenata01-01> ;
+	rico:isEventAssociatedWith <Dokument01-02> .
+	
+	#SkupDokumenata02-01 kao logièki                        
+<SkupDokumenata02-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd02" ;
+			rico:name "Skup dokumenata 02" ;
+			rico:directlyPrecedesInSequence <Dokument02-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1947. 4. 21." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 11 dokumenata s bilješkama o predavanju o Dekakristima i prijelazu iz feudalnog razdoblja." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "11" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata02-01 kao fizièki pojavni oblik
+<SkupDokumenata02-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd02" ;
+			rico:name "Skup dokumenata 02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "17" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+			
+			SkupDokumenata03-01 kao logièki                        
+<SkupDokumenata03-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd03" ;
+			rico:name "Skup dokumenata 03" ;
+			rico:directlyPrecedesInSequence <Dokument01-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1948. 4. 9." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 18 dokumenata s bilješkama o razim temama." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "18" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata03-01 kao fizièki pojavni oblik
+<SkupDokumenata03-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd03" ;
+			rico:name "Skup dokumenata 03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "51" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+
+#Dokument03-02 kao logièki
+<Dokument03-02> a rico:Record ;
+rico:generalDescription "Dokument" ;
+			rico:identifier "kt20d03" ;
+			rico:name "Dokument 02" ;
+			rico:directlyFollowsInSequence <SkupDokumenata03-01> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDate "19471205" ;
+								] ;
+			rico:AuthenticityNote "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "ne nedostaju dijelovi dokumenta." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent " "Francuska 1823-30"
+epoha restauracije (Europa 5. 12.47.) utopijski socijalizam 
+Drugi: Sveta Alijansa (9.4.48.)
+Revolucija u Belgiji
+Njemaèka 1830 
+ulomak " od: ustanak u Varšavi 29. 11. 1830."" ;
+			#ovdje ne brojimo dokumente jer se radi o jednom dokumentu
+			rico:state "Nacrt" ;
+			rico:documentaryForm "Rukopis" ;
+			rico:recordSetType "Komad" . 
+
+#Dokument03-02 kao fizièki oblik
+<Dokument03-02> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt01d02" ;
+			rico:name "Dokument 02" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+						rico:quantity "2" ;
+						rico:unitOfMeasurement "List" ;
+						] ;
+			rico:physicalCharacteristicsNote "Èitko" ;
+			rico:productionTechnique "Pisano rukom." ;
+			rico:qualityOfRepresentatonNote "" .
+
+#Agent
+<JaroslavSidak> a rico:Person ;
+			rico:name "Jaroslav Šidak" ;
+			rico:performsOrPerformed <PredavanjeNaFilozfskomFakultetu> .
+
+#Agent
+<FilozofskiFakultet> a rico:Agent ;
+			rico:name "Filozofski fakultet" ;
+			rico:legalStatus "Fakultet" , "Javna ustanova." ;
+			rico:isOrWasLocationOf <PredavanjeNaFilozfskomFakultetu>.
+
+#Mjesto 
+<Zagreb> a rico:Place ;
+		 rico:name "Zagreb" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> ;
+			rico:isOrWasLocationOf<FilozofskiFakultet> .
+
+#Dogaðaj
+<PredavanjeNaFilozfskomFakultetu> a rico:Activity ;
+			rico:name "Predavanje na Filozoskom fakultetu" ;
+			rico:occurredAtDate [ a rico:Date ;	
+	                       rico:expressedDate "1948." 
+	                       ]  ;
+	rico:isOrWasPerformedBy <JaroslavSidak> .
+
+SkupDokumenata04-01 kao logièki                        
+<SkupDokumenata04-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd04" ;
+			rico:name "Skup dokumenata 04" ;
+			rico:directlyPrecedesInSequence <Dokument01-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 8 dokumenata s bilješkama o životu u 2. pol 18. st.." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata04-01 kao fizièki pojavni oblik
+<SkupDokumenata04-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd04" ;
+			rico:name "Skup dokumenata 04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "18" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+			
+			SkupDokumenata04-01 kao logièki                        
+<SkupDokumenata04-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd04" ;
+			rico:name "Skup dokumenata 04" ;
+			rico:directlyPrecedesInSequence <Dokument01-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 8 dokumenata s bilješkama o životu u 2. pol 18. st.." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata04-01 kao fizièki pojavni oblik
+<SkupDokumenata04-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd04" ;
+			rico:name "Skup dokumenata 04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "18" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+			
+			SkupDokumenata04-01 kao logièki                        
+<SkupDokumenata04-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd04" ;
+			rico:name "Skup dokumenata 04" ;
+			rico:directlyPrecedesInSequence <Dokument01-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 8 dokumenata s bilješkama o životu u 2. pol 18. st.." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata04-01 kao fizièki pojavni oblik
+<SkupDokumenata04-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd04" ;
+			rico:name "Skup dokumenata 04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "18" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+			
+			SkupDokumenata05-01 kao logièki                        
+<SkupDokumenata05-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd05" ;
+			rico:name "Skup dokumenata 05" ;
+			rico:directlyPrecedesInSequence <Dokument04-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1948.-1949." ;
+								rico:expressedDate "" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 5 dokumenata, bilješke za predavanje u zimskom semestru 1948/9, fokus na Beèkom Kongresu" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata05-01 kao fizièki pojavni oblik
+<SkupDokumenata05-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd05" ;
+			rico:name "Skup dokumenata 05" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "12" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija" .
+			
+			SkupDokumenata06-01 kao logièki                        
+<SkupDokumenata06-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd06" ;
+			rico:name "Skup dokumenata 06" ;
+			rico:directlyPrecedesInSequence <Dokument05-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1950.11.20." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 3 dokumenata, bilješke za predavanje 20.11.1950.,problemi hrvatske povijesti u prvom svesku historije/ Jugoslavija naroda " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata06-01 kao fizièki pojavni oblik
+<SkupDokumenata06-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd06" ;
+			rico:name "Skup dokumenata 06" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "3" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata07-01 kao logièki                        
+<SkupDokumenata07-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd07" ;
+			rico:name "Skup dokumenata 07" ;
+			rico:directlyPrecedesInSequence <Dokument06-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1942." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 8 dokumenata, bilješke za predavanje 1942., zakjuèak seljaèke bune" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "8" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata07-01 kao fizièki pojavni oblik
+<SkupDokumenata07-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd07" ;
+			rico:name "Skup dokumenata 07" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "8" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata08-01 kao logièki                        
+<SkupDokumenata08-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd08" ;
+			rico:name "Skup dokumenata 08" ;
+			rico:directlyPrecedesInSequence <Dokument07-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1942." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 40 dokumenata, bilješke za predavanje 1942., Socijalizam i komunizam 40-ih godina" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "40" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata08-01 kao fizièki pojavni oblik
+<SkupDokumenata08-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd08" ;
+			rico:name "Skup dokumenata 08" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "40" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+				SkupDokumenata09-01 kao logièki                        
+<SkupDokumenata09-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd09" ;
+			rico:name "Skup dokumenata 09" ;
+			rico:directlyPrecedesInSequence <Dokument08-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 60 dokumenata, bilješke za predavanje, razvoj Engleske nakon 1741. i Švedska nakon 1. svjetskog rata" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "60" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata09-01 kao fizièki pojavni oblik
+<SkupDokumenata09-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd09" ;
+			rico:name "Skup dokumenata 09" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "60" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-01 kao logièki                        
+<SkupDokumenata10-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument09-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1952." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 24 dokumenata, bilješke za predavanje 1952., Francuska poslije 1714/5" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "24" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-01 kao fizièki pojavni oblik
+<SkupDokumenata10-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "24" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-02 kao logièki                        
+<SkupDokumenata10-02> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1953." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 37 dokumenata, Plan za ljetni semestar 1952/3. i bilješke za predavanje Machiavelli; Vladar. " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "37" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-02 kao fizièki pojavni oblik
+<SkupDokumenata10-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "37" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-03 kao logièki                        
+<SkupDokumenata10-03> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 32 dokumenata, bilješke za predavanje Naslovi francuskih i njemaèkih dijela i Istorija filozofije. " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "32" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-03 kao fizièki pojavni oblik
+<SkupDokumenata10-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "32" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-04 kao logièki                        
+<SkupDokumenata10-04> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1956." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 76 dokumenata, Kolekcija bilješki njegovog studenta stavljena u korice: Bismarck und der Staat, kao i bilješke za predavanje Popoviæ: istoèno pitanje 1928. " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "76" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-04 kao fizièki pojavni oblik
+<SkupDokumenata10-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "76" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-05 kao logièki                        
+<SkupDokumenata10-05> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-04> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1953." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 65 dokumenata, plan rada za ljetni semestar 1953/4 kao i bilješke za predavanje Idejna struja u Rusiji u 1. polovici XIX st. te Odjek julske revolucije " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "65" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-05 kao fizièki pojavni oblik
+<SkupDokumenata10-05> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "65" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-06 kao logièki                        
+<SkupDokumenata10-06> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-05> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1961." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 49 dokumenata, plan rada za ljetni semestar 1961/2 kao i bilješke iz kolokvija 18. stoljeæe  " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "49" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-06 kao fizièki pojavni oblik
+<SkupDokumenata10-06> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "49" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-07 kao logièki                        
+<SkupDokumenata10-07> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-06> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1954." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 23 dokumenata, plan rada za ljetni semestar 1954/5 kao i bilješke za predavanje Revolucija  1848/9   " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "23" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-07 kao fizièki pojavni oblik
+<SkupDokumenata10-07> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "23" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-08 kao logièki                        
+<SkupDokumenata10-08> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-07> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1954." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 16 dokumenata, bilješke za predavanje Rusija 1830-48 " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "16" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-08 kao fizièki pojavni oblik
+<SkupDokumenata10-08> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "16" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-09 kao logièki                        
+<SkupDokumenata10-09> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-08> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 6 dokumenata, seminarski rad, brojevi poput raèunice napisani na koricama skupa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-09 kao fizièki pojavni oblik
+<SkupDokumenata10-09> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "6" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata10-10 kao logièki                        
+<SkupDokumenata10-10> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument10-09> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "1957." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 10 dokumenata, bilješke za predavanje Engleska buržoaska revolucija" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "10" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata10-10 kao fizièki pojavni oblik
+<SkupDokumenata10-10> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd10" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "10" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata11-01 kao logièki                        
+<SkupDokumenata11-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:directlyPrecedesInSequence <Dokument10-10> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 4 dokumenata, bilješke- vremenska crta štrajkova u svijetu sa fokusom na Rusiju" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "4" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata11-02 kao fizièki pojavni oblik
+<SkupDokumenata11-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "4" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata11-02 kao logièki                        
+<SkupDokumenata11-02> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:directlyPrecedesInSequence <Dokument11-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 58 dokumenata, korice zelene knjige, naslov pisan na Njemaèkom, knjižica na njemaèkom nalazi se unutra, ZADNJA STRANA KNJIŽICE IMA TOPOGRAFSKU KARTU KOJA PRIKAZIJE AGRARNU REFORMU U EUROPI 1917-1925." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "58" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Knjiga", "Tiskano" ;
+			rico:recordSetType "fond". 
+
+#SkupDokumenata11-02 kao fizièki pojavni oblik
+<SkupDokumenata11-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "58" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Potpuno èitko gradivo." ;
+			rico:productionTechnique "Tiskano" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog kvalitete tiska".
+			
+			SkupDokumenata11-03 kao logièki                        
+<SkupDokumenata11-03> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:directlyPrecedesInSequence <Dokument11-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da dokument nije u potpunosti saèuvan." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 2 dokumenata, novinski izrezak "Ideja Mitteleurope" u prošlosti " NOVA RIJEÈ br 138 3. 8. 1939. (politika ekspanzije) prilog" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Novinski izrezak", "Tisak" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata11-03 kao fizièki pojavni oblik
+<SkupDokumenata11-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo." ;
+			rico:productionTechnique "Tiskano" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog toga što je samo izrezak".
+			
+			SkupDokumenata11-04 kao logièki                        
+<SkupDokumenata11-04> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:directlyPrecedesInSequence <Dokument11-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 35 dokumenata, Novinski izrezak na Njemaèkom i br5. str63. Socijalna misao "Pregledi"- kulturni i socijalno-privredni, èlanak: "jel dalmacija pasivna?" podcrtan olovkom" te razni èlanci i bilješke ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "35" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata11-04 kao fizièki pojavni oblik
+<SkupDokumenata11-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd11" ;
+			rico:name "Skup dokumenata 11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "35" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom i tiskano." ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata12-01 kao logièki                        
+<SkupDokumenata12-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd12" ;
+			rico:name "Skup dokumenata 12 ;
+			rico:directlyPrecedesInSequence <Dokument11-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1945.-1951." ;
+								rico:expressedDate "1948." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 25 dokumenata, Tiskani tekst- izvaðeno iz neke knjige (bilješka REPUBLIKA 1948/5) NASLOV: "Nietzsche i njemaèki fašizam"" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "25" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke i izvadak iz knjige", "Rukopis i tiskani tekst " ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata12-01 kao fizièki pojavni oblik
+<SkupDokumenata12-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd12" ;
+			rico:name "Skup dokumenata 25" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "25" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom i tiskano" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija".
+			
+			SkupDokumenata13-01 kao logièki                        
+<SkupDokumenata13-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd13" ;
+			rico:name "Skup dokumenata 10" ;
+			rico:directlyPrecedesInSequence <Dokument12-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 41 dokumenata, kolekcija predavanja o USA i Rusiji spomenuto djelo dr. Vinka Kriškoviæa "U svijetu paradoksa" 1937." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "41" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata13-01 kao fizièki pojavni oblik
+<SkupDokumenata13-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd13" ;
+			rico:name "Skup dokumenata 13" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "41" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija"
+			
+			SkupDokumenata14-01 kao logièki                        
+<SkupDokumenata14-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd14" ;
+			rico:name "Skup dokumenata 32" ;
+			rico:directlyPrecedesInSequence <Dokument13-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 32 dokumenata, kolekcija predavanja o postanku filozofije, židovskom monoteizmu i korporativnoj državi" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "41" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata14-01 kao fizièki pojavni oblik
+<SkupDokumenata14-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd14" ;
+			rico:name "Skup dokumenata 14" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "32" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija"
+			
+			SkupDokumenata15-01 kao logièki                        
+<SkupDokumenata15-01> a rico:RecordSet 1 ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd15" ;
+			rico:name "Skup dokumenata 64" ;
+			rico:directlyPrecedesInSequence <Dokument14-01> ;
+			rico:isAssociatedWithDate [ a rico:DateRange "1952.-1970." ;
+								rico:expressedDate "n/a" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavštine" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Skup od 64 dokumenata, Skupina u knjžici: Dr Juraj Šæetinec "Korporativi sistem fašizma" I TISKANI TEKST ( 1. Iz Korporativnog zakonodavstva) "Ustav o radu") " ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "64" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke i knjžica", "Rukopis i tiskani tekst" ;
+			rico:recordSetType "fond" . 
+
+#SkupDokumenata15-01 kao fizièki pojavni oblik
+<SkupDokumenata15-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt20sd15" ;
+			rico:name "Skup dokumenata 15" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "64" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Veæinom èitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Pisano rukom i tiskano" ;
+			rico:qualityOfRepresentatonNote "Djelomièni gubitak informacije zbog pisanja olovkom i kvalitete kopija"
