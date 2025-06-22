@@ -14,7 +14,7 @@
 			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
 			rico:includesOrIncluded <SkupDokumenata01-01> , <SkupDokumenata01-02> , <SkupDokumenata01-03> , <SkupDokumenata01-04> , <Ljetopis01-05> , <SkupDokumenata01-06> , <SkupDokumenata01-07> , <SkupDokumenata01-08> , <Casopis01-09> , <SkupDokumenata01-10> , <SkupDokumenata01-11> , <SkupDokumenata01-12> , <Novine01-13> , <SkupDokumenata01-14> , <Casopis01-15> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1897-1942" ;
+								rico:normalizedDateValue "1897/1942" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavština" ; #može se koristiti za skup
@@ -29,7 +29,7 @@
 			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
 			rico:structure "Kronološka" ;
 			rico:documentaryForm "Bilješke" , "Rukopis" , "Tisak" , "Ilustracija"  ;
-			rico:recordSetType "fond" . #razina
+			rico:recordSetType "" . #razina
 			
 			
 #kutija kao fizički pojavni oblik
@@ -52,8 +52,8 @@
 			rico:identifier "kt01sd01" ;
 			rico:name "V Recepti" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-02> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1933" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1933" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -91,8 +91,8 @@
 			rico:identifier "kt01sd02" ;
 			rico:name "Rešetarov zbornik" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-03> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1931" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1931" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -130,8 +130,8 @@
 			rico:identifier "kt01sd03" ;
 			rico:name "Bilješke o bosanskim bogomilima" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-04> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1932" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1932" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -169,8 +169,8 @@
 			rico:identifier "kt01sd04" ;
 			rico:name "Bilješke o okupaciji Bosne i 'istočnom pitanju'" ;
 			rico:directlyPrecedesInSequence <Ljetopis01-05> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1936" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1936" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -209,7 +209,7 @@ rico:generalDescription "Ljetopis" ;
 			rico:name "Kongres historičara 21.-27.VIII.1932." ;
 			rico:directlyFollowsInSequence <SkupDokumenata01-04> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "1934" ;
+								rico:normalizedDateValue "1934" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
@@ -242,7 +242,7 @@ rico:generalDescription "Ljetopis" ;
 			rico:name "Die materialistiche Geschichtauffassung" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-07> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1923-1930" ;
+								rico:normalizedDateValue "1923/1930" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -280,8 +280,8 @@ rico:generalDescription "Ljetopis" ;
 			rico:identifier "kt01sd07" ;
 			rico:name "Nepoznat naziv" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-08> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1895" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1895" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -319,8 +319,8 @@ rico:generalDescription "Ljetopis" ;
 			rico:identifier "kt01sd08" ;
 			rico:name "Dubrovački tjednik" ;
 			rico:directlyPrecedesInSequence <Casopis01-09> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1897" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1897" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -359,7 +359,7 @@ rico:generalDescription "Casopis" ;
 			rico:name "Nove dulebske studije - Časopis za zgodovino in narodpisje" ;
 			rico:directlyFollowsInSequence <SkupDokumenata01-08> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "1928" ;
+								rico:normalizedDateValue "1928" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
@@ -391,8 +391,8 @@ rico:generalDescription "Casopis" ;
 			rico:identifier "kt01sd10" ;
 			rico:name "Bosna i Hercegovina pod austro-ugarskom upravom/Srpski narod u XIX veku" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-11> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1938" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1938" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -430,8 +430,8 @@ rico:generalDescription "Casopis" ;
 			rico:identifier "kt01sd11" ;
 			rico:name "Srbija pod osmanskom vlašću" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata01-12> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1923" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1923" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -469,8 +469,8 @@ rico:generalDescription "Casopis" ;
 			rico:identifier "kt01sd12" ;
 			rico:name "Dalmatinski gradovi do XII st." ;
 			rico:directlyPrecedesInSequence <Novine01-13> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1939" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1939" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -509,7 +509,7 @@ rico:generalDescription "Novine" ;
 			rico:name "Neue Ordnung" ;
 			rico:directlyFollowsInSequence <SkupDokumenata01-12> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "19420308" ;
+								rico:normalizedDateValue "1942-03-08" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
@@ -541,8 +541,8 @@ rico:generalDescription "Novine" ;
 			rico:identifier "kt01sd14" ;
 			rico:name "III Recepti" ;
 			rico:directlyPrecedesInSequence <Casopis01-15> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1932" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1932" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -581,7 +581,7 @@ rico:generalDescription "Casopis" ;
 			rico:name "Jugoslavenska njiva" ;
 			rico:directlyFollowsInSequence <SkupDokumenata01-14> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "1924" ;
+								rico:normalizedDateValue "1924" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
@@ -711,7 +711,7 @@ rico:generalDescription "Casopis" ;
 <BosanskiBogomili> a rico:Activity ;
 			rico:name "Bosanski bogomili" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1932." 
+	                       rico:normalizedDateValue "1932" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <Stojanovic> , <Savakovic> , <Petranovic> .
 	
@@ -720,7 +720,7 @@ rico:generalDescription "Casopis" ;
 <OkupacijaBosneIIstocnoPitanje> a rico:Activity ;
 			rico:name "Okupacija Bosne i istočno pitanje" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1936." 
+	                       rico:normalizedDateValue "1936" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <Starcevic> .
 	
@@ -729,7 +729,7 @@ rico:generalDescription "Casopis" ;
 <PovijestSocijalizma> a rico:Activity ;
 			rico:name "Povijest socijalizma" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1895." 
+	                       rico:normalizedDateValue "1895" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <Bernstein> .
 	
@@ -738,7 +738,7 @@ rico:generalDescription "Casopis" ;
 <DubrovackiTjednik> a rico:Activity ;
 			rico:name "Dubrovački tjednik" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1897." 
+	                       rico:normalizedDateValue "1897" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <VidVuceticVukanovic> .
 	
@@ -747,7 +747,7 @@ rico:generalDescription "Casopis" ;
 <BosnaIHercegovinaPodAustroUgarskomUpravomSrpskiNarodUXIXVeku> a rico:Activity ;
 			rico:name "Bosna i Hercegovina pod austro-ugarskom upravom/Srpski narod u XIX veku" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1938." 
+	                       rico:normalizedDateValue "1938" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <Skaric> , <Hadzic> , <Stojanovic> .
 	
@@ -756,7 +756,7 @@ rico:generalDescription "Casopis" ;
 <SrbijaPodOsmanskomVlascu> a rico:Activity ;
 			rico:name "Srbija pod osmanskom vlašću" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1923." 
+	                       rico:normalizedDateValue "1923" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <Sisic> .
 	
@@ -765,7 +765,7 @@ rico:generalDescription "Casopis" ;
 <NeueOrdnung> a rico:Activity ;
 			rico:name "Neue Ordnung" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "8.3.1942." 
+	                       rico:normalizedDateValue "1942-03-08" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <Hauptmann> .
 	
@@ -774,6 +774,6 @@ rico:generalDescription "Casopis" ;
 <JugoslavenskaNjiva> a rico:Activity ;
 			rico:name "Jugoslavenska njiva" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1924." 
+	                       rico:normalizedDateValue "1924" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <JurajDemetrovic> .

@@ -11,3 +11,4 @@
             rico:language "Hrvatski (hr)" , "Latinski (lat)" ;
             rico:DemographicGroup "" ;
             rico:OccupationType "Povjesničar" .
+

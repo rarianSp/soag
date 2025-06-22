@@ -1,0 +1,330 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<Kutija17> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt17" ;
+			rico:name "Kutija 17" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata17-01> , <SkupDokumenata17-02> , <SkupDokumenata17-03> , <SkupDokumenata17-04> , <SkupDokumenata17-05> , <SkupDokumenata17-06> , <SkupDokumenata17-07> , <SkupDokumenata17-08> , <SkupDokumenata17-09> , <SkupDokumenata17-10> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1926/uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal, kopije, izresci iz novina." ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (cyrl)" , "Njemački (njem)" , "Srpski (sr)" , "Francuski (fra)" ;
+			rico:scopeAndContent "Rukopisi radova 1. Hrvatska XIV. i XV. st., 2. Hrvatski narodni preporod, 3. Pogled na prošlost hrvatskog naroda, 4. Hrvatska u I. polovici XIX. st., 5. Nova građa o akciji Rimske kurije u Bosni, 6. Sveučilište 1874-1918., 7. Bogumilstvo (zbornik radova), 8. Kukuljević kao političar, 9. Dva spisa F. Zacha o prilikama u Srbiji, 10. Razno" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "10" ;
+							rico:unitOfMeasurement "skupa dokumenata" ;
+							] ;
+			rico:classification "Ostavština" ;
+			rico:documentaryForm "Bilješke", "Rukopis" , "Tiskano" , "Novinski izresci" . 
+<Kutija17> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt17" ;
+			rico:name "Kutija 17" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Srednje čitljivo gradivo, dio gradiva pisan olovkom, dio kemijskom olovkom, novinski izresci, kopije." ;
+			rico:productionTechnique "Pisano rukom i tiskani dokumenti." .
+<SkupDokumenata17-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd01" ;
+			rico:name "Bilješke Hrvatska XIV. i XV. st. (za Historiju nar. Jug I?)" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata17-02> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1953?" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Rukopisne bilješke o hrvatskoj povijesti XIV. i XV. stoljeća. " ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-01> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "24" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisne bilješke, dijelovi su slabije čitljivi." ;
+			rico:productionTechnique "Rukopis"  ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+<SkupDokumenata17-02> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd02" ;
+			rico:name "Bilješke" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-01> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o hrvatskim zemljama na pragu 60-ih godina XX. st., narodnom preporodu u Dalmaciji od g. 1860. do 1870., Istri od 1861., Hrvatsko-ugarskoj nagodbi, Reviziji Hrvatsko-ugarske nagodbe, Počecima radničkog pokreta u hrvatskim zemljama, Razvojačenju Vojne krajine te Dodatci za izvore, literatura, dodaci literature i umetci literaturi " ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-02> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "111" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisne bilješke, dijelovi su slabije čitljivi." ;
+			rico:productionTechnique "Rukopis"  ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd03" ;
+			rico:name "Bilješke Pogled na prošlost hrvatskog naroda" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-02> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1955?" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Rukopisne bilješke o pogledu na prošlost hrvatskog naroda." ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-03> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "8" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisne bilješke, dijelovi su slabije čitljivi." ;
+			rico:productionTechnique "Rukopis"  ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-04> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd04" ;
+			rico:name "Bilješke" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-03> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o Hrvatskoj u I. polovici XIX. st i razne." ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-04> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "46" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Slabije čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano kemijskom olovkom" , "Pisano olovkom" ;
+			rico:qualityOfRepresentationNote "Srednje očuvano" .
+<SkupDokumenata17-05> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd05" ;
+			rico:name "Bilješke Nova građa o akciji Rimske kurije u Bosni" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-04> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke za novu građu o akciji Rimske kurije u Bosni 1245. godine." ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-05> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "9" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Slabije čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano kemijskom olovkom" , "Pisano olovkom" ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-06> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd06" ;
+			rico:name "Bilješke" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-05> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ;
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o Sveučilištu od 1874. do 1918. godine" ;
+			rico:describesOrDescribed <RazvojSveucilistaZagreb> ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-06> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "19" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Slabije čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano olovkom" ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-07> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd07" ;
+			rico:name "Bilješke" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-06> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ;
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)" ;
+			rico:scopeAndContent "Bilješke (bogumilstvo, dva priloga, Kopitatarovo bosansko evanđelje, umetak)." ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-07> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "23" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Slabije čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano olovkom" ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-08> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd08" ;
+			rico:name "Ivan Kukuljević kao političar" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-07> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ;
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o Ivanu Kukuljeviću kao političaru." ;
+			rico:describesOrDescribed <IvanKukuljevic> ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-08> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "60" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Slabije čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano olovkom" ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-09> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd09" ;
+			rico:name "Bilješke" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-08> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ;
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o dva spisa F. Zacha o prilikama u Srbiji, o Gajevim izvještajima o prilikama u Srbiji i literaturi o njima, o prilogu A. V. Solovjeva." ;
+			rico:comment "Priprema za članak Tajna politika Ljudevita Gaja i postanak njegovih Memoranduma knezu Metternichu, objavljenom u Arhivskom vjesniku iz 1970. godine. Bilješke za prikaz teksta Le testament du gost Radin A. V. Solovijeva, Dodatak ocjeni o prilogu A. V. Solovijeva. Šidakova recenzija objavljena je u časopisu Slovo 17, 1967, 195-199." ;
+			rico:describesOrDescribed <AleksandarVasiljevicSolovjev> , <IvanKukuljevic> , <LjudevitGaj> , <FranjoZach> ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+<SkupDokumenata17-09> a rico:Instantiation ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "52" ;
+							rico:unitOfMeasurement "List" ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Izvorni omot" ;
+							] ;
+			rico:physicalCharacteristicsNote "Slabije čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano olovkom" ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-10> a rico:Instantiation ;
+			rico:physicalCharacteristicsNote "Dobro čitljivo." ;
+			rico:productionTechnique "Rukopis" , "Pisano olovkom" , "Pisano kemijskom olovkom" , "Tiskano" ;
+			rico:qualityOfRepresentationNote "Dobro očuvano" .
+<SkupDokumenata17-10> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt17sd10" ;
+			rico:name "Razno" ;
+			rico:directlyFollowsInSequence <SkupDokumenata17-09> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1926-uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije, izresci iz novina." ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu, no na kraju se nalaze dijelovi bilježaka koji su greškom izdvojeni." ;
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (cyrl)" , "Njemački (njem)" , "Srpski (sr)" , "Francuski (fra)" ;
+			rico:scopeAndContent "Izvadci iz tiskovina i publikacija, zametnute stranice rukopisa, Izvadak is Historijskog zbornika s tekstom Zbornik o Ljudevitu Gaju, vijest iz novina o smrti docenta Maksimilijana Mandla na Biokovu i broj časopisa Hrvatski planinar iz 1941." ;
+			rico:describesOrDescribed <SmrtMaksimilijanaMandla> , <MaksimilijanMandl> , <SvetiJure> ;
+			rico:structure "Tematska" , "Neorganizirana";
+			rico:documentaryForm "Tisak" , "Bilješke", "Rukopis" .
+
+<MaksimilijanMandl> a rico:Person ;
+			rico:name "Maksimilijan Mandl" ;
+			rico:hasDateOfDeath [ a rico:Date ;
+								rico:normalizedDateValue "1927-04" ;
+								] ;
+			rico:hasDeathPlace <SvJure> ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-10> .
+<SmrtMaksimilijanaMandla> a rico:Event ;
+			rico:generalDescription "Planinarska nesreća sa smrtnim ishodom" ;
+			rico:name "Smrt Maksimilijana Mandla" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1927-04" ;
+								] ;
+			rico:isEventAssociatedWith <SvJure> , <MaksimilijanMandl> ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-10> .
+<SvetiJure> a rico:Place ;
+			rico:name "Sv. Jure" ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-10> ;
+			rico:isOrWasLocationOf <SmrtMaksimilijanaMandla> ;
+			rico:isDeathPlaceOf <MaksimilijanMandl> ;
+			rico:note "Približno mjesto jer je Mandl pronađen mrtav u manjoj spilji do koje je sišao." ;
+			rico:geographicalCoordinates "latitude 43.341944, longitude 17.053056" .
+<AleksandarVasiljevicSolovjev> a rico:Person ;
+			rico:name "Aleksandar Vasiljevič Solovjev" ;
+			rico:hasDateOfBirth [ a rico:Date ;
+								rico:normalizedDateValue "1890-10-18" ;
+								] ;
+			rico:hasDateOfDeath [ a rico:Date ;
+								rico:normalizedDateValue "1971-01-14" ;
+								] ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-09> .
+<IvanKukuljevic> a rico:Person ;
+			rico:name "Ivan Kukuljević Sakcinski" ;
+			rico:hasDateOfBirth [ a rico:Date ;
+								rico:normalizedDateValue "1816-05-29" ;
+								] ;
+			rico:hasDateOfDeath [ a rico:Date ;
+								rico:normalizedDateValue "1889-08-01" ;
+								] ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-08> .
+<LjudevitGaj> a rico:Person ;
+			rico:name "Ljudevit Gaj" ;
+			rico:hasDateOfBirth [ a rico:Date ;
+								rico:normalizedDateValue "1809-07-08" ;
+								] ;
+			rico:hasDateOfDeath [ a rico:Date ;
+								rico:normalizedDateValue "1872-04-20" ;
+								] ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-09> .
+<FranjoZach> a rico:Person ;
+			rico:name "Franjo Zach" ;
+			rico:hasDateOfBirth [ a rico:Date ;
+								rico:normalizedDateValue "1807-04-19" ;
+								] ;
+			rico:hasDateOfDeath [ a rico:Date ;
+								rico:normalizedDateValue "1878-01-02" ;
+								] ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-09> .
+<RazvojSveucilistaZagreb> a rico:Activity ;
+			rico:name "Organizacijski razvoj Sveučilišta" ;
+			rico:hasDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1874/1918" ;
+								] ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-06> ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" .
+
+<Zagreb> a rico:Place ;
+			rico:name "Zagreb" ;
+			rico:isOrWasLocationOf <RazvojSveucilistaZagreb> ;
+			rico:isOrWasDescribedBy <SkupDokumenata17-06> ;
+			rico:geographicalCoordinates "latitude 45.813097, longitude 15.97728" .

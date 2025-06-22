@@ -14,7 +14,7 @@
 			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
 			rico:includesOrIncluded <SkupDokumenata05-01>, <SkupDokumenata05-02>, <Dokument05-03> ; 
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1938-1975" ;
+								rico:normalizedDateValue "1938/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -51,7 +51,7 @@
 			rico:name "skup 01" ;
 			rico:includesOrIncluded <SkupDokumenata05-01-01>, <SkupDokumenata05-01-02>, <SkupDokumenata05-01-03>, <SkupDokumenata05-01-04>, <SkupDokumenata05-01-05>, <SkupDokumenata05-01-06>, <SkupDokumenata05-01-07> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -88,7 +88,7 @@
 			rico:name "skup 01-01" ;
 			rico:isDirectlyIncludedIn <SkupDokumenata05-01> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1938-1975" ;
+								rico:normalizedDateValue "1938/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -125,7 +125,7 @@
 			rico:name "skup 01-02" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-01-03> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -162,7 +162,7 @@
 			rico:name "skup 01-03" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-01-04> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -199,7 +199,7 @@
 			rico:name "skup 01-04" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-01-05> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -236,7 +236,7 @@
 			rico:name "skup 01-05" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-01-06> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -273,7 +273,7 @@
 			rico:name "skup 01-06" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-01-07> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -310,7 +310,7 @@
 			rico:name "skup 01-07" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-02> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -348,7 +348,7 @@
 			rico:directlyFollowsInSequence <SkupDokumenata05-01-07> ;
 			rico:includesOrIncluded <SkupDokumenata05-02-01>, <SkupDokumenata05-02-02>, <SkupDokumenata05-02-03>, <SkupDokumenata05-02-04>, <SkupDokumenata05-02-05>, <SkupDokumenata05-02-06> ; 
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -384,8 +384,8 @@
 			rico:identifier "kt05sd02sd01" ;
 			rico:name "skup 02-01" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-02-02> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1957." ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1957" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -422,7 +422,7 @@
 			rico:name "skup 02-02";
 			rico:directlyPrecedesInSequence <SkupDokumenata05-02-03> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -459,7 +459,7 @@
 			rico:name "skup 02-03" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-02-04> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -496,7 +496,7 @@
 			rico:name "skup 02-04" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-02-05> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -533,7 +533,7 @@
 			rico:name "skup 02-05" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata05-02-06> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -570,7 +570,7 @@
 			rico:name "skup 02-06" ;
 			rico:directlyPrecedesInSequence <Dokument05-03> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1943-1975" ;
+								rico:normalizedDateValue "1943/1975" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -607,7 +607,7 @@ rico:generalDescription "Dokument" ;
 			rico:name "Bosna, Hercegovina i Crna Gora spram prvoga srpskog ustanka" ;
 			rico:directlyFollowsInSequence <SkupDokumenata05-02-06> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "1967" ;
+								rico:normalizedDateValue "1967" ;
 								] ;
 			rico:AuthenticityNote "" ; 
 			rico:contentType "Tekstualni dokumenti" ; 

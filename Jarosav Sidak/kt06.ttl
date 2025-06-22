@@ -14,7 +14,7 @@
 			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
 			rico:includesOrIncluded <SkupDokumenata06-01> , <SkupDokumenata06-02> , <SkupDokumenata06-03> , <SkupDokumenata06-04>, <SkupDokumenata06-05> , <SkupDokumenata06-06> , <SkupDokumenata06-07> , <SkupDokumenata06-08> , <SkupDokumenata06-09> , <SkupDokumenata06-10> , <SkupDokumenata06-11> , <SkupDokumenata06-12> , <SkupDokumenata06-13> , <SkupDokumenata06-14> , <SkupDokumenata06-15> , <SkupDokumenata06-16> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1936-1981" ;
+								rico:normalizedDateValue "1936/1981" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -29,7 +29,7 @@
 			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
 			rico:structure "Kronološka" ;
 			rico:documentaryForm "Bilješke", "Rukopis", "Knjiga", "Bilježnica" ;
-			rico:recordSetType "fond" . #razina
+			rico:recordSetType "" . #razina
 			
 
 #kutija kao fizički pojavni oblik
@@ -52,7 +52,7 @@
 			rico:name "Bilješke razne" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-02> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1960-1977" ;
+								rico:normalizedDateValue "1960/1977" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -89,7 +89,7 @@
 			rico:name "Ilirski pokret" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-03> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1974-1981" ;
+								rico:normalizedDateValue "1974/1981" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -126,7 +126,7 @@
 			rico:name "Reformacije u Hrvatskoj" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-04> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1954-1965" ;
+								rico:normalizedDateValue "1954/1965" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." , "Knjiga O pitanju odnosa prema reformaciji na hrvatskim prostorima." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -162,8 +162,8 @@
 			rico:identifier "kt06sd04" ;
 			rico:name "Trdine" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-05> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1937" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1937" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." , "Tiskani dokumenti." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -200,7 +200,7 @@
 			rico:name "Miroslav Šestak: Revolucionarna Suradnja E. Kvaternika i J. V. Friča 1863-1864" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-06> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1964-1965" ;
+								rico:normalizedDateValue "1964/1965" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." , "Tiskani dokument." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -237,7 +237,7 @@
 			rico:name "Pavlinović" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-07> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1962-1963" ;
+								rico:normalizedDateValue "1962/1963" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -275,6 +275,7 @@
 			rico:name "Neimenovani skup povezan klamericom." ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-08> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "" ;
 								rico:dateQualifier "Nezabilježeno." ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
@@ -312,8 +313,8 @@
 			rico:identifier "kt06sd08" ;
 			rico:name "Reiswitz" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-09> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1936" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1936" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -350,6 +351,7 @@
 			rico:name "Neminemovani skup" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-10> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "" ;
 								rico:dateQualifier "Nezabilježeno." ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
@@ -389,7 +391,7 @@
 			rico:name "Bilježnica" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-11> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1948-1970" ;
+								rico:normalizedDateValue "1948/1970" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -427,7 +429,7 @@
 			rico:name "Školstvo u Hrv. 1773-1874." ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-12> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1960-1965" ;
+								rico:normalizedDateValue "1960/1965" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -466,7 +468,7 @@
 			rico:name "Neimenovan skup." ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-13> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1974-1979" ;
+								rico:normalizedDateValue "1974/1979" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -504,6 +506,7 @@
 			rico:name "Neimenovan skup" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-14> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "" ;
 								rico:dateQualifier "Nezabilježeno." ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
@@ -541,8 +544,8 @@
 			rico:identifier "kt06sd14" ;
 			rico:name "Neimenovan skup" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-15> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1961" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1961" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -580,8 +583,8 @@
 			rico:identifier "kt06sd15" ;
 			rico:name "Neimenovan skup" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata06-16> ;
-			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1980" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1980" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -619,7 +622,7 @@
 			rico:name "Neimenovan skup" ;
 			rico:directlyFollowsInSequence <SkupDokumenata06-15> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1945-1967" ;
+								rico:normalizedDateValue "1945/1967" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "Ostavštine" ; #može se koristiti za skup
@@ -749,7 +752,7 @@
 <SintezaHrvatskePovijest> a rico:Activity ;
 			rico:name "Sinteza Hrvatske Povijesti" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1975." 
+	                       rico:normalizedDateValue "1975" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <JaroslavSidak> ;
 	rico:documentedBy <SkupDokumenata06-01> .
@@ -759,7 +762,7 @@
 <OsnivanjeHrvatskeAkademijeZnanostiIUmjestnosti> a rico:Activity ;
 			rico:name "Osnivanje Hrvatske Akademije Znanosti i Umjetnosti" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1861." 
+	                       rico:normalizedDateValue "1861" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <JosipJurajStrossmayer> ;
 	rico:documentedBy <SkupDokumenata06-01> .	
@@ -768,7 +771,7 @@
 <ClanakOIlirskomPreporodu> a rico:Activity ;
 			rico:name "Clanak o Ilirskom Preporodu" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1935." 
+	                       rico:normalizedDateValue "1935" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <FranoFancev> ;
 	rico:documentedBy <SkupDokumenata06-02> .
@@ -777,7 +780,7 @@
 <IlirskiPokret> a rico:Event ;
 			rico:name "Ilirski pokret" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1835." 
+	                       rico:normalizedDateValue "1835" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <LjudevitGaj> ;	
 	rico:documentedBy <SkupDokumenata06-02> .	
@@ -787,7 +790,7 @@
 <OPitanjuOdnosaPremaReformacijiNaHrvatskimProstorima> a rico:Activity ;
 			rico:name "O pitanju odnosa prema reformaciji na hrvatskim prostorima" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1963." 
+	                       rico:normalizedDateValue "1963" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <JulijanVladimirovicBromlej> ;
 	rico:documentedBy <SkupDokumenata06-03> .							   
@@ -798,7 +801,7 @@
 <GovorUHrvatskomSaboru> a rico:Activity ;
 			rico:name "Govor u Hrvatskom saboru" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1843." 
+	                       rico:normalizedDateValue "1843" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <IvanKukuljevicSakcinski> ;
 	rico:documentedBy <SkupDokumenata06-04> .							   
@@ -808,7 +811,7 @@
 <IzvještajiOUgarskomNamjesnickomVijecu> a rico:Activity ;
 			rico:name "Izvještaj o Ugarskom namjesničkom vijeću" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1864." 
+	                       rico:normalizedDateValue "1864" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <IvanMazuranic> ;
 	rico:documentedBy <SkupDokumenata06-04> .					   
@@ -817,7 +820,7 @@
 <PriceJanezaTrdine> a rico:Activity ;
 			rico:name "Priče Janeza Trdine" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1866." 
+	                       rico:normalizedDateValue "1866" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <JanezTrdina> ;
 	rico:documentedBy <SkupDokumenata06-04> .							   
@@ -825,8 +828,8 @@
 #Događaj
 <RevolucionarnaSuradnjaEKvaternikaIJVFriča1863-1864> a rico:Activity ;
 			rico:name "Revolucionarna Suradnja E. Kvaternika i J. V. Friča 1863-1864" ;
-			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1965." 
+			rico:occurredAtDate [ a rico:DateRange ;	
+	                       rico:normalizedDateValue "1863/1864" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <MiroslavSestak> ;
 	rico:documentedBy <SkupDokumenata06-05> .						   
@@ -836,7 +839,7 @@
 <OsnivanjeNarodnogLista> a rico:Activity ;
 			rico:name "Osnivanje Narodnog Lista" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1869." 
+	                       rico:normalizedDateValue "1869" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <MihovilPavlinovic> ;
 	rico:documentedBy <SkupDokumenata06-06> .	
@@ -846,7 +849,7 @@
 <IstrazivanjeOHermannWendelu> a rico:Activity ;
 			rico:name "Istraživanje o Hermann Wendelu" ;
 			rico:occurredAtDate [ a rico:Date ;	
-	                       rico:expressedDate "1945." 
+	                       rico:normalizedDateValue "1945" 
 	                       ]  ;
 	rico:isOrWasPerformedBy <JohannAlbrechtVonReiswitz> ;
 	rico:documentedBy <SkupDokumenata06-08> .

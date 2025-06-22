@@ -1,0 +1,500 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+#kutija kao logički skup
+<Kutija11> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt11" ;
+			rico:name "Kutija 11" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata11-01> , <SkupDokumenata11-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ; 
+								rico:normalizedDateValue "x" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; 
+			rico:classification "Ostavština" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Srpski (srb)" , "Latinica (latn)" , "Ćirilica (ćirl)" ;
+			rico:scopeAndContent "Kutija s financijskim dokumentima i rukopisnim bilješkama." ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "11" ; 
+							rico:unitOfMeasurement "skup dokumenata" ; 
+							] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ; 
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke" , "Rukopis" , "Tisak" , "Fotografije" ; 
+			rico:recordSetType "" .
+#kutija kao fizički pojavni oblik
+<Kutija11> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt11" ;
+			rico:name "Kutija 11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "11" ;
+							rico:unitOfMeasurement "skupova dokumenata" ;
+							] ;
+			rico:physicalCharacteristicsNote "Tiskani financijski dokumenti ponekad s rukopisnim bilješkama" ; 
+			rico:productionTechnique "Rukopis i tiskano." ; 
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+ #SkupDokumenata 11-01 kao logički oblik
+<SkupDokumenata11-01š> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd01" ;
+			rico:name "H2-kampuš" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-02> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1962" ;
+								] ;
+			rico:AuthenticityNote "Financijski dokumenti, uglavnom izvještaji" ;
+			rico:classification "" ; 
+			rico:contentType "Financijski dokumenti" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Srpski (srb)" , "Latinica (latn)" , "Ćirilica (ćirl)" ;
+			rico:scopeAndContent "Koverta koja sadrži skup financijskih dokumenata, uglavnom namjenjenih ili izadnih od strane Historijskog zbornika" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "86" ;
+								rico:unitOfMeasurement "Dokumenti i manji skupovi dokumenata"
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Financijski izvještaji"] ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke" ;
+			rico:recordSetType "Predmet" . 
+#SkupDokumenata 11-01 kao fizički pojavni oblik
+<SkupDokumenata11-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "138" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Podosta financijskih izvještaja i izvoda, čitki ali veliki dio prazan ili sa minimalnim informacijama" ;
+			rico:productionTechnique "Tiskano sa povremenim rukopisnim bilješkama" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-02 kao logički oblik
+<SkupDokumenata11-02> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd02" ;
+			rico:name "Financije 1969.g." ;
+			rico:directlyPrecedesInSequence <SkupDokumenata01-03> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1969" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "41" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-02 kao fizički pojavni oblik
+<SkupDokumenata11-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "185" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .	
+#SkupDokumenata11-03 kao logički oblik
+<SkupDokumenata11-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd03" ;
+			rico:name "Bez imena" ;
+			rico:directlyPrecedesInSequence <Dokument01-04> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1964" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (ćirl)" , "Srpski (srb)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-03 kao fizički pojavni oblik
+<SkupDokumenata11-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "43" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-04 kao logički oblik
+<SkupDokumenata11-04> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd04" ;
+			rico:name "1968 Bankovni izvadci" ;
+			rico:directlyPrecedesInSequence <Dokument01-05> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1968" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "19" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-04 kao fizički pojavni oblik
+<SkupDokumenata11-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "58" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-05 kao logički oblik
+<SkupDokumenata11-05> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd05" ;
+			rico:name "Prof. Dr. Jaroslav Šidak urednik Historijskog zbornika" ;
+			rico:directlyPrecedesInSequence <Dokument01-06> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1984" 
+								] ;
+			rico:AuthenticityNote "Esej" ;
+			rico:classification "Esej" ;
+			rico:contentType "Esej" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Esej i rukopisne bilješke" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Esej"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-05 kao fizički pojavni oblik
+<SkupDokumenata11-05> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd05" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "25" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni" ;
+			rico:productionTechnique "Esej" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-06 kao logički oblik
+<SkupDokumenata11-06> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd06" ;
+			rico:name "Povijesno društvo financije 1970 " ;
+			rico:directlyPrecedesInSequence <Dokument01-07> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1970" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "21" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-06 kao fizički pojavni oblik
+<SkupDokumenata11-06> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd06" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "68" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-07 kao logički oblik
+<SkupDokumenata11-07> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd07" ;
+			rico:name "1967 bankovni izvatci" ;
+			rico:directlyPrecedesInSequence <Dokument01-08> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1967" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-07 kao fizički pojavni oblik
+<SkupDokumenata11-07> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd07" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "238" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-08 kao logički oblik
+<SkupDokumenata11-08> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd08" ;
+			rico:name "1966 bankovni izvatci" ;
+			rico:directlyPrecedesInSequence <Dokument01-09> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1966" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (ćirl)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-08 kao fizički pojavni oblik
+<SkupDokumenata11-08> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd08" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "97" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-09 kao logički oblik
+<SkupDokumenata11-09> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd09" ;
+			rico:name "Potvrda primitka HZ" ;
+			rico:directlyPrecedesInSequence <Dokument01-10> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1969" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa, razglednice i fotografije" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-09 kao fizički pojavni oblik
+<SkupDokumenata11-09> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd09" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "51" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-10 kao logički oblik
+<SkupDokumenata11-10> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd10" ;
+			rico:name "1971. HZ računi svežanj 11" ;
+			rico:directlyPrecedesInSequence <Dokument01-11> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1971" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "70" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-10 kao fizički pojavni oblik
+<SkupDokumenata11-10> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "302" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#SkupDokumenata11-11 kao logički oblik
+<SkupDokumenata11-11> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd11" ;
+			rico:name "HZ računi" ;
+			rico:directlyPrecedesInSequence <Dokument01-12> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1963" 
+								] ;
+			rico:AuthenticityNote "Računi" ;
+			rico:classification "Skup računa" ;
+			rico:contentType "Računi" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (ćirl)" ;
+			rico:scopeAndContent "Mali skupovi računa, svaki sadrži izvještaj, uplatnicu i stanje računa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "4" ;
+								rico:unitOfMeasurement "Skup dokumenata" 
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Računi"] ;
+			rico:structure "Kronološki" ;
+			rico:documentaryForm "Dokument" ;
+			rico:recordSetType "Predmet" ;.
+#SkupDokumenata11-11 kao fizički pojavni oblik
+<SkupDokumenata11-11> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt11sd11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "269" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvani i pravilno raspoređeni, skupovi spojeni spajalicama" ;
+			rico:productionTechnique "Računi" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<JosipLučić> a rico:Person ;
+			rico:name "Josip Lučić" ;
+			rico:performsOrPerformed <Račun> . 
+<DragoGizdić> a rico:Person ;
+			rico:name "Drago Gizdić" ;
+			rico:performsOrPerformed <Račun> .
+<NadaKlaić> a rico:Person ;
+			rico:name "dr. Nada Klaić" ;
+			rico:performsOrPerformed <Račun> .
+<BogdanKrizman> a rico:Person ;
+			rico:name "dr. Bogdan Krizman" ;
+			rico:performsOrPerformed <Račun> .
+<SlavkoGavrilović> a rico:Person ;
+			rico:name "Slavko Gavrilović" ;
+			rico:performsOrPerformed <Račun> .
+<JaroslavSidak> a rico:Person ;
+			rico:name "Jaroslav Šidak" ;
+			rico:performsOrPerformed <Račun> .
+<MuhamedHadžijahič> a rico:Person ;
+			rico:name "Muhamed Hadžijahič" ;
+			rico:performsOrPerformed <Račun> .
+<VasoVojvodić> a rico:Person ;
+			rico:name "Vaso Vojvodić" ;
+			rico:performsOrPerformed <Račun> .
+<IvanErceg> a rico:Person ;
+			rico:name "Ivan Erceg" ;
+			rico:performsOrPerformed <Račun> .
+<MirjanaGross> a rico:Person ;
+			rico:name "dr. Mirjana Gross" ;
+			rico:performsOrPerformed <Račun> .
+<IvanBach> a rico:Person ;
+			rico:name "dr. Ivan Bach" ;
+			rico:performsOrPerformed <Račun> .
+<JakšaRavlić> a rico:Person ;
+			rico:name "Jakša Ravlić" ;
+			rico:performsOrPerformed <Račun> .
+<IvanKampuš> a rico:Person ;
+			rico:name "Ivan Kampuš" ;
+			rico:performsOrPerformed <Račun> .
+<BogumilHrabak> a rico:Person ;
+			rico:name "Bogumil Hrabak" ;
+			rico:performsOrPerformed <Račun> .
+<IgorKaraman> a rico:Person ;
+			rico:name "dr. Igor Karaman" ;
+			rico:performsOrPerformed <Račun> .
+#mjesto
+<Zagreb> a rico:Place ;
+		 rico:name "Zagreb" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> ;
+			rico:isOrWasLocationOf<Događaj1> .
+<Subotica> a rico:Place ;
+		 rico:name "Subotica" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Subotica> ;
+			rico:isOrWasLocationOf<Događaj2> .
+<Beograd> a rico:Place ;
+		 rico:name "Beograd" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Beograd> ;
+			rico:isOrWasLocationOf<Događaj3> .
+<Sarajevo> a rico:Place ;
+		 rico:name "Sarajevo" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Sarajevo> ;
+			rico:isOrWasLocationOf<Događaj4> .
+<Dubrovnik> a rico:Place ;
+		 rico:name "Dubrovnik" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Dubrovnik> ;
+			rico:isOrWasLocationOf<Događaj5> .
+# Aktivnost
+<IzradaRacuna> a rico:Activity ;
+    rico:name "Izrada i pregled financijskih izvještaja" ;
+    rico:isAssociatedWithDate [ a rico:Date ;
+        rico:normalizedDateValue "1962"^^xsd:gYear
+    ] ;
+    rico:isAssociatedWithRecordResource <SkupDokumenata11-01> .
+
+# Povezivanje dokumenta s agentima
+<SkupDokumenata11-01> rico:hasOrHadAgent <JosipLučić>, <DragoGizdić>, <NadaKlaić>,
+    <BogdanKrizman>, <SlavkoGavrilović>, <JaroslavSidak>, <MuhamedHadžijahič>,
+    <VasoVojvodić>, <IvanErceg>, <MirjanaGross>, <IvanBach>, <JakšaRavlić>,
+    <IvanKampuš>, <BogumilHrabak>, <IgorKaraman> .
+
+# Povezivanje dokumenta s mjestima
+<SkupDokumenata11-01> rico:isAssociatedWithPlace <Zagreb>, <Subotica>, <Beograd>, <Sarajevo>, <Dubrovnik> .

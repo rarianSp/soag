@@ -1,0 +1,58 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+#kutija kao logički skup dokumenata
+<Kutija20> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt20" ;
+			rico:name "Kutija 20" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata01-01> , <Dokument01-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1933/1934" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup dokumenata
+			rico:classification "" ; #može se koristiti za skup dokumenata
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup dokumenata
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kutija s rukopisima radova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "skupa dokumenata ili dokumenata" ;
+							] ;
+
+			rico:state "Nacrti" ;
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "" . #razina
+<SkupDokumenata01-01> a rico:RecordSet ;
+    rico:generalDescription "Skup dokumenata" ;
+    rico:identifier "kt02sd01" ;
+    rico:name "Bilješke za predavanje (opće povijesti)" ;
+    rico:isAssociatedWithDate [ a rico:DateRange ;
+                                rico:normalizedDateValue "1946/1956" ] ;
+    rico:AuthenticityNote "Izvorne rukopisne bilješke." ;
+    rico:contentType "Tekstualni dokumenti" ;
+    rico:integrityNote "Skup bilješki je cjelovit." ;
+    rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+    rico:scopeAndContent "Rukopisne bilješke za predavanja o Engleskoj revoluciji, uključujući bilješke o društveno-ekonomskim okolnostima i idejnoj nadgradnji." ;
+    rico:hasExtent [ a rico:RecordResourceExtent ;
+                     rico:quantity "1" ;
+                     rico:unitOfMeasurement "skup dokumenata" ] ;
+    rico:state "Priprema predavanja" ;
+    rico:structure "Tematska" ;
+    rico:documentaryForm "Rukopis" ;
+    rico:recordSetType "Tematski skup" .
+
+<SkupDokumenata01-01> a rico:Instantiation ;
+    rico:generalDescription "Skup rukopisnih bilješki" ;
+    rico:identifier "kt02sd01" ;
+    rico:hasExtent [ a rico:InstantiationExtent ;
+                     rico:quantity "1" ;
+                     rico:unitOfMeasurement "Kutija" ] ;
+    rico:physicalCharacteristicsNote "Pisano rukom, čitko. Djelomična oštećenja na rubovima papira." ;
+    rico:productionTechnique "Pisano rukom." ;
+    rico:qualityOfRepresentatonNote "Djelomično izblijedjelo." .

@@ -1,0 +1,987 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+#kutiju opisali Lucija Črnčec i David Ivančević
+#kutija kao logički skup dokumenata
+<Kutija14> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt14" ;
+			rico:name "Kutija 14" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata14-01> , <Dokument14-02> , <SkupDokumenata14-03> , <SkupDokumenata14-04> , <SkupDokumenata14-05> , <SkupDokumenata14-06> , <SkupDokumenata14-07> , <SkupDokumenata14-08> , <SkupDokumenata14-09> , <SkupDokumenata14-10>, <Dokument14-11> , <Dokument14-12> , <Dokument14-13> , <SkupDokumenata14-14> , <SkupDokumenata14-15> , <SkupDokumenata14-16> , <Dokument14-17> , <SkupDokumenata14-18> , <SkupDokumenata14-19> , <Dokument14-20> , <Dokument14-21> , <SkupDokumenata14-22> , <SkupDokumenata14-23>;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1937/1983" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup dokumenata
+			rico:classification "Ostavština" ; #može se koristiti za skup dokumenata
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup dokumenata
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Engleski (en)" , "Njemački (njem)" ;
+			rico:scopeAndContent "Kutija s rukopisima i strojopisima radova." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "23" ;
+							rico:unitOfMeasurement "skupa dokumenata i dokumenata" ;
+							] ;
+
+			rico:state "Nacrti" ;
+			rico:structure "Kutija se sastoji od 23 skupa dokumenata i dokumenata." ;
+			rico:documentaryForm "Bilješke", "Rukopis", "Strojopis" ;
+			rico:recordSetType "" . #razina
+			
+
+#kutija kao fizički pojavni oblik
+<Kutija14> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt14" ;
+			rico:name "Kutija 14" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Većinom čitko gradivo, dio gradiva pisan olovkom izblijedio." ;
+			rico:productionTechnique "Rukopis i tiskano." ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+
+#SkupDokumenata14-01 kao logički oblik                    
+<SkupDokumenata14-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd01" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Prijepisi tekstova iz novina XIX. st." ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-02> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Kopije." ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Govor Antuna Nemčića u hrv. saboru, Vraz: Hrvat pred otvorenim nebom (1848.), Kukuljević: Vječni međudržavni mir, Prevrat (Danica), Glas u naše doba, Robstvo Duhovnikah, Učionica i cerkva, Vukotinović: Nekoja glavna pitanja našeg vremena, Vežić: Dalmatinac Dalmatincima, Cerkva i naše doba, Aula est pro nobis, Zašto padoše tolike žertve u Pešti i Aradu?, Sadašnje stanje domovine naše, Bratinstvo, Tkalčević: Razmatranja domorodna, Bogović: Naši liberalci, Pjesma narodne čete, Bogović: Magjarom, Pregled na europejske događaje god. 1848., Vukotinović: Nešto o slavjanstvu, Dollhopf: Narodnost i demokracia" ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "21" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Strojopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+#SkupDokumenata14-01 kao fizički pojavni oblik
+<SkupDokumenata14-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd01" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "104" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Papiri su loše očuvani, ali strojopis je čitak." ;#ili slično
+			rico:productionTechnique "Strojopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<AntunNemcic> a rico:Person ;
+			rico:name "Antun Nemčić" ;
+			rico:performsOrPerformed <GovorUHrvSaboru>.
+
+#Dokument14-02 kao logički oblik
+<Dokument14-02> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d02" ;
+			rico:name "Privredni i društveni odnosi u Splitu do kraja XIV. st." ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-03> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Kopija" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Rukopis doktorata Miroslava Brandta" ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Strojopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-02 kao fizički pojavni oblik
+<Dokument14-02> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "185" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Strojopis sa rukopisnim bilješkama" ;
+			rico:qualityOfRepresentatonNote "Odlično očuvano" .	
+
+
+#SkupDokumenata14-03 kao logički oblik                    
+<SkupDokumenata14-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd03" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Rukopisne (radne) varijante radova Jaroslava Šidaka" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-04> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Kopije." ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Engleski (en)";
+			rico:scopeAndContent "Some questions about Croatian history of early middle ages, O 300-godišnjici smrti Jurja Križanića, Dva desetljeća Historijskog instituta Slavonije i Baranje, Balcanica XIII-XIV, Tridesetogodišnjica časopisa 'Slovo'" ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Strojopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-03 kao fizički pojavni oblik
+<SkupDokumenata14-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd03" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "33" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;#ili slično
+			rico:productionTechnique "Strojopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<JurajKrizanic> a rico:Person ;
+			rico:name "Juraj Križanić" ;
+			rico:performsOrPerformed <Smrt> .
+
+
+#SkupDokumenata14-04 kao logički oblik                    
+<SkupDokumenata14-04> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd04" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Hrvatsko društvo u Križanićevo doba" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-05> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti o Križaniću." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "4" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-04 kao fizički pojavni oblik
+<SkupDokumenata14-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd04" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "110" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+
+#Agent
+<JurajKrizanic> a rico:Person ;
+			rico:name "Juraj Križanić" ;
+			rico:performsOrPerformed <ŽivotUNjegovoDoba> .
+
+#SkupDokumenata14-05 kao logički oblik                    
+<SkupDokumenata14-05> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd05" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Svršetak moga teksta o 1848. u historiografiji" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-06> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)" ;
+			rico:scopeAndContent "Povijesni događaji 1848. godine" ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-05 kao fizički pojavni oblik
+<SkupDokumenata14-05> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd05" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "46" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#SkupDokumenata14-06 kao logički oblik                    
+<SkupDokumenata14-06> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd06" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "O tobožnjoj detronizaciji Habsburgovaca u Hrvatskom saboru 1848." ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-07> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti se bave događajima u Hrvatskom saboru 1848. godine." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "6" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-06 kao fizički pojavni oblik
+<SkupDokumenata14-06> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd06" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "68" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<JosipJelacic> a rico:Person ;
+			rico:name "Josip Jelačić" ;
+			rico:performsOrPerformed <HrvatskiSabor> .
+
+#SkupDokumenata14-07 kao logički oblik                    
+<SkupDokumenata14-07> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd07" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Neuspjeli pregovori hrvatsko-ugarske nagodbe u ljeto 1848." ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-08> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti se bave događajima 1848. godine." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-07 kao fizički pojavni oblik
+<SkupDokumenata14-07> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd07" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "88" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<JosipJelacic> a rico:Person ;
+			rico:name "Josip Jelačić" ;
+			rico:performsOrPerformed <Pregovori> .
+
+#SkupDokumenata14-08 kao logički oblik                    
+<SkupDokumenata14-08> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd08" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Hrvatski pokret 1848/49. u historiografiji" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-09> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1983" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti o hrvatskoj povijesti tijekom 1848. i 1849. godine" ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-08 kao fizički pojavni oblik
+<SkupDokumenata14-08> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd08" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "124" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<FranjoRacki> a rico:Person ;
+			rico:name "Franjo Rački" ;
+			rico:performsOrPerformed <Život> .
+
+#SkupDokumenata14-09 kao logički oblik                    
+<SkupDokumenata14-09> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd09" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Hrvatska historiografija – njezin razvoj i današnje stanje" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-10> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Hrvatska kroz povijest." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-09 kao fizički pojavni oblik
+<SkupDokumenata14-09> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd09" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "86" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<IvanLucic> a rico:Person ;
+			rico:name "Ivan Lučić" ;
+			rico:performsOrPerformed <DeRegnoDalmatiaeEtCroatiaeLibriSex> .
+
+#Dokument14-10 kao logički oblik
+<Dokument14-10> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d10" ;
+			rico:name "Bilješke" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-11> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o povijesti." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-10 kao fizički pojavni oblik
+<Dokument14-10> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "21" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+
+#Dokument14-11 kao logički oblik
+<Dokument14-11> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d11" ;
+			rico:name "O nekim posljednjim prilozima B. Primova problemu bogumilstva" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-12> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kritika bogumilstva." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-11 kao fizički pojavni oblik
+<Dokument14-11> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "9" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopisne bilješke" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#Agent
+<BorislavPrimov> a rico:Person ;
+			rico:name "Borislav Primov" ;
+			rico:performsOrPerformed <Radovi> .
+
+
+#Dokument14-12 kao logički oblik
+<Dokument14-12> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d12" ;
+			rico:name "Predgovor" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-13> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Problemi heretičke crkve." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-12 kao fizički pojavni oblik
+<Dokument14-12> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d12" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "4" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopisne bilješke" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Dokument14-13 kao logički oblik
+<Dokument14-13> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d13" ;
+			rico:name "Bilješke" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-14> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Bilješke o bogumilstvu." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-13 kao fizički pojavni oblik
+<Dokument14-13> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d13" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "4" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopisne bilješke" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<AlojzBenac> a rico:Person ;
+			rico:name "Alojz Benac" ;
+			rico:performsOrPerformed <Monografija> .
+
+#SkupDokumenata14-14 kao logički oblik                    
+<SkupDokumenata14-14> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd14" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Hrvatska historiografija XIX. stoljeća" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-15> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijest Hrvatske u 19. stoljeću." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-14 kao fizički pojavni oblik
+<SkupDokumenata14-14> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd14" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "20" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#Agent
+<FerdoSisic> a rico:Person ;
+			rico:name "Ferdo Šišić" ;
+			rico:performsOrPerformed <Prikaz> .
+
+
+#SkupDokumenata14-15 kao logički oblik                    
+<SkupDokumenata14-15> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd15" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Narodna zahtijevanja od 25. ožujka – program hrvatske četrdesetosme" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-16> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Narodna zahtijevanja." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-15 kao fizički pojavni oblik
+<SkupDokumenata14-15> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd15" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "133" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<LjudevitGaj> a rico:Person ;
+			rico:name "Ljudevit Gaj" ;
+			rico:performsOrPerformed <NovineDalmatHorvatskoSlavonske> .
+
+#SkupDokumenata14-16 kao logički oblik                    
+<SkupDokumenata14-16> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd16" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Prilozi" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-17> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti o pismu Matije Bana." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-16 kao fizički pojavni oblik
+<SkupDokumenata14-16> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd16" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "85" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#Agent
+<MatijaBan> a rico:Person ;
+			rico:name "Matija Ban" ;
+			rico:performsOrPerformed <Pismo> .
+
+
+#Dokument14-17 kao logički oblik
+<Dokument14-17> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d17" ;
+			rico:name "Pogled na tristogodišnji razvoj visokoškolske nastave u Zagrebu" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-18> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijest školstva u Zagrebu." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-17 kao fizički pojavni oblik
+<Dokument14-17> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d17" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "15" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopisne bilješke" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<IvanMazuranic> a rico:Person ;
+			rico:name "Ivan Mažuranić" ;
+			rico:performsOrPerformed <ReformaŠkolstva> .
+
+
+#SkupDokumenata14-18 kao logički oblik                    
+<SkupDokumenata14-18> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd18" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Mijo Mirković " ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-19> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1937" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti o Mirkoviću." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-18 kao fizički pojavni oblik
+<SkupDokumenata14-18> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd18" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "34" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<MijoMirkovic> a rico:Person ;
+			rico:name "Mijo Mirković" ;
+			rico:performsOrPerformed <Radovi> .
+
+#SkupDokumenata14-19 kao logički oblik                    
+<SkupDokumenata14-19> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd19" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Seljačko pitanje u hrvatskoj politici 1848." ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-20> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti o seljacima u Hrvatskoj 1848. godine." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-19 kao fizički pojavni oblik
+<SkupDokumenata14-19> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd19" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "119" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Dokument14-20 kao logički oblik
+<Dokument14-20> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d20" ;
+			rico:name "Seljačka buna g. 1573. u historiografiji" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <Dokument14-21> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Seljačka buna." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-20 kao fizički pojavni oblik
+<Dokument14-20> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d20" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "82" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopisne bilješke" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<MatijaGubec> a rico:Person ;
+			rico:name "Matija Gubec" ;
+			rico:performsOrPerformed <SeljačkaBuna> .
+
+#Agent
+<FranjoTahy> a rico:Person ;
+			rico:name "Franjo Tahy" ;
+			rico:performsOrPerformed <SeljačkaBuna> .
+
+
+#Dokument14-21 kao logički oblik
+<Dokument14-21> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d21" ;
+			rico:name "Razvoj školstva u hrvatskim zemljama od 1773.-1874." ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-22> ;#navesti sljedeći dokument ili skup dokumenata kao subjekt, u ovom slučaju i objekt
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za dokument
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokument"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Hrvatsko školstvo kroz povijest." ; #kratak opis sadržaja dokumenta
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+#Dokument14-21 kao fizički pojavni oblik
+<Dokument14-21> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt14d21" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "39" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitko." ;
+			rico:productionTechnique "Rukopisne bilješke" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+
+#SkupDokumenata14-22 kao logički oblik                    
+<SkupDokumenata14-22> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd22" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "O uredniku i značenju ilirskog 'Branislava'" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata14-23> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Dokumenti o ilirskom 'Branislavu'." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "2" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-22 kao fizički pojavni oblik
+<SkupDokumenata14-22> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd22" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "76" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+#Agent
+<FranjoHaller> a rico:Person ;
+			rico:name "Franjo Haller" ;
+			rico:performsOrPerformed <ProtivljenjeIlirskomPokretu> .
+
+#SkupDokumenata14-23 kao logički oblik                    
+<SkupDokumenata14-23> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd23" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Stockholmski referat" ; #nazvati skup dokumenata
+			rico:directlyFollowsInSequence <SkupDokumenata14-22> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal" ; #može se koristiti za skup
+			rico:classification "Skup dokumenata" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)";
+			rico:scopeAndContent "Češka politika od 1874. do 1895., Hrvati od 1861.-1907., Hrvati od 1861.-1918., Hrvati, Bilješke za Slovake 1860.-1914., Češko školstvo poslije 60-ih godina, Češko pitanje do izbijanja svjetskog rata, Češki narodni pokret 1848/9., Narodni preporod u Čeha, Slavenski kongres u Pragu 1848." ; #kratak opis sadržaja skupa dokumenata
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;#ovo znači da je u skupu dokumenata 6 dokumenata, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirana" ;#Kronološka, Tematska, Neorganizirana ili sl.
+			rico:documentaryForm "Rukopis" ; #izabrati ovisno o gradivu
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+
+
+#SkupDokumenata14-23 kao fizički pojavni oblik
+<SkupDokumenata14-23> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt14sd23" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "240" ;
+							rico:unitOfMeasurement "List" ;#zabilježiti broj listova
+							] ;
+			rico:physicalCharacteristicsNote "Slabo čitko." ;#ili slično
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+#Agent
+<IvanMazuranic> a rico:Person ;
+			rico:name "Ivan Mažuranić" ;
+			rico:performsOrPerformed <Banovanje> .

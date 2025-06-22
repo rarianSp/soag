@@ -1,0 +1,244 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+#kutija kao logički skup
+<Kutija01> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt04" ;
+			rico:name "Kutija 04" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata01-01> , <SkupDokumenata01-02> , <Dokument01-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ; #ako je samo datum onda se koristi Date, vidjeti pravila za datume s predavanja
+								rico:normalizedDateValue "" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
+			rico:classification "Ostavština" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ;
+			rico:language "Hrvatski (hr)" , "Njemački (de)", "Latinski (la)", "Srpski (sr)", "Latinica (latn)", "Ćirilica (cyrl)";
+			rico:scopeAndContent "Kutija s rukopisima radova i tiskanim sadržajem." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "" ; #arapskim brojkama zabilježiti broj dokumenata ili manjih skupova dokumenata
+							rico:unitOfMeasurement "" ; #skupa dokumenata ili dokumenata
+							] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ; #Nacrti ili Konačni
+			rico:structure "Kronološka" ;
+			rico:documentaryForm "Bilješke" , "Rukopis" , "Tisak" ; 			rico:recordSetType "" . #razina koja se odnosi na ono što trenutno opisujemo, dopuštene vrijednosti su: Fond, Zbirka,Podfond, Serija, Podserija, Grupa, Predmet, Dio predmeta, Dokument, Drugo. Za kutiju ostaviti prazno, ostalo popuniti
+		
+#kutija kao fizički pojavni oblik
+<Kutija04> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt04" ;
+			rico:name "Kutija 04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Podosta nečitkog gradiva, puno rukom pisanih dokumenata, tiskani izvori u dobrom stanju." ;
+			rico:productionTechnique "Rukopis i tiskano." ; 
+			rico:qualityOfRepresentatonNote "Djelomično dobro očuvano" .			
+			
+#SkupDokumenata01-01 kao logički oblik                    
+<SkupDokumenata01-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt04sd01" ;#zabilježiti ispravan identifikator prema broju kutije
+			rico:name "Skup rukopisnih dokumenata" ; #nazvati skup dokumenata
+			rico:directlyPrecedesInSequence <SkupDokumenata01-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ; #Date ili DateRange
+								rico:normalizedDateValue "1918/1970" ;#vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal." ; #može se koristiti za skup
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da dokumenti u skupu dokumenata vjerojatno nisu u cjelini." ; 
+			rico:language "Hrvatski (hr)" , "Njemački (de)", "Latinski (la)", "Latinica (latn)" ;
+			rico:scopeAndContent "Skup rukom pisanih dokumenata koji obuhvaćaju biljške o Zrinskima, Kukuljeviću, srednjem vijeku, histografiji i histografiji francuske revolucije." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity ">100" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Dokumenti"] ;
+			rico:structure "Neorganizirana" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ; 
+			rico:recordSetType "Predmet" . #razina: Predmet, Dio predmeta, Drugo
+			
+			
+#SkupDokumenata01-01 kao fizički pojavni oblik
+<SkupDokumenata01-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt04sd01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity ">100" ;
+							rico:unitOfMeasurement "List" ;							] ;
+			rico:physicalCharacteristicsNote "Podosta nečitko gradivo. " ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+			
+#SkupDokumenata01-02 kao logički oblik                     
+<SkupDokumenata01-02> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt01sd02" ;
+			rico:name "Skup tiskanih dokumenata" ; 
+			rico:directlyPrecedesInSequence <Dokument01-03> ;
+			rico:isAssociatedWithDate [ a rico:Date ;#Date ili DateRange
+								rico:normalizedDateValue "1956" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijali i kopije." ; 
+			rico:classification "" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da dokumenti u skupu dokumenata vjerojatno nisu u cjelini." ; 
+			rico:language "Hrvatski (hr)" , "Njemački (de)" , "Srpski (sr)" , "Latinica (latn)" , "Ćirilica (cyrl)" ;
+			rico:scopeAndContent "Skup tiskanih dokumenata koji sadrže različita pisma i bilješke na njemačkom i hrvatskom te skup novinskih papira na hrvatskom i srpskom" ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "32" ;
+								rico:unitOfMeasurement "Dokument" ; #ovo znači da je u skupu dokumenata 3 dokumenta, staviti prema pravoj situaciji
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Neorganizirano" ;
+			rico:documentaryForm "Bilješke", "Rukopis"  ;
+			rico:recordSetType "" . #razina: Predmet, Dio predmeta, Drugo
+			
+			
+#SkupDokumenata01-02 kao fizički pojavni oblik
+<SkupDokumenata01-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt04sd02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "32" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Malo čitkije u odnosu na ostale dokumente." ;
+			rico:productionTechnique "Tisak" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .		
+
+
+#SkupDokumenata01-03 kao logički oblik
+<Dokument01-03> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt04sd03" ;
+			rico:name "Skup tiskanih i rukom pisanih dokumenata koji su međusobno povezani"; 
+			rico:directlyPrecedesInSequence <nema> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ; #Date ili DateRange
+								rico:normalizedDateValue "1917/1969" ; #vidjeti pravila za datume s predavanja
+								] ;
+			rico:AuthenticityNote "Izvorni materijal." ; 
+			rico:classification "" ; #za dokument je to prazno
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za dokument
+			rico:integrityNote "Pregledom je ustanovljeno da dokumenti u skupu dokumenata vjerojatno nisu u cjelini." ; 
+			rico:language "Hrvatski (hr)" , "Srpski (sr)" , "Latinski (la)" , "Latinica (latn)" , "Ćirilica (cyrl)" ;
+			rico:scopeAndContent "Skup tiskanih i rukom pisanih dokumenata koji, to jest tiskanih dokumenata i priloženih rukom pisanih bilješki vezanih za povijest zagrebačkog sveučilišta, berlinski ugovor i crvenu Hrvatsku" ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "54" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; #ostaviti prazno
+			rico:documentaryForm "Bilješke", "Rukopis"  ;#ovisno o gradivu
+			rico:recordSetType "Dokument" . #razina
+
+
+#Dokument01-03 kao fizički pojavni oblik
+<Dokument01-03> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt01d03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ; #zabilježiti broj listova
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dosta čitko, manja oštećenja na pojedinim dijelovima." ;
+			rico:productionTechnique "Rukopis" ;
+			rico:qualityOfRepresentatonNote "Dosta dobro očuvano" .		
+			
+#za svaki sljedeći dokument ili skup dokumenata kopirati i zalijepiti linije koje se tiču njihovog logičkog i fizičkog aspekta
+#Agent
+<ImePrezime> a rico:Person ;
+			rico:name "Zrinski" ;
+			rico:performsOrPerformed <Event_SkupRukopisnihDokumenata> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "Zrinski – Skup rukopisnih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupRukopisnihDokumenata> ;
+    rico:hasParticipant <Zrinski> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "Nada Klaić" ;
+			rico:performsOrPerformed <Event_SkupRukopisnihDokumenata> , <Event_SkupTiskanihIRukopisnihDokumenataKojiSuMeđusobnoPovezani> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "Nada Klaić – Skup rukopisnih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupRukopisnihDokumenata> ;
+    rico:hasParticipant <NadaKlaić> .
+<Event_SkupTiskanihDokumenata> a rico:Event ;
+	rico:name "Nada Klaić - Skup tiskanih i rukopisnih dokumenata koji su međusobno povezani" ;
+	rico:isDocumentedIn <Dokument_SkupTiskanihIRukopisnihDokumenataKojiSuMeđusobnoPovezani> ;
+	rico:hasParticipant <NadaKlaić> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "Frankopani" ;
+			rico:performsOrPerformed <Event_SkupRukopisnihDokumenata> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "Frankopani – Skup rukopisnih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupRukopisnihDokumenata> ;
+    rico:hasParticipant <Frankopani> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "Vatroslav Jagić" ;
+			rico:performsOrPerformed <Event_SkupRukopisnihDokumenata> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "Vatroslav Jagić – Skup rukopisnih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupRukopisnihDokumenata> ;
+    rico:hasParticipant <VatroslavJagić> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "J. J. Strossmayer" ;
+			rico:performsOrPerformed <Event_SkupRukopisnihDokumenata> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "J. J. Strossmayer – Skup rukopisnih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupRukopisnihDokumenata> ;
+    rico:hasParticipant <J.J.Strossmayer> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "Julije Janković" ;
+			rico:performsOrPerformed <Event_SkupRukopisnihDokumenata> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "Julije Janković – Skup rukopisnih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupRukopisnihDokumenata> ;
+    rico:hasParticipant <JulijeJanković> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "Scherz" ;
+			rico:performsOrPerformed <Event_SkupTiskanihDokumenata> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "Sherz – Skup tiskanih dokumenata" ;
+    rico:isDocumentedIn <Dokument_SkupTiskanihDokumenata> ;
+    rico:hasParticipant <Scherz> .
+
+<ImePrezime> a rico:Person ;
+			rico:name "D. Tomašić" ;
+			rico:performsOrPerformed <Event_SkupTiskanihIRukopisnihDokumenataKojiSuMeđusobnoPovezani> . #uvrstiti sve događaje u kojima je osoba sudjelovala
+<Event_SkupRukopisnihDokumenata> a rico:Event ;
+    rico:name "D. Tomašić – Skup tiskanih i rukopisnih dokumenata koji su međusobno povezani" ;
+    rico:isDocumentedIn <Dokument_SkupTiskanihIRukopisnihDokumenataKojiSuMeđusobnoPovezani> ;
+    rico:hasParticipant <D.Tomašić> .
+#za svaki sljedeći agent kopirati i zalijepiti linije		
+
+#mjesto
+<Čakovec> a rico:Place ;
+		 rico:name "Čakovec" ;
+			rico:isOrWasLocationOf <Event_Cakovec1971> .
+			
+<Ljubljana> a rico:Place ;
+		 rico:name "Ljubljana" ;
+			rico:isOrWasLocationOf <Event_Ljubljana1962> .
+
+<Rijeka> a rico:Place ;
+		 rico:name "Rijeka" ;
+			rico:isOrWasLocationOf <Event_Rijeka1953> .
+#za svako sljedeće mjesto kopirati i zalijepiti linije		
+			
+
+#za svaki sljedeći događaj kopirati i zalijepiti linije
+#validairati, validirati, validirati! (http://ttl.summerofcode.be)

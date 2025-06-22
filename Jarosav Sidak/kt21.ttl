@@ -14,7 +14,7 @@
 			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
 			rico:includesOrIncluded <SkupDokumenata21-01> , <Dokument21-02> , <Dokument21-03> , <Dokument21-04> , <Dokument21-05> , <Dokument21-06> , <SkupDokumenata21-07> , <SkupDokumenata21-08> ; 
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1939.-1985." ;
+								rico:normalizedDateValue "1939/1985" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -52,7 +52,7 @@
 			rico:name "skup 01" ;
 			rico:directlyPrecedesInSequence <Dokument21-02> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1952.-1980." ;
+								rico:normalizedDateValue "1952/1980" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijal i kopije bilježaka za pripremu predavanja." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -89,7 +89,7 @@ rico:generalDescription "Dokument Izvanredna sjednica vijeća FFZG-a" ;
 			rico:name "Dokument 02" ;
 			rico:directlyFollowsInSequence <SkupDokumenata21-01> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "13.03.1970." , "19.03.1970." ;
+								rico:normalizedDateValue "1970-03-13" , "1970-03-19" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tiskani dokument"; #može se koristiti za skup
@@ -121,7 +121,7 @@ rico:generalDescription "Pismo o odluci za obustavu prodaje Kulundžićeve knjig
 			rico:name "Dokument 03" ;
 			rico:directlyFollowsInSequence <SkupDokumenata21-02> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "04.06.1970." ;
+								rico:normalizedDateValue "1970-06-04" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tiskani dokument"; #može se koristiti za skup
@@ -153,7 +153,7 @@ rico:generalDescription "Pripremiti prijedloge za pov. BiH u knjigama tj. bavi s
 			rico:name "Dokument 04" ;
 			rico:directlyFollowsInSequence <SkupDokumenata21-03> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:expressedDate "31.05.1941." , "10.02.1942." ;
+								rico:normalizedDateValue "1941-05-31" , "1942-02-10" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tiskani dokument"; #može se koristiti za skup
@@ -185,7 +185,7 @@ rico:generalDescription "Pismo o mišljenju kandidaturi za docenta na katedri hr
 			rico:name "Dokument 05" ;
 			rico:directlyFollowsInSequence <SkupDokumenata21-04> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "09.04.1955." ;
+								rico:normalizedDateValue "1955-04-09" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Tiskani dokument"; #može se koristiti za skup
@@ -217,7 +217,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 			rico:name "Dokument 06" ;
 			rico:directlyFollowsInSequence <SkupDokumenata21-05> ;
 			rico:isAssociatedWithDate [ a rico:Date ;
-								rico:normalizedDate "" ;
+								rico:normalizedDateValue "" ;
 								] ;
 			rico:AuthenticityNote "" ; #može se koristiti za skup
 			rico:contentType "Pismo naRukopis."; #može se koristiti za skup
@@ -249,7 +249,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 			rico:name "skup 07" ;
 			rico:directlyPrecedesInSequence <SkupDokumenata21-08> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1939.-1985." ;
+								rico:normalizedDateValue "1939/1985" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijali korespondencije Jaroslava Šidaka." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -286,7 +286,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 			rico:name "skup 08" ;
 			rico:directlyFollowsInSequence <SkupDokumenata21-07> ;
 			rico:isAssociatedWithDate [ a rico:DateRange ;
-								rico:expressedDate "1951.-1985." ;
+								rico:normalizedDateValue "1951/1985" ;
 								] ;
 			rico:AuthenticityNote "Izvorni materijali korespondencije Jaroslava Šidaka." ; #može se koristiti za skup
 			rico:classification "" ; #može se koristiti za skup
@@ -492,7 +492,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <PripremaPredavanje> a rico:Activity ;
             rico:name "Priprema bilježaka za predavanje" ;
             rico:occurredAtDate [ a rico:DateRange ;
-                           rico:expressedDate "1952.-1980."
+                           rico:normalizedDateValue "1952/1980"
                            ]  ;
         rico:isOrWasPerformedBy <JaroslavSidak> ;
         rico:documentedBy <SkupDokumenata21-01> .
@@ -501,7 +501,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <SjednicaVijećaFFZG> a rico:Activity ;
             rico:name "Izvanredna sjednica vijeća FFZG-a" ;
             rico:occurredAtDate [ a rico:Date ;
-                           rico:expressedDate "13.03.1970." , "19.03.1970."
+                           rico:normalizedDateValue "1970-03-13" , "1970-03-19"
                            ]  ;
         rico:isOrWasPerformedBy <JaroslavSidak>, <ZvonimirKulundzic>, <DujeRendicMiocevic> ;
         rico:documentedBy <Dokument21-02> .
@@ -510,7 +510,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <ObustavaProdajeKnjige> a rico:Activity ;
             rico:name "Obustava prodaje knjige 'Tragedije hrvatske historiografije' Zvonimira Kulundžića" ;
             rico:occurredAtDate [ a rico:Date ;
-                           rico:expressedDate "04.06.1970."
+                           rico:normalizedDateValue "1970-06-04"
                            ]  ;
             rico:isOrWasPerformedBy <JaroslavSidak>, <ZvonimirKulundzic>, <GrgoGamulin>, <PeroBudak> ;
             rico:documentedBy <Dokument21-03> .
@@ -519,7 +519,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <PrijedloziPovijestiBiH> a rico:Activity ;
             rico:name "Prijedlozi za Državnu Šerijatsku gimnaziju u Sarajevu o prikazivanju povijesti BiH u školskim knjigama" ;
             rico:occurredAtDate [ a rico:Date ;
-                           rico:expressedDate "31.05.1941." , "10.02.1942."
+                           rico:normalizedDateValue "1941-05-31" , "1942-02-10"
                            ]  ;
         rico:isOrWasPerformedBy <JaroslavSidak>, <HusejnAlic>, <LovreKatic> ;
         rico:documentedBy <Dokument21-04> .
@@ -528,7 +528,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <KandidaturaDocentaKatedreHRV.POV.> a rico:Activity ;
             rico:name "Kandidatura za docenta na katedri hrv. pov. Nade Klaić" ;
             rico:occurredAtDate [ a rico:Date ;
-                           rico:expressedDate "09.04.1955."
+                           rico:normalizedDateValue "1955-04-09"
                            ]  ;
         rico:isOrWasPerformedBy <JaroslavSidak>, <NadaKlaic>, <GrgaNovak> ;
         rico:documentedBy <Dokument21-05> .
@@ -543,7 +543,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <KorespodencijaI> a rico:Activity ;
             rico:name "Korespodencija I između Jaroslava Šidaka i ostalih" ;
             rico:occurredAtDate [ a rico:DateRange ;
-                           rico:expressedDate "1939.-1985."
+                           rico:normalizedDateValue "1939/1985"
                            ]  ;
         rico:isOrWasPerformedBy <JaroslavSidak>, <MetodMikuz>, <RadovanGajer>, <BogumilHrabak>, <MateHraste> ;
         rico:documentedBy <SkupDokumenata21-07> .
@@ -552,7 +552,7 @@ rico:generalDescription "Tema pisma je Rukopisna ostavština pokojnog djeda te o
 <KorespodencijaII> a rico:Activity ;
             rico:name "Korespodencija II između Jaroslava Šidaka i ostalih" ;
             rico:occurredAtDate [ a rico:DateRange ;
-                           rico:expressedDate "1951.-1985."
+                           rico:normalizedDateValue "1951/1985"
                            ]  ;
             rico:isOrWasPerformedBy <JaroslavSidak>, <LujMargetic>, <TomislavRakor>, <MladenCaldarovic>, <Dr.Drucker>, <ZlatkoTomicic>, <VladimirStipetic>, <UrosPereusko>, <NiksaStancic>, <RobertF.Randle>, <IvanBach>, <IvoBanac> ;
             rico:documentedBy <SkupDokumenata21-08> .

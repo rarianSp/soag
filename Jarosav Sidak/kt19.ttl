@@ -1,0 +1,3012 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+<Kutija19> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt19" ;
+			rico:name "Kutija 19" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <Dokument19-01> , <Dokument19-02> , <SkupDokumenata19-03> , <Dokument19-04> , <Dokument19-05> , <Dokument19-06> , <Dokument19-07> , <Dokument19-08> , <Dokument19-09> , <Dokument19-10> , <Dokument19-11> , <Dokument19-12> , <Dokument19-13> , <Dokument19-14> , <Dokument19-15> , <Dokument19-16> , <Dokument19-17> , <Dokument19-18> , <Dokument19-19> , <Dokument19-20> , <Dokument19-21> , <Dokument19-22> , <Dokument19-23> , <Dokument19-24> , <Dokument19-25> , <Dokument19-26> , <Dokument19-27> , <Dokument19-28> , <Dokument19-29> , <Dokument19-30> , <Dokument19-31> , <Dokument19-32> , <Dokument19-33> , <Dokument19-34> , <Dokument19-35> , <Dokument19-36> , <Dokument19-37> , <Dokument19-38> , <Dokument19-39> , <Dokument19-40> , <Dokument19-41> , <Dokument19-42> , <Dokument19-43> , <Dokument19-44> , <Dokument19-45> , <Dokument19-46> , <Dokument19-47> , <Dokument19-48> , <Dokument19-49> , <Dokument19-50> , <Dokument19-51> , <Dokument19-52> , <Dokument19-53> , <Dokument19-54> , <Dokument19-55> , <SkupDokumenata19-56> ,<Dokument19-57> ,<Dokument19-58> , <Dokument19-59> , <Dokument19-60> , <Dokument19-61> , <Dokument19-62> , <Dokument19-63> , <SkupDokumenata19-64> , <SkupDokumenata19-65> , <SkupDokumenata19-66> , <SkupDokumenata19-67> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;  
+								rico:normalizedDateValue "1946-1975" ; 
+								] ;
+			rico:AuthenticityNote "Tiskovina, isječci iz novina, rukopisni materijali, znanstveni radovi" ; 
+			rico:classification "Ostavština" ; 
+			rico:contentType "Tekstualni dokumenti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)" , "Latinica (latn)" , "Francuski (fr)" , "Latinica (latn)" , "Latinski (lat)" , "Latinica (latn)" , "Srpski (srp)" , "Latinica (latn)" , "Srpski (srp)", "Ćirilica (ćir)" , "Češki (češ)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kutija s rukopisima radova, novinskim isječcima i tiskanim sadržajem." ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ; 
+							rico:quantity "67" ; 
+							rico:unitOfMeasurement "" ; 
+							] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label ""] ; 
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke" , "Rukopis" , "Tisak" , "Ilustracija", "Novine" , "Znanstveni časopisi" ;
+			rico:recordSetType "" . 
+		
+<Kutija19> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt19" ;
+			rico:name "Kutija 19" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "0,12" ;
+							rico:unitOfMeasurement "dm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Podosta tiskanih izvora u dosta dobrom stanju." ; 
+			rico:productionTechnique "Rukopis, strojopis i tiskano." ; 
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+<Dokument19-01> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d01" ;
+			rico:name "Glose nekojim pitanjima slavenske arheologije" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1952" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik Arheološkog društva Dalmacije" ; 
+			rico:classification "" ; 
+			rico:contentType "Objavljen rad"; 
+			rico:integrityNote "Cijeli dokument." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (njem)" , "Latinica (latn)" , "Francuski (fr)" , "Latinica (latn)" , "Latinski (lat)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Objavljen rad na temu slavenske arheologije" ; 
+			rico:performsOrPerformed <Znanstveničasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Štampani rad"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Ljubo Karaman" ;
+			rico:performsOrPerformed <autor> . 
+			<Znanstveničasopis> a rico:Journal ;
+			rico:name "Vjesnik Arheološkog društva Dalmacije" .
+
+<Dokument19-01> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "55-71" ;
+							rico:unitOfMeasurement "strana" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, bez oštećenja, rukopisna bilješka Vjesnik Arheološkog društva Dalmacije" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Ljubo Karaman" ;
+			rico:performsOrPerformed <autor> . 
+			<Znanstveničasopis> a rico:Journal ;
+			rico:name "Vjesnik Arheološkog društva Dalmacije" .
+		
+<Dokument19-02> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d02" ;
+			rico:name "Razvijmo borbu mišljenja - K pitanju odnosa historijskog materijalizma i marksističke sociologije, povodom diskusije na interfakultetskoj konferenciji ekonomskih fakulteta u Beogradu" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950-06-15" ; 
+								] ;
+			rico:AuthenticityNote "Sveučilišni list br. 12" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Historijski materijalizam, marksistička sociologija" ;			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Dr Stjepan Pulišelić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Sveučilišni list" .
+
+<Dokument19-02> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "3-4" ;
+							rico:unitOfMeasurement "strana" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Dokument oštećen po sredini savijanja. Rukopisna bilješka 15.06.1950." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Dr. Stjepan Pulišelić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Sveučilišni list" .
+
+<SkupDokumenata19-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd03" ;
+			rico:name "Isječci novina i tiskovina" ; 
+			rico:directlyPrecedesInSequence <SkupDokumenata19-03> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947/1954" ;
+								] ;
+			rico:AuthenticityNote "Isječci iz novina." ; 
+			rico:classification "" ; 
+			rico:contentType "Vezano za povijest i povijesne ličnosti" ; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Engleski (en)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Isječci objavljeni u tisku koja se primarno bavi povijesnom tematikom." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "5" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Novinski isječci" ; 
+			rico:recordSetType "Predmet" . 
+						
+<SkupDokumenata19-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "8" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivi" ;
+			rico:productionTechnique "Tisak" ;
+			rico:qualityOfRepresentatonNote "Očuvano" .
+
+<Dokument19-04> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d04" ;
+			rico:name "Problem bogumilske umjetnosti" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1957-04-21" ; 
+								] ;
+			rico:AuthenticityNote "Studentski list VII br. 12" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ; 
+			rico:scopeAndContent "Povijest, bogumili, stećci, crkva bosanska" ;			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Zlatko Kauzlarić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Studentski list" .
+
+<Dokument19-04> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "3-4" ;
+							rico:unitOfMeasurement "strana" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Studentski list VII 1957. 15.06.1950." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Tekst sa slikama" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Zlatko Kauzlarić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Studentski list" .
+
+<Dokument19-05> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d05" ;
+			rico:name "Približavanje ekonomske krize u kapitalističkom svijetu" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1946-12-16" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Ekonomska kriza, ekonomski ciklusi, anarhija proizvodnje, SAD, Kanada, Marks" ; 			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "E. Varga" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-05> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d05" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Borba 16.12.1946." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "E. Varga" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-06> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d06" ;
+			rico:name "Ratni profiti američkih monopola" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1946-08-03" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Američki profiti, Roosevelt, Friedrich Alen, časopis “Herpes Magazin”, ekonomska kriza, SAD, Marks, Kanada, engleska, ekonomski ciklusi, anarhija proizvodnje" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "M. Rubinstein" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-06> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d06" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Borba 03.08.1946." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "M. Rubinstein" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-07> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d07" ;
+			rico:name "Monopolistički trutovi - gospodari atomske energije" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1946-08-10" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Liberation, pokus atomske bombe na otoku Bikini, Lucien Kaste, međunarodni koncerni radija i uranija, General Elektric, Dipon, Baruchov plan, ADA Atomic Development Authority" ;			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "M. Rubinstein" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-07> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d07" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Naprijed, 10.08.1946." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "M. Rubinstein" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-08> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d08" ;
+			rico:name "Dva naučna predavanja Friedricha Engelsa, povodom 61-e godišnjice smrti Friedricha Engelsa" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1946-08-10" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Marks, Engels, Vera Zasulič, revolucija u Rusiji" ; 			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "nepoznat" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-08> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d08" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Borba 05.08.1946." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "nepoznat" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-09> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d09" ;
+			rico:name "Republikanska i Demokratska partija Sjedinjenih Američkih Država uoči izbora" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1946-09-12" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Republikanska stranka, Demokratska stranka, analiza ranijih izbora" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "B. Bronski" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-09> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d09" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Borba 12.09.1946." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "B. Bronski" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-10> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d10" ;
+			rico:name "Gandhi - Zadnje rqzdoblje" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1948-03-28" ; 
+								] ;
+			rico:AuthenticityNote "Slovenski Goročavalec" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Slovenski (slo)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Gandhi, Lincoln, marksizam, imperijalizam" ;			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "nepoznat" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Slovenski Goročavalec" .
+
+<Dokument19-10> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d10" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Slovenski Goročavalec, 28.03.1948." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "nepoznat" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Slovenski Goročavalec" .
+
+<Dokument19-11> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d11" ;
+			rico:name "Seljaci južne Italije bore se za hleb i zemlju " ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1948-02-10" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Napulj, Južna Italija, seljak, uvoz izvoz, poljoprivreda, imperijalizam , komunisti, socijalisti SAD, Italija, Kalabrija" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Petar Stojanović" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-11> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d11" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Borba 10.02.1948." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Petar Stojanović" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-12> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d12" ;
+			rico:name "General De Gaulle kandidat za fašističkog diktatora" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-10-25" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Francuska, De Gaulle, Churchill , London, Njemačka, fašizam, 1944" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Pavel Višnjakov" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-12> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d12" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Naprijed, 25.10.1947." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Pavel Višnjakov" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-13> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d13" ;
+			rico:name "Revolucija i istina" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1949-12-20" ; 
+								] ;
+			rico:AuthenticityNote "Književne novine godina II br. 51" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Revolucija, Jugoslavija, komunistički režim, SSSR, Franko, armija, njemačka francuska, jakobinci" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Žan Kasu" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Književne novine" .
+
+<Dokument19-13> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d13" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Žan Kasu" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Književne novine" .
+
+<Dokument19-14> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d14" ;
+			rico:name "Tridesetogodišnjica Sovjetskog Saveza i trideset godina provokacijske djelatnosti njegovih protivnika (1917-1947)" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-10-08" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Sovjetski Savez, Versajski ugovor, Evropa, Amerika, desničarski reakcionizam, Hitler, Pijo XII, 1933, Hugenberg, Abesinija, Španjolska, Japanci, Ukrajina, Nevil Čembrlen, Mur-Brabazon" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "E. Tarle" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-14> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d14" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "E. Tarle" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-15> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d15" ;
+			rico:name "Isječen naslov, nedostaje" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; 
+								] ;
+			rico:AuthenticityNote "Studentski list" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ; 
+			rico:scopeAndContent "Prijevod članka “Historija i Filozofija koji je napisao B.D. Grehov, akademik i sekretar odeljenja historije i filozofije." ;			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Studentski list" .
+
+<Dokument19-15> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d15" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, naslov se ne vidi jer je isječen, vidi se dio koji se ne može rekonstruirati" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Tekst" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Studentski list" .
+
+<Dokument19-16> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d16" ;
+			rico:name "Protuameričke struje u engleskoj politici" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-03-15" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika Bevina, konzervativna stranka, Britanska imperija, izvoz, carine, Churchill , SAD, Roosevelt, Ugovor o zajmu i najmu" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "E. Varga" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-16> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d16" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka Borba 15.03.1947." .
+			<ImePrezime> a rico:Person ;
+			rico:name "E. Varga" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-17> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d17" ;
+			rico:name "Sa puta po okupiranoj Njemačkoj – U Zapadnoj Njemačkoj još uvijek vladaju monopolistički kapitalisti i nacisti" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-02-09" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Ekonomija, industrijski karteli, Hitlerova Njemačka, monopolistički koncerni, ratni zločinci, Saksonija" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Milan Slani" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-17> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d17" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka Borba 09.02.1947." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Milan Slani" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-18> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d18" ;
+			rico:name "Militarizacija nauke u Sjedinjenim Američkim Državama" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-10-05" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Vijeće sigurnosti, 79. Kongres SAD, naučno istraživački rad, vojska, atomska energija, vojna kontrola" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "M. Rubinstein" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-18> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d18" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Naprijed, 10.05.1947." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "M. Rubinstein" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-19> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d19" ;
+			rico:name "Monopoli Sjedinjenih Američkih Država za vrijeme i poslije drugog svjetskog rata " ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-08-05" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Trumanova vlada, politika, ekonomija, privredna struktura, trustovi i koncerni, državne investicije" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "V. E. Motiljov" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-19> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d19" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka Borba 05.08.1947." .
+			<ImePrezime> a rico:Person ;
+			rico:name "V. E. Motiljov" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-20> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d20" ;
+			rico:name "Otkuda mau-mau specijalno za Međunarodnu politiku" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-03-01" ; 
+								] ;
+			rico:AuthenticityNote "Međunarodna politika" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "O kolonijalnim problemima, pokret Mau-mau, Afrikanci, Afrički savez Kenije, socijalne nedaće, pleme Kikuju, Britanci, ekonomske nedaće" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Fener Brokvej" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Međunarodna politika" .
+
+<Dokument19-20> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d20" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka 1953. br. 5 god IV 01.03.1953." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Fener Brokvej" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Međunarodna politika" .
+
+<Dokument19-21> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d21" ;
+			rico:name "Događaji u zemlji i svijetu" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-08-05" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik u sredu, br. 66 godina XIV" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Koreja, paralele, Kina, Radio Peking, kaznene akcije, jugoslavenski stav" ;						
+			rico:name "Titov gost Clement Attlle" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-08-05" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik u sredu, br. 66 godina XIV" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Tito, Clement Attlle" ;						
+
+			rico:name "Primirje u Koreji a u Indokini Plan Nararre" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-08-05" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik u sredu, br. 66 godina XIV" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Koreja, paralele, Indokina, Nararre, Kina, Radio Peking, kaznene akcije, jugoslavenski stav" ;						
+
+			rico:name "Koreja 1951-1953." ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-08-05" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik u sredu, br. 66 godina XIV" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Koreja, paralele, Kina, kaznene akcije, jugoslavenski stav" ;					
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Branko Bucalo" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vijesnik u sredu" .
+
+<Dokument19-21> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d21" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Branko Bucalo" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik u sredu" .
+
+<Dokument19-22> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d22" ;
+			rico:name "" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; 
+								] ;
+			rico:AuthenticityNote "" ; 
+			rico:classification "" ; 
+			rico:contentType "Slika, ilustracija"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Arapska slova, slika slova kako se koje slovo zove i kako se čita" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "" .
+
+<Dokument19-22> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d22" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "" .
+
+<Dokument19-23> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d23" ;
+			rico:name "Iz dnevnika Šandora Petofija" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1948-04-02" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Francuska revolucija, Pešta, 1848, Louis Philippe, Mađarska, Francuska, izbori, govor, poezija" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-23> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d23" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo, Rukopisna bilješka Naprijed, 02.04.1948." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-24> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d24" ;
+			rico:name "Prešernovo mesto u političkoj istoriji slovenačkog naroda" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1949-02-01" ; 
+								] ;
+			rico:AuthenticityNote "Književne novine godina II br. 5" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Poezija, proletarijat, Slovenija 1848, Andrej Smole, inteligencija, svećenstvo, Austrija, industrijska buržoazija, revolucija" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Edvard Kardelj" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Književne novine" .
+
+<Dokument19-24> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d24" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka Naslov u originalu Novi Svet IV 1949, 2 (113-127)" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Edvard Kardelj Kasu" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Književne novine" .
+
+<Dokument19-25> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d25" ;
+			rico:name "Neki dokumenti o značaju 27. marta" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950-03-28" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, povijest, Hitler, maršal Kajtl, Nürnbergški proces, Staljin Churchill, plan Barbarosa, Jugoslavija" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "S. N. K." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-25> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d25" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka Borba 28.03.1950., dosta podvučenih margina" .
+			<ImePrezime> a rico:Person ;
+			rico:name "S. N. K." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-26> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d26" ;
+			rico:name "Članak Krilov ili Ezop ili basna o pudlici i slonu ili o vuku i jagnjetu" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1949-09-06" ; 
+								] ;
+			rico:AuthenticityNote "Književne novine godina II br. 36" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Diplomatska nota, Sarajevski atentat, Austrija, Austro-Ugarska, Srbija, satira, parodija, Staljin, Slovenci, basne Krilov (pisac basne)" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Psić Zubatović" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Književne novine" .
+
+<Dokument19-26> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d26" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Psić Zubatović" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Književne novine" .
+
+<Dokument19-27> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d27" ;
+			rico:name "Prikaz knjige - Hrvatska ljevica u godinama revolucije 1848.-49. Vaso Bogdanova" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1949-11-11" ; 
+								] ;
+			rico:AuthenticityNote "Podlistak Vjesnik" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Stogodišnjica revolucije 1848-49, slavenski narodi,  historiografija, Marks, Engels, knjiga Hrvatska ljevica, Jelačić" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "H." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Podlistak Vjesnik" .
+
+<Dokument19-27> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d27" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "H." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Podlistak Vjesnik" .
+
+<Dokument19-28> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d28" ;
+			rico:name "Kako je Truman podelio svet – Od Ruzvelta do Trumana i atomske bombe" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-11-25" ; 
+								] ;
+			rico:AuthenticityNote "Republika" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Politika, povijest, atomska diplomacija, Truman, Roosevelt, Henri Stimson, ministar rata; Trust mozgova,  Churchill, Staljin, Rusija Harpes Magazin, New Meksiko, streptomicin" ; 			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "ing. strojarstva M. Simić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Republika" .
+
+<Dokument19-28> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d28" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, Rukopisna bilješka Republika, 25.11.1947." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "ing. strojarstva M. Simić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Republika" .
+
+<Dokument19-29> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d29" ;
+			rico:name "Kalendar Prosvjeta 1950." ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950" ; 
+								] ;
+			rico:AuthenticityNote "Kalendar Prosvjeta 1950" ; 
+			rico:classification "" ; 
+			rico:contentType "Radovi"; 
+			rico:integrityNote "Publikacija" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Povijest, partizani, narodnooslobodilačka borba" ; 			
+			rico:performsOrPerformed <Publikacija> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Kalendar Prosvjeta" .
+
+<Dokument19-29> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d29" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "45-56 ; 65-104 ; 131-158 ; 195-202" ;
+							rico:unitOfMeasurement "strana" ;
+							] ;
+			rico:physicalCharacteristicsNote "Djelomično očuvano, nije cijeli dokument" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, neke stranice su van korica" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Kalendar Prosvjeta" .
+
+<Dokument19-30> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d30" ;
+			rico:name "Njegoš i Hrvati" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-06-07" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Ilirski pokret, Otokar Keršovani, Njegoš, Hrvati, Vladimir Bakarić,  1848, revolucija, Jelačić" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Marin Frančević." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-30> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d30" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Naprijed 07.06.1947." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Marin Frančević" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-31> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d31" ;
+			rico:name "Fridrih Engels o južnim Slovenima" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1957-01-30" ; 
+								] ;
+			rico:AuthenticityNote "Republika" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Politika, turski utjecaj, Srbi, Rusija, Slaveni, Turska, klasna borba, povijest" ; 			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "M." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Republika" .
+
+<Dokument19-31> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d31" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, Rukopisna bilješka Republika, 30.01.1957. br 2749" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "M." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Republika" .
+
+<Dokument19-32> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d32" ;
+			rico:name "Dokumenti i materijali: Počeci sukoba Srba i Hrvata u Hrvatskoj" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1952" ; 
+								] ;
+			rico:AuthenticityNote "Vidici" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Srbi, Hrvati, feudalizam, Austrija, 16. stoljeće, 17. stoljeće, 18. stoljeće" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Rene Lovrenčić." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vidici" .
+
+<Dokument19-32> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d32" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Vidici, Slavonski brod 1952. br. 02" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Rene Lovrenčić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vidici" .
+
+<Dokument19-33> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d33" ;
+			rico:name "Izložba etnogeneze Južnih Slovena u ranom srednjem veku prema materijalnoj kulturi" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950-06-09" ; 
+								] ;
+			rico:AuthenticityNote "Politika" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Etnogeneza, Južni Slaveni, Podunavlje, Slovenija, Panonija, povijest" ; 			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Politika" .
+
+<Dokument19-33> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d33" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, Rukopisna bilješka Politika  09.06.1950." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Politika" .
+
+<Dokument19-34> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d34" ;
+			rico:name "Antemurale christianitatis – Taj “laskavi” naslov, koji pape obično daju Hrvatima uopće nije zasnovan ni na kakvoj historijskoj istini" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-04-22" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik u sredu"; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijest, papinstvo, latinski" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Branko P. Sučević" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik u sredu" .
+
+<Dokument19-34> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d34" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Vjesnik u sredu 22.04.1953." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Branko P. Sučević" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik u sredu" .
+
+<Dokument19-35> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d35" ;
+			rico:name "O podeli stare Jugoslavije 1941." ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1957-03-30" ; 
+								] ;
+			rico:AuthenticityNote "Politika" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak sa slikom, podcrtane demilitarizovane zone"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Povijest, 1941, karte" ; 			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Politika" .
+
+<Dokument19-35> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d35" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, Rukopisna bilješka Politika  30.03.1957." ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Politika" .
+
+<Dokument19-36> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d36" ;
+			rico:name "Povodom godišnjice rođenja – Strossmayer i Vatikan" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1952-02-04" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik br. 2101 godina XII"; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijest, papinstvo, Strossmayer" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Ive Mihovilović" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik" .
+
+<Dokument19-36> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d36" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Vjesnik 04.02.1952. br. 2101 god XII" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Ive Mihovilović" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik" .
+
+<Dokument19-37> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d37" ;
+			rico:name "Problem Hrvatskog historijskog muzeja" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-07-12" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Muzeologija, nauka, materijali" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Grga (prezime nedostaje uslijed oštećenja)" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-37> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d37" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "krajevi malo oštećeni" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Djelomice čitljivo, rukopisna bilješka Naprijed 12.07.1947." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Grga (prezime nedostaje uslijed oštećenja)" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-38> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d38" ;
+			rico:name "Muzeji Beograda" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; 
+								] ;
+			rico:AuthenticityNote "Muzeji Beograda" ; 
+			rico:classification "" ; 
+			rico:contentType "Prospekt sa mapom"; 
+			rico:integrityNote "Publikacija" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Vodič, muzeji, Beograd" ; 			
+			rico:performsOrPerformed <Publikacija> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Muzeji Beograda" .
+
+<Dokument19-38> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d38" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "očuvano, cijeli dokument" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, pregledno" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Muzeji Beograda" .
+
+<Dokument19-39> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d39" ;
+			rico:name "Voltaireova intervencija u najvećoj aferi XVIII. stoljeća" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1952-05-21" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik u sredu"; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijest, filzofija, Voltaire, lomača Jean Calas, 09.03.1762." ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Mirko Trišler" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik u sredu" .
+
+<Dokument19-39> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d39" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Vjesnik u sredu 21.05.1952." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Mirko Trišler" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik u sredu" .
+
+<Dokument19-40> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d40" ;
+			rico:name "Pokušaji stvaranja radničkih savjeta u USA" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1952-08-29" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Ekonomija, politika, sindikati, upravljanje u poduzećima" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "ing. D. Rogić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-40> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d40" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Naprijed 29.08.1952." .
+			<ImePrezime> a rico:Person ;
+			rico:name "ing. D. Rogić" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-41> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d41" ;
+			rico:name "Prikaz knjige dr. Nikole Vučo: Privredna historija naroda FNRJ do prvog svetskog rata, Naučna knjiga, Beograd, 1948. str 342" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; 
+								] ;
+			rico:AuthenticityNote "Dio knjige od 93-107 str." ; 
+			rico:classification "" ; 
+			rico:contentType "Prikaz knjige"; 
+			rico:integrityNote "Dio knjige" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Privreda, povijest" ; 			
+			rico:performsOrPerformed <Publikacija> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Sergije Dimitrijević" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Dio knjige od str 93-107" .
+
+<Dokument19-41> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d38" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "8" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "očuvano, dio nekadašnje knjige" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, pregledno" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Sergije Dimitrijević" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Dio knjige od str 93-107" .
+
+<Dokument19-42> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d42" ;
+			rico:name "Neki dokumenti o okupaciji Trsta 1945. Godine anketa informbiroovske perjanice Davida Lajole" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950-02-10" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik"; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, Lajolo, Trst, okupacija, general Morgan" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "I. M." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik" .
+
+<Dokument19-42> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d42" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Vjesnik 10.02.1950." .
+			<ImePrezime> a rico:Person ;
+			rico:name "I. M." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik" .
+
+<Dokument19-43> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d43" ;
+			rico:name "Karakter seljačkih pokreta u Vojvodini od 1527.-1808." ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1952" ; 
+								] ;
+			rico:AuthenticityNote "Radio Zagreb"; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, povijest, seljački pokret, Vojvodina" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "A. Lebl" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Radio Zagreb" .
+
+<Dokument19-43> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d43" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Radio Zagreb, 1950. br. 13" .
+			<ImePrezime> a rico:Person ;
+			rico:name "A. Lebl" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Radio Zagreb" .
+
+<Dokument19-44> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d44" ;
+			rico:name "Uskrsle Rapalske metode" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950-06-09" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Problematika Trsta, povijest, politika, geopolitika" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "I. M." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-44> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d44" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Naprijed 09.06.1950." .
+			<ImePrezime> a rico:Person ;
+			rico:name "I. M." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-45> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d45" ;
+			rico:name "Svečana akademija na Kolarčevom narodnom univerzitetu u Beogradu: Referat druga Moše Pijade o životu i radu Dimitrija Tucovića" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1949-11-20" ; 
+								] ;
+			rico:AuthenticityNote "Borba" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, povijest, Moše Pijade, DimitrijeTucović" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Moše Pijade" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-45> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d45" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, Rukopisna bilješka Borba 20.11.1949. br. 276 god XIV" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Moše Pijade" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Borba" .
+
+<Dokument19-46> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d46" ;
+			rico:name "Odsun" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1954" ; 
+								] ;
+			rico:AuthenticityNote "Naše cesta" ; 
+			rico:classification "" ; 
+			rico:contentType "Knjižica samog rada"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Česki (češ)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, povijest, Pokret otpora, II. svjetski rat" ; 
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "dr. Radomir Luža" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naše Cesta" .
+
+<Dokument19-46> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d45" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "12" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "dr. Radomir Luže" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naše cesta" .
+
+<Dokument19-47> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d47" ;
+			rico:name "Geschichte Russlands von den Anfängen bis zur Gegenwart" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1950" ; 
+								] ;
+			rico:AuthenticityNote "Franz Mittelbach Verlag Stuttgart" ; 
+			rico:classification "" ; 
+			rico:contentType "Prospekt"; 
+			rico:integrityNote "Publikacija" ; 
+			rico:language "Njemački (nj)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Prospekt, Povijest Rusije" ; 			
+			rico:performsOrPerformed <Publikacija> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Von Walther Kirchner" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Geschichte Russlands von den Anfängen bis zur Gegenwart" .
+
+<Dokument19-47> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d47" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "4" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "očuvano, cijeli dokument" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, pregledno" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Von Walther Kirchner" ;
+			rico:performsOrPerformed <autor> . 
+			<Publikacija> a rico:Publication ;
+			rico:name "Geschichte Russlands von den Anfängen bis zur Gegenwart" .
+
+<Dokument19-48> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d48" ;
+			rico:name "Život i rad na katedrama i institutima - Neistoričnost plana istoriske nastave" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1949-02-25" ; 
+								] ;
+			rico:AuthenticityNote "Univerzitetski vesnik" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Srpski (srp)" , "Ćirilica (ćir)" ;
+			rico:scopeAndContent "Nastava povijesti, univerzitet, katedra za povijest, odlike nastave" ;			
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Dimitrije Vučenov" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Univerzitetski vesnik" .
+
+<Dokument19-48> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d48" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Historija u sveučilišnoj nastavi (1949)" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Dimitrije Vučenov" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Univerzitetski vesnik" .
+
+<Dokument19-49> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d49" ;
+			rico:name "Vrijeme je da iz Zagreba nestane spomenika crno-žutog generala Jelačića" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947-07-18" ; 
+								] ;
+			rico:AuthenticityNote "Vjesnik"; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, povidest, revolucija 1848., Jelačić" ;						
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Vladimir Babić." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik" .
+
+<Dokument19-49> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d49" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Vjesnik 18.07.1947." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Vladimir Babić." ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vjesnik" .
+
+<Dokument19-50> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d50" ;
+			rico:name "Ispravak po zakonu o štampi" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953-05-08" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Problematika zakona o štampi, tekst ispravka, zakon" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-50> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d50" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Naprijed 08.05.1953., dosta podcrtanog teksta članka" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-51> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d51" ;
+			rico:name "Seljački nemiri 1920. - Bumo sami sudili" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1953" ; 
+								] ;
+			rico:AuthenticityNote "Naprijed" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Seljaštvo, nemiri, 1920., bune" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Vojo Rajčević" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-51> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d51" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Naprijed 1953. br 14." .
+			<ImePrezime> a rico:Person ;
+			rico:name "Vojo Rajčević" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Naprijed" .
+
+<Dokument19-52> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d51" ;
+			rico:name "Islam Ansiklopedisi - Turska redakcija izdanja Enciklopedije Islama" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1957" ; 
+								] ;
+			rico:AuthenticityNote "Sveučilišni list" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Islam, enciklopedija, Turska" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "dr. Ivo Žuvela" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Sveučilišni list" .
+
+<Dokument19-52> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d52" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "dio lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Sveučilišni list II, 1957. br. 34" .
+			<ImePrezime> a rico:Person ;
+			rico:name "dr Ivo Žuvela" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Sveučilišni list" .
+
+<Dokument19-53> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d53" ;
+			rico:name "Nova Obzorja Revija za kulturo in politiko I. letnik" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1948" ; 
+								] ;
+			rico:AuthenticityNote "Nova Obzorja" ; 
+			rico:classification "" ; 
+			rico:contentType "Zbornik sa znanstvenim radovima iz oblasti kulture i politike"; 
+			rico:integrityNote "Znanstveni časopis" ; 
+			rico:language "Slovenski (slo)" , "Latinica (latn)" ;
+			rico:scopeAndContent "tematski broj posvećen godišnjici revolucije 1848." ;				
+			rico:performsOrPerformed <Znanstveničasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			 
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Nova Obzorja" .
+
+<Dokument19-53> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d53" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "27" ;
+							rico:unitOfMeasurement "lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Znanstveničasopis> a rico:Journal ;
+			rico:name "Nova Obzorja" .
+
+<Dokument19-54> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d54" ;
+			rico:name "Nova Mysl Časopis za teorijsku politiku u Komunističkoj Čehoslovačkoj" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1954" ; 
+								] ;
+			rico:AuthenticityNote "Nova Mysl" ; 
+			rico:classification "" ; 
+			rico:contentType "Zbornik sa znanstvenim radovima iz oblasti politike"; 
+			rico:integrityNote "Znanstveni časopis" ; 
+			rico:language "Češki (češ)" , "Latinica (latn)" ;
+			rico:scopeAndContent "radovi iz oblasti političke teorije" ;				
+			rico:performsOrPerformed <ZnanstveniCasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			 
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Nova Mysl" .
+
+<Dokument19-54> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d54" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "" ;
+							rico:unitOfMeasurement "lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Znanstveničasopis> a rico:Journal ;
+			rico:name "Nova Mysl" .
+
+<Dokument19-55> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d55" ;
+			rico:name "Republika 11 Časopis za književnost i umjetnost" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1947" ; 
+								] ;
+			rico:AuthenticityNote "Republika" ; 
+			rico:classification "" ; 
+			rico:contentType "Zbornik sa znanstvenim radovima iz oblasti književnosti i umjetnosti"; 
+			rico:integrityNote "Znanstveni časopis" ; 
+			rico:language "Hrvatsku (hrv.)" , "Latinica (latn)" ;
+			rico:scopeAndContent "znanstveni radovi" ;			
+			rico:performsOrPerformed <ZnanstveniCasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Znanstveničasopis> a rico:Journal ;
+			rico:name "Republika" .
+
+<Dokument19-55> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d55" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "25" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Dobro očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Znanstveničasopis> a rico:Journal ;
+			rico:name "Republika" .
+
+<SkupDokumenata19-56> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd56" ;
+			rico:name "Materijali seminara sveučilišta" ; 
+			rico:directlyPrecedesInSequence <SkupDokumenata19-03> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;
+								] ;
+			rico:AuthenticityNote "Štampani znanstveni radovi." ; 
+			rico:classification "" ; 
+			rico:contentType "Vezano za povijest i povijesne ličnosti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv.)" , "Latinica (latn)" , "Engleski (eng)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijesna tematika." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Tekstualni dokumenti" ; 
+			rico:recordSetType "Predmet" . 
+			
+<SkupDokumenata19-56> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd56" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivi" ;
+			rico:productionTechnique "Tisak" ;
+			rico:qualityOfRepresentatonNote "Očuvano". 
+
+<Dokument19-57> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d57" ;
+			rico:name "Smolenice pri Bratislavi, 27.-29. VI. 1966. -Ob simpoziju o Ljudevitu Šturu in o medslovanskih odnosnih v njegovem času" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1966-09-24" ; 
+								] ;
+			rico:AuthenticityNote "Naši Razgledi" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Češki (češ)" , "Latinica (latn)" ;
+			rico:scopeAndContent "povijest, međuslavenski odnosi, Ljudevit Štur" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Dušan Kermavner" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Novi Razgledi" .
+
+<Dokument19-57> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d57" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano, čitljivo" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna podcrtavanja" .
+		<ImePrezime> a rico:Person ;
+			rico:name "Dušan Kermavner" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Novi Razgledi" .
+
+<Dokument19-58> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d58" ;
+			rico:name "Die polnische sudslavische Politik in den Jahren 1840-48." ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ; 
+								] ;
+			rico:AuthenticityNote "Novina" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Njemački (njem)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Politika, poljska politika 1840-48" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "" .
+
+<Dokument19-58> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d58" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "deo lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+		<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "" .
+
+<Dokument19-59> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d59" ;
+			rico:name "Prvni žena za universitni katedrou" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1966" ; 
+								] ;
+			rico:AuthenticityNote "Vlasta" ; 
+			rico:classification "" ; 
+			rico:contentType "Članak"; 
+			rico:integrityNote "Dio novina" ; 
+			rico:language "Češki (češ)" , "Latinica (latn)" ;
+			rico:scopeAndContent "prava žena, profesura na univerzitetu" ;				
+			rico:performsOrPerformed <Novina> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Jaroslav Valenta" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vlasta" .
+
+<Dokument19-59> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d59" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "deo lista" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo, rukopisna bilješka Z časopisu Vlasta č. 47" .
+		<ImePrezime> a rico:Person ;
+			rico:name "Jaroslav Valenta" ;
+			rico:performsOrPerformed <autor> . 
+			<Novina> a rico:Journal ;
+			rico:name "Vlasta" .
+
+<Dokument19-60> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d60" ;
+			rico:name "Znanstveno savjetovanje prigodom 80. obljetnice smrti hrvatskog književnika i povjesničara - Ivana Kukuljevića Sakacinskog" ; 
+			rico:directlyPrecedesInSequence <Dokument19-59> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1969-10-25" ; 
+								] ;
+			rico:AuthenticityNote "Program" ; 
+			rico:classification "" ; 
+			rico:contentType "Plakat sa programom dešavanja"; 
+			rico:integrityNote "Plakat" ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Ivan Kukuljević Sakcinski, 80. obljetnica smrti, znanstveno savjetovanje" ;	
+			rico:describesOrDescribed <IvanKukuljevic> ;
+			rico:performsOrPerformed <Plakat> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Plakat> a rico:Journal ;
+			rico:name "Plakat" .
+
+<Dokument19-60> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d60" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "2" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+		<ImePrezime> a rico:Person ;
+			rico:name "" ;
+			rico:performsOrPerformed <autor> . 
+			<Plakat> a rico:Journal ;
+			rico:name "Plakat" .
+
+<Dokument19-61> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d61" ;
+			rico:name "Zbornik o Ljudevitu Gaju" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1974/1975" ; 
+								] ;
+			rico:AuthenticityNote "Historijski zbornik" ; 
+			rico:classification "" ; 
+			rico:contentType "Prikaz Zbornika o Ljudevitu Gaju"; 
+			rico:integrityNote "Članak" ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Ljudevit Gaj, povijest, znanstveni radovi" ;	
+			rico:performsOrPerformed <ZnanstveniCasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Historijski zbornik" .
+
+<Dokument19-61> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d61" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "3" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Historijski zbornik" .
+
+<Dokument19-62> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d62" ;
+			rico:name "Pokušaj Franje Bogdanića oko izdavanja Narodnih novina 1792-1793" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1967" ; 
+								] ;
+			rico:AuthenticityNote "Godišnjak Filozofskog fakulteta u Novom Sadu, knjiga X" ; 
+			rico:classification "" ; 
+			rico:contentType "Povijesni znanstveni rad"; 
+			rico:integrityNote "Tekstualni dokument" ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Narodne novine, povijest, 1792-93, Franjo Bogdanić" ;	
+			rico:performsOrPerformed <ZnanstveniCasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "dr. Slavko Gavrilović" ;
+			rico:performsOrPerformed <autor> . 
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Godišnjak Filozofskog fakulteta u Novom Sadu" .
+
+<Dokument19-62> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d62" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "71" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "dr. Slavko Gavrilović" ;
+			rico:performsOrPerformed <autor> . 
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Godišnjak Filozofskog fakulteta u Novom Sadu" .
+
+<Dokument19-63> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d63" ;
+			rico:name "KoncepcijaGarašaninova Načertanija (1844)" ; 
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "1961" ; 
+								] ;
+			rico:AuthenticityNote "Historijski pregled, br. 2" ; 
+			rico:classification "" ; 
+			rico:contentType "Povijesni znanstveni rad"; 
+			rico:integrityNote "Tekstualni dokument" ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Ilija Garašanin, politika, povijest, Srbija" ;	
+			rico:performsOrPerformed <ZnanstveniCasopis> ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ; 
+			rico:documentaryForm "Tisak"; 
+			rico:recordSetType "Dokument" . 
+			<ImePrezime> a rico:Person ;
+			rico:name "Mirko Valentić" ;
+			rico:performsOrPerformed <autor> . 
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Historijski pregled" .
+
+<Dokument19-63> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt19d63" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "5" ;
+							rico:unitOfMeasurement "list" ;
+							] ;
+			rico:physicalCharacteristicsNote "Očuvano" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Čitljivo" .
+			<ImePrezime> a rico:Person ;
+			rico:name "Mirko Valentić" ;
+			rico:performsOrPerformed <autor> . 
+			<ZnanstveniCasopis> a rico:Journal ;
+			rico:name "Historijski pregled" .
+
+<SkupDokumenata19-64> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd64" ;
+			rico:name "Bilješke i za javna predavanja (opća povijest) 1945-1951 i za javna predavanja" ; 
+			rico:directlyPrecedesInSequence <SkupDokumenata19-64> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;
+								] ;
+			rico:AuthenticityNote "Predavanja pisana strojopisom" ; 
+			rico:classification "" ; 
+			rico:contentType "Vezano za povijest i povijesne ličnosti"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv.)" , "Latinica (latn)" ; 
+			rico:scopeAndContent "Povijesna tematika." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Tekstualni dokumenti" ; 
+			rico:recordSetType "Predmet" . 
+			
+<SkupDokumenata19-64> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd64" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivi" ;
+			rico:productionTechnique "Strojopis" ;
+			rico:qualityOfRepresentatonNote "Očuvano" .
+
+<SkupDokumenata19-65> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd65" ;
+			rico:name "Izresci iz novina tiskovina nakon 1945" ; 
+			rico:directlyPrecedesInSequence <SkupDokumenata19-65> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;
+								] ;
+			rico:AuthenticityNote "Novine, tiskovine" ; 
+			rico:classification "" ; 
+			rico:contentType "Vezano za povijest i politiku"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv.)" , "Latinica (latn)" ; 
+			rico:scopeAndContent "Povijesna i politička tematika." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Tekstualni dokumenti" ; 
+			rico:recordSetType "Predmet" . 
+			
+<SkupDokumenata19-65> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd65" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivi" ;
+			rico:productionTechnique "Štampa" ;
+			rico:qualityOfRepresentatonNote "Očuvano" .
+
+<SkupDokumenata19-66> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd66" ;
+			rico:name "Referati 1955 - 1978" ; 
+			rico:directlyPrecedesInSequence <SkupDokumenata19-66> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;
+								] ;
+			rico:AuthenticityNote "Vlastoručni zapisi" ; 
+			rico:classification "" ; 
+			rico:contentType "Vezano za povijest i politiku"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" , "Njemački (njem)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijesna i politička tematika." ; 
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Rukopisni tekstualni dokumenti" ; 
+			rico:recordSetType "Predmet" . 
+			
+<SkupDokumenata19-66> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd66" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "15" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivi" ;
+			rico:productionTechnique "Pisanje" ;
+			rico:qualityOfRepresentatonNote "Očuvano". 
+
+<SkupDokumenata19-67> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd67" ;
+			rico:name "Pisane bilješke za Englesku revoluciju" ; 
+			rico:directlyPrecedesInSequence <SkupDokumenata19-67> ;
+			rico:isAssociatedWithDate [ a rico:Date ; #Date ili DateRange
+								rico:normalizedDateValue "" ;
+								] ;
+			rico:AuthenticityNote "Vlastoručni zapisi" ; 
+			rico:classification "" ; 
+			rico:contentType "Vezano za povijest i politiku"; 
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hrv)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Povijesna i politička tematika." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "" ;
+								rico:unitOfMeasurement "Dokument" ;								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Rukopisni tekstualni dokumenti" ; 
+			rico:recordSetType "Predmet" . 
+	
+<SkupDokumenata19-67> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt19sd67" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "27" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Čitljivi" ;
+			rico:productionTechnique "Pisanje" ;
+			rico:qualityOfRepresentatonNote "Očuvano" .

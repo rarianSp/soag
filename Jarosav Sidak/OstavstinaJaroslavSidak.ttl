@@ -1,0 +1,29 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+<OstavstinaJaroslavSidak> a rico:RecordSet ;
+			rico:generalDescription "Ostavština" ;
+			rico:identifier "24" ;
+			rico:name "Ostavština Jaroslava Šidaka 1933-1980-ih" ;
+			rico:hasCreator <JaroslavSidak> ;
+			rico:includesOrIncluded <Kutija01>, <Kutija02>, <Kutija03>, <Kutija04>, <Kutija05>, <Kutija06>, <Kutija07>, <Kutija08>, <Kutija09>, <Kutija10>, <Kutija11>, <Kutija12>, <Kutija13>, <Kutija14>, <Kutija15>, <Kutija16>, <Kutija17>, <Kutija18>, <Kutija19>, <Kutija20>, <Kutija21>, <Kutija22> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDate "1933/1980" ;
+								rico:dateQualifier "Okvirna zadnja godina." ;
+								] ;
+			rico:AuthenticityNote "Izvorna ostavština Jaroslava Šidaka se čuva u Arhivu Filozofskog fakulteta." ; #može se koristiti za skup
+			rico:classification "Ostavštine" ; #može se koristiti za skup
+			rico:conditionsOfAcess "100 godina od rođenja osobe na koju se osobni podaci odnose ili nakon smrti osobe, prema čl. 19. Zakona o arhivskom gradivu i arhivima, Narodne novine, br. 61/18, 98/19, 114/22." ;
+			rico:conditionsOfUse "Dostupno za korištenje uz odobrenje Ureda dekana" ; #može se koristiti za skup
+			rico:contentType "Tekstualni dokumenti"; #može se koristiti za skup
+			rico:history "Ostavština je darovana od strane Odsjeka za povijest bez ugovora." ;
+			#integrityNote bilježiti kod pojedinih kutija 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:legalStatus "Darovano gradivo" ; #može se koristiti za skup
+			rico:scopeAndContent "Ostavština Jaroslava Šidaka broji 22 kutije sređenog arhivskog gradiva, a sadrži pretežno Rukopise njegovih radova, izreske iz novina, bilješke te materijale drugih autora s kojima je surađivao." ;
+			#state izvorno gradivo ili kopija bilježiti kod skupova dokumenata ili dokumenata
+			rico:structure "(u Kutiji01 prepisati strukturu, koristiti zatvorenu listu 1-22)" ;
+			rico:accruals "Ne očekuje se da će ostavština primiti novo gradivo." ;
+			#documentaryForm bilježiti kod skupova dokumenata ili dokumenata unutar kutija
+			rico:recordSetType "serija" . #razina

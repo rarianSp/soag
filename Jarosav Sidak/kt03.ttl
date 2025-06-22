@@ -1,0 +1,446 @@
+@prefix rico:<https://www.ica.org/standards/RiC/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/>.
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+<Kutija03> a rico:RecordSet ;
+	rico:generalDescription "Kutija" ;
+			rico:identifier "kt03" ;
+			rico:name "Kutija 03" ;
+			rico:isDirectlyIncludedIn <OstavstinaJaroslavSidak> ;
+			rico:includesOrIncluded <SkupDokumenata03-01> , <SkupDokumenata03-02> , <SkupDokumenata03-03> , <SkupDokumenata03-04> , <Dokument03-05> , <Dokument03-06> , <Dokument03-07> , <Dokument03-08> , <Dokument03-09> , <Dokument03-10> , <Dokument03-11> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "uuuu/1982-05-27" ; #1832-11-06, 1982-05-27
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavština" ;
+			rico:contentType "Tekstualni dokumenti i fotografije" ; 
+			rico:integrityNote "Pregledom je ustanovljeno da je kutija cjelovita, pojedini listovi imaju znakove oštećenja." ;
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (cyrl)" , "Srpski (srp)" , "Starohrvatski (srphrv)" , "Češki (ces)" , "Njemački (deu)" , "Talijanski (ita)" , "Latinski (lat)" , "Francuski (fra)" ;
+			rico:scopeAndContent "Kutija s rukopisnim bilješkama, tiskanim materijalom i fotografijama." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+							rico:quantity "4" ; #skupa
+							rico:unitOfMeasurement "skupa dokumenata" ;
+							] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrti i konačni"] ;
+			rico:structure "Neorganizirana" ;
+			rico:documentaryForm "Rukopis" , "Tisak" , "Fotografija" , "Strojopis" , "Mikrofilm" ;
+			rico:recordSetType "" .
+
+<Kutija03> a rico:Instantiation ;
+			rico:generalDescription "Kutija" ;
+			rico:identifier "kt03" ;
+			rico:name "Kutija 03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "12" ;
+							rico:unitOfMeasurement "cm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisno gradivo nečitko i u dva stila, dio tiskanog gradiva oštećeno, fotografije u dobrom stanju." ;
+			rico:productionTechnique "Rukopis, strojopis i tiskano." ;
+			rico:qualityOfRepresentatonNote "Blaga oštećenja papira." .
+			
+<SkupDokumenata03-01> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd01" ;
+			rico:name "Skup dokumenata 1" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata03-02> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "uuuu/1982-05-27" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavština" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Ćirilica (cyrl)" , "Srpski (srp)" , "Starohrvatski (srphrv)" , "Češki (ces)" , "Njemački (deu)" , "Talijanski (ita)" ;
+			rico:scopeAndContent "Novinski članci, rukopisi, skenovi i dijelovi knjiga te strojopisi političke tematike." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "19" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" , "Tisak" , "Strojopis" , "Mikrofilm" .
+<SkupDokumenata03-01> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "326" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisne bilješke nečitke, blaga oštećenja papira, ilustracije su očuvane." ;
+			rico:productionTechnique "Rukopis" , "Strojopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+<SkupDokumenata03-02> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd02" ;
+			rico:name "Skup dokumenata 2" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata03-03> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1842/1970" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavština" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Njemački (deu)" , "Latinski (lat)" , "Francuski (fra)" ;
+			rico:scopeAndContent "Rukopisne bilješke o citatima radova drugih osoba." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "200" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Bilješke", "Rukopis" ;
+			rico:recordSetType "Predmet" .
+			
+<SkupDokumenata03-02> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "371" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisne bilješke nečitke, blaga oštećenja papira." ;
+			rico:productionTechnique "Rukopis" , "Strojopis" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+<SkupDokumenata03-03> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd03" ;
+			rico:name "Skup dokumenata 3" ;
+			rico:directlyPrecedesInSequence <SkupDokumenata03-04> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "uuuu/uuuu" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavština" ;
+			rico:contentType "Fotografije";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju fotografije u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Fotografije predmeta, rukopisa i časopisa." ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Skup fotografija"
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Fotografija" ;
+			rico:recordSetType "Predmet" .
+			
+<SkupDokumenata03-03> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "6" ;
+							rico:unitOfMeasurement "Fotografija"
+							] ;
+			rico:physicalCharacteristicsNote "Sve fotografije jasno vidljive i očuvane, blagi gubitak kontrasta." ;
+			rico:productionTechnique "Fotografija" ;
+			rico:qualityOfRepresentatonNote "Izvrsno očuvano" .
+
+<SkupDokumenata03-04> a rico:RecordSet ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd04" ;
+			rico:name "Skup dokumenata 4" ;
+			rico:directlyPrecedesInSequence "" ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1977" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "Ostavština" ;
+			rico:contentType "Tekstualni dokumenti" ;
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Kserokopije i strojopisni dokument" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "List"
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "Tematska" ;
+			rico:documentaryForm "Strojopis" , "Kserokopija" ;
+			rico:recordSetType "Predmet" .
+			
+<SkupDokumenata03-04> a rico:Instantiation ;
+			rico:generalDescription "Skup dokumenata" ;
+			rico:identifier "kt03sd04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "3" ;
+							rico:unitOfMeasurement "Fotografija"
+							] ;
+			rico:physicalCharacteristicsNote "Strojopis očuvan i čitak, blagi gubitak kontrasta na kserokopijama." ;
+			rico:productionTechnique "Strojopis" , "Kserokopija" ;
+			rico:qualityOfRepresentatonNote "Izvrsno očuvano" .
+
+<Dokument03-05> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d01" ;
+			rico:name "Novine" ;
+			rico:directlyPrecedesInSequence <Dokument03-06> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1926.-1982." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" ;
+			rico:scopeAndContent "Novinski članci o hrvatskoj politici" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Tisak" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-05> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d01" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "7" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Potpuno čitko, oštećenja papira." ;
+			rico:productionTechnique "Tisak" ;
+			rico:qualityOfRepresentatonNote "Dosta dobro očuvano" .		
+
+<Dokument03-06> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d02" ;
+			rico:name "Bilješke" ;
+			rico:directlyPrecedesInSequence <Dokument03-07> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "19xx" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenata." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Starohrvatski (srphrv)" , "Češki (ces)" , "Njemački (deu)" , "Talijanski (ita)" ;
+			rico:scopeAndContent "Bilješke o hrvatskoj politici" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "11" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Strojopis" , "Rukopis" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-06> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d02" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "206" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Potpuno čitko, oštećenja papira." ;
+			rico:productionTechnique "Rukopis" , "Strojopis" ;
+			rico:qualityOfRepresentatonNote "Dosta dobro očuvano" .
+
+<Dokument03-07> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d03" ;
+			rico:name "Skenovi i dijelovi knjiga" ;
+			rico:directlyPrecedesInSequence <Dokument03-08> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1940.-1978." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da nedostaje dio stranica." ; 
+			rico:language "Hrvatski (hr)" , "Latinica (latn)" , "Češki (ces)" , "Njemački (deu)" , "Talijanski (ita)" ;
+			rico:scopeAndContent "Knjige o politici" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "9" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Tisak" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-07> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d03" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "102" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Potpuno čitko, oštećenja papira i korica." ;
+			rico:productionTechnique "Tisak" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+			
+<Dokument03-08> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d04" ;
+			rico:name "Mikrofilm" ;
+			rico:directlyPrecedesInSequence <Dokument03-09> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "xxxx" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Mikrofilm";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenta." ; 
+			rico:language "" ;
+			rico:scopeAndContent "Mikrofilm s fotografijama dokumenata" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Mikrofilm" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-08> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d04" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "1" ;
+							rico:unitOfMeasurement "Mikrofilm" ;
+							] ;
+			rico:physicalCharacteristicsNote "Mikrofilm neoštećen, fotografije na njemu vidljive." ;
+			rico:productionTechnique "Mikrofilm" ;
+			rico:qualityOfRepresentatonNote "Izvrsno očuvano" .
+			
+<Dokument03-09> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d05" ;
+			rico:name "Citati" ;
+			rico:directlyPrecedesInSequence <Dokument03-10> ;
+			rico:isAssociatedWithDate [ a rico:DateRange ;
+								rico:normalizedDateValue "1842.-1970." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Rukopis";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenta." ; 
+			rico:language "" ;
+			rico:scopeAndContent "Rukopisne bilješke o citatima radova drugih osoba" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "200" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Nacrt"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Rukopis" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-09> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d05" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "371" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Rukopisne bilješke nečitke, blaga oštećenja papira." ;
+			rico:productionTechnique "Mikrofilm" ;
+			rico:qualityOfRepresentatonNote "Dobro očuvano" .
+
+<Dokument03-10> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d06" ;
+			rico:name "Fotografije" ;
+			rico:directlyPrecedesInSequence <Dokument03-11> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "xxxx" ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Fotografija";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenta." ; 
+			rico:language "" ;
+			rico:scopeAndContent "Fotografije predmeta, rukopisa i časopisa" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "3" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Fotografija" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-10> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d06" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "6" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Sve fotografije jasno vidljive i očuvane, blagi gubitak kontrasta." ;
+			rico:productionTechnique "Fotografija" ;
+			rico:qualityOfRepresentatonNote "Izvrsno očuvano" .
+			
+<Dokument03-11> a rico:Record ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d07" ;
+			rico:name "Fotografije" ;
+			rico:directlyPrecedesInSequence <> ;
+			rico:isAssociatedWithDate [ a rico:Date ;
+								rico:normalizedDateValue "1977." ;
+								] ;
+			rico:AuthenticityNote "Izvorni materijal i kopije." ;
+			rico:classification "" ;
+			rico:contentType "Tekstualni dokumenti";
+			rico:integrityNote "Pregledom je ustanovljeno da ne nedostaju dokumenti u skupu dokumenta." ; 
+			rico:language "" ;
+			rico:scopeAndContent "Kserokopije i strojopisni dokument" ;
+			rico:hasExtent [ a rico:RecordResourceExtent ;
+								rico:quantity "1" ;
+								rico:unitOfMeasurement "Dokument" ;
+								] ;
+			rico:hasRecordState [a rico:RecordState; rdf:label "Konačni"] ;
+			rico:structure "" ;
+			rico:documentaryForm "Strojopis" , "Kserokopija" ;
+			rico:recordSetType "Dokument" .
+
+<Dokument03-11> a rico:Instantiation ;
+			rico:generalDescription "Dokument" ;
+			rico:identifier "kt03d07" ;
+			rico:hasExtent [ a rico:InstantiationExtent ;
+							rico:quantity "3" ;
+							rico:unitOfMeasurement "List" ;
+							] ;
+			rico:physicalCharacteristicsNote "Strojopis očuvan i čitak, blagi gubitak kontrasta na kserokopijama." ;
+			rico:productionTechnique "Strojopis" , "Kserokopija" ;
+			rico:qualityOfRepresentatonNote "Izvrsno očuvano" .
+
+<FranjoJosip> a rico:Person ;
+			rico:name "Franjo Josip" .
+
+<LjudevitGaj> a rico:Person ;
+			rico:name "Ljudevit Gaj" .
+
+<EugenKvaternik> a rico:Person ;
+			rico:name "Eugen Kvaternik" .
+			
+<IgnjatMartinović> a rico:Person ;
+			rico:name "Ignjat Martinović" .
+
+<MirkoAndroić> a rico:Person ;
+			rico:name "prof. Mirko Androić" .
+
+# i ostali...
+			
+<Zagreb> a rico:Place ;
+		 rico:name "Zagreb" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Zagreb> .
+		 
+<Beograd> a rico:Place ;
+		 rico:name "Beogard" ;
+		 rico:isEquivalentTo <https://dbpedia.org/page/Belgrade> .
+
+<Varšava> a rico:Place ;
+		 rico:name "Varšava" .
+		 #rico:isEquivalentTo <https://dbpedia.org/page/Warsaw>
+		 
+<Varaždin> a rico:Place ;
+		 rico:name "Varaždin" .
+		 #rico:isEquivalentTo <https://dbpedia.org/page/Varazdin>
